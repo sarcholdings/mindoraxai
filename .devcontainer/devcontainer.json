@@ -1,0 +1,81 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+  "name": "Ait XAI",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "build": {
+    "name": "Ait XAI",
+    "image": "ait-xai:latest",
+    "dockerfile": "Dockerfile"
+  },
+  // "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    // Explicitly specify no features to prevent automatic additions
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [4004],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "formulahendry.auto-rename-tag",
+        "ms-vscode.js-debug",
+        "eamodio.gitlens",
+        "rangav.vscode-thunder-client",
+        "SAPSE.vscode-cds",
+        //   "prisma.prisma",
+        "bradlc.vscode-tailwindcss",
+        "jebbs.markdown-extended",
+        "shd101wyy.markdown-preview-enhanced",
+        "rainbow.rainbow-csv",
+        "prettier.prettier-vscode",
+        "csstools.postcss",
+        "anthropic.claude-code",
+        "ms-vscode.vscode-typescript-next",
+        "shd101wyy.markdown-preview-enhanced",
+        "alex-c.code-canvas-app"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[html]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[css]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        },
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true,
+        "files.trimTrailingWhitespace": true,
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  // Environment variables to forward from host to container
+  "remoteEnv": {
+    "AUTH0_DOMAIN": "${localEnv:AUTH0_DOMAIN}",
+    "AUTH0_CLIENT_ID": "${localEnv:AUTH0_CLIENT_ID}",
+    "AUTH0_CLIENT_SECRET": "${localEnv:AUTH0_CLIENT_SECRET}"
+  }
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

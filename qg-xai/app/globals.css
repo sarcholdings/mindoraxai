@@ -1,0 +1,321 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 40% 98%; /* #F8FAFC - very light gray/white */
+    --foreground: 215 25% 27%; /* #1E293B - slate navy */
+
+    --card: 210 40% 98%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 210 40% 98%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Updated Corporate Color System */
+    --primary: 213 94% 68%; /* #3B82F6 - moderate blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 219 79% 66%; /* #1D4ED8 - darker blue for hover */
+    --primary-light: 213 93% 68%; /* #60A5FA - light blue for backgrounds */
+
+    --secondary: 214 13% 93%; /* Light gray */
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 214 13% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 213 94% 95%; /* Very light blue */
+    --accent-foreground: 213 94% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 13% 88%;
+    --input: 214 13% 88%;
+    --ring: 213 94% 68%;
+
+    /* Corporate gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%), hsl(219 79% 66%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 94% 68%) 0%, hsl(219 79% 66%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(210 40% 98%) 0%, hsl(213 94% 98%) 100%);
+
+    /* Corporate shadows */
+    --shadow-corporate: 0 4px 20px -2px hsl(213 94% 68% / 0.1);
+    --shadow-card: 0 2px 8px -1px hsl(215 25% 27% / 0.08);
+
+    /* Professional spacing */
+    --section-padding: 5rem 0;
+    --container-padding: 1.5rem;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Hero section tokens - Light mode */
+    --hero-bg: 210 40% 98%; /* Light background */
+    --hero-fg: 215 25% 27%; /* Dark text */
+    --hero-muted: 215 16% 47%; /* Muted dark text */
+    --hero-border: 214 13% 88%; /* Light border */
+    --hero-glow: 213 94% 68%; /* Blue glow */
+
+    /* Hero accent per slide — teal, green, cyan, purple */
+    --hero-accent-1: 168 80% 58%;    /* teal-400 */
+    --hero-accent-1-glow: 175 60% 23%; /* teal-900 */
+    --hero-accent-2: 142 71% 45%;    /* green-400 */
+    --hero-accent-2-glow: 152 60% 20%; /* green-900 */
+    --hero-accent-3: 187 92% 69%;    /* cyan-400 */
+    --hero-accent-3-glow: 197 79% 20%; /* cyan-900 */
+    --hero-accent-4: 271 91% 65%;    /* purple-400 */
+    --hero-accent-4-glow: 272 60% 22%; /* purple-900 */
+
+    /* Gradient stops for hero headlines */
+    --hero-gradient-1-from: 167 77% 72%;  /* teal-300 */
+    --hero-gradient-1-to: 183 80% 60%;    /* cyan-400 */
+    --hero-gradient-2-from: 142 69% 73%;  /* green-300 */
+    --hero-gradient-2-to: 160 84% 39%;    /* emerald-400 */
+    --hero-gradient-3-from: 187 92% 75%;  /* cyan-300 */
+    --hero-gradient-3-to: 199 89% 55%;    /* sky-400 */
+    --hero-gradient-4-from: 270 95% 75%;  /* purple-300 */
+    --hero-gradient-4-to: 264 87% 64%;    /* violet-400 */
+
+    /* Navigation tokens - Light mode (frosted glass) */
+    --nav-bg: 210 40% 98%; /* #F8FAFC - translucent light */
+    --nav-border: 214 20% 80%; /* Subtle glass edge */
+    --nav-text: 222 47% 11%; /* #111827 - dark navy */
+    --nav-hover: 217 91% 60%; /* #2563EB - QuantaGlobal blue accent */
+    --nav-dropdown-bg: 0 0% 100%; /* White glass pane */
+    --nav-dropdown-text: 222 47% 11%; /* #111827 */
+    --nav-dropdown-hover: 217 91% 96%; /* Very light blue highlight */
+    --nav-dropdown-hover-text: 217 91% 50%; /* Stronger blue */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Hero section tokens - Dark mode */
+    --hero-bg: 222.2 84% 4.9%; /* Dark background */
+    --hero-fg: 210 40% 98%; /* Light text */
+    --hero-muted: 215 20.2% 65.1%; /* Muted light text */
+    --hero-border: 217.2 32.6% 17.5%; /* Dark border */
+    --hero-glow: 212.7 26.8% 83.9%; /* Light blue glow */
+
+    --hero-accent-1: 168 80% 58%;
+    --hero-accent-1-glow: 175 60% 23%;
+    --hero-accent-2: 142 71% 45%;
+    --hero-accent-2-glow: 152 60% 20%;
+    --hero-accent-3: 187 92% 69%;
+    --hero-accent-3-glow: 197 79% 20%;
+    --hero-accent-4: 271 91% 65%;
+    --hero-accent-4-glow: 272 60% 22%;
+
+    --hero-gradient-1-from: 167 77% 72%;
+    --hero-gradient-1-to: 183 80% 60%;
+    --hero-gradient-2-from: 142 69% 73%;
+    --hero-gradient-2-to: 160 84% 39%;
+    --hero-gradient-3-from: 187 92% 75%;
+    --hero-gradient-3-to: 199 89% 55%;
+    --hero-gradient-4-from: 270 95% 75%;
+    --hero-gradient-4-to: 264 87% 64%;
+
+    /* Navigation tokens - Dark mode (white frosted glass) */
+    --nav-bg: 0 0% 100%; /* White glass base */
+    --nav-border: 214 20% 80%; /* Same subtle glass edge as light */
+    --nav-text: 222 47% 11%; /* #111827 - dark navy text */
+    --nav-hover: 217 91% 60%; /* #2563EB - blue accent */
+    --nav-dropdown-bg: 0 0% 100%; /* White glass dropdown */
+    --nav-dropdown-text: 222 47% 11%; /* Dark text */
+    --nav-dropdown-hover: 217 91% 96%; /* Light blue highlight */
+    --nav-dropdown-hover-text: 217 91% 50%; /* Stronger blue */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-garamond), Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  /* Typography System */
+  .font-display {
+    font-family: var(--font-garamond), Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  .font-heading {
+    font-family: var(--font-garamond), Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    line-height: 1.2;
+  }
+
+  .font-subheading {
+    font-family: var(--font-garamond), Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.3;
+  }
+
+  .font-body {
+    font-family: var(--font-garamond), Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.6;
+  }
+
+  .font-body-medium {
+    font-family: var(--font-garamond), Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+  }
+
+  .font-caption {
+    font-family: var(--font-garamond), Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+  }
+
+  /* Corporate Components */
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-24;
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .card-corporate {
+    @apply bg-card border border-border rounded-lg p-6;
+    box-shadow: var(--shadow-card);
+  }
+
+  .btn-corporate {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-200;
+    box-shadow: var(--shadow-corporate);
+  }
+
+  .btn-corporate:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px -3px hsl(213 94% 68% / 0.15);
+  }
+
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
