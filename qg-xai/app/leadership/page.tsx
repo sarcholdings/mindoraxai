@@ -17,7 +17,7 @@ export default function Leadership() {
     {
       step: 'Chief Financial Officer',
       title: 'Mehul Dave',
-      content: 'Mehul is the Chief Financial Officer of Quanta Global and is responsible for the company's finance function end to end. He manages all finance operations, including planning, reporting, and controls, and partners with the leadership team to ensure that Quanta's growth, investments, and product bets are grounded in clear financial discipline and long term sustainability.',
+      content: "Mehul is the Chief Financial Officer of Quanta Global and is responsible for the company's finance function end to end. He manages all finance operations, including planning, reporting, and controls, and partners with the leadership team to ensure that Quanta's growth, investments, and product bets are grounded in clear financial discipline and long term sustainability.",
       image: '/mehul.jpeg',
       credentials: 'CFO, Finance Operations Expert',
       expertise: ['Financial Planning', 'Reporting & Controls', 'Strategic Finance', 'Business Sustainability']

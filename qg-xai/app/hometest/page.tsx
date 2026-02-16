@@ -1,3 +1,5 @@
+"use client";
+
 import Header from '@/components/hometest/Header';
 import Hero from '@/components/hometest/Hero';
 import OurVision from '@/components/hometest/OurVision';

@@ -1,7 +1,7 @@
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 function CTA() {
   return (
@@ -20,12 +20,12 @@ function CTA() {
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <Link to="/contact">
+            <Link href="/contact">
               <Button className="gap-4" variant="outline">
                 Meet Our Leaders <MoveRight className="w-4 h-4" />
               </Button>
             </Link>
-            <Link to="/services">
+            <Link href="/services">
               <Button className="gap-4">
                 Explore Solutions <PhoneCall className="w-4 h-4" />
               </Button>
