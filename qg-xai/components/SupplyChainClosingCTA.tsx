@@ -24,11 +24,11 @@ const SupplyChainClosingCTA = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-              Ready to build a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">resilient and efficient</span> supply chain with SAP S/4HANA and MindoraX AI?
+              Ready to build a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">resilient and efficient</span> supply chain with SAP S/4HANA and SwiftAI?
             </h2>
             
             <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto">
-              Let MindoraX AI Labs guide you through every step of your supply chain transformation journey.
+              Let SwiftAI guide you through every step of your supply chain transformation journey.
             </p>
           </div>
           

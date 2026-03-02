@@ -34,7 +34,7 @@ const CrossIndustryUseCases = () => {
               A common intelligence layer for <span className="text-teal-400">trust-critical use cases</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              MindoraX AI supports a wide range of cross-industry, high-stakes workflows through a unified intelligence foundation.
+              SwiftAI supports a wide range of cross-industry, high-stakes workflows through a unified intelligence foundation.
             </p>
           </div>
 

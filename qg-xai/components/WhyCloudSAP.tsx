@@ -23,7 +23,7 @@ const WhyCloudSAP = () => {
           {/* Header Section */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">SAP S/4HANA Public Cloud</span> with MindoraX AI Labs
+              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">SAP S/4HANA Public Cloud</span> with SwiftAI
             </h2>
           </div>
           

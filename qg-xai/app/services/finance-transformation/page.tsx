@@ -4,7 +4,7 @@ import FinanceHero from '@/components/FinanceHero';
 import FinanceIntro from '@/components/FinanceIntro';
 import FinanceApproach from '@/components/FinanceApproach';
 import FinanceServiceBuckets from '@/components/FinanceServiceBuckets';
-import MindoraXAIHighlight from '@/components/MindoraXAIHighlight';
+import SwiftAIAIHighlight from '@/components/SwiftAIAIHighlight';
 import FinanceClosingCTA from '@/components/FinanceClosingCTA';
 
 export default function FinanceServices() {
@@ -16,7 +16,7 @@ export default function FinanceServices() {
         <FinanceIntro />
         <FinanceApproach />
         <FinanceServiceBuckets />
-        <MindoraXAIHighlight />
+        <SwiftAIAIHighlight />
         <FinanceClosingCTA />
       </main>
       <Footer />

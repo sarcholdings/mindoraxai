@@ -16,7 +16,7 @@ const SupplyChainExpertise = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
             <div className="relative bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl p-10 shadow-2xl border border-slate-200 hover:shadow-blue-500/25 transition-all duration-500">
               <p className="text-2xl text-slate-700 leading-relaxed font-semibold">
-                With proven expertise in SAP transformation and MindoraX AI as an intelligent automation layer, we help clients adapt quickly, reduce complexity, and create supply chains that are not only efficient but also adaptive and competitive.
+                With proven expertise in SAP transformation and SwiftAI as an intelligent automation layer, we help clients adapt quickly, reduce complexity, and create supply chains that are not only efficient but also adaptive and competitive.
               </p>
             </div>
           </div>

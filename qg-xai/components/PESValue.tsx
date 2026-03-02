@@ -38,7 +38,7 @@ const PESValue = () => {
               The <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Value</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              MindoraX AI Labs ensures leaders don't just select a vendor, but build a partner ecosystem that is:
+              SwiftAI ensures leaders don't just select a vendor, but build a partner ecosystem that is:
             </p>
           </div>
           

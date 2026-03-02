@@ -4,7 +4,7 @@ const TransformationJourney = () => {
   const capabilities = [
     'See and understand your current SAP landscape clearly',
     'Identify the processes and data that truly matter to your business',
-    'Leverage MindoraX AI to automate cleanup of unnecessary data and technical debt',
+    'Leverage SwiftAI to automate cleanup of unnecessary data and technical debt',
     'Design a roadmap that balances speed, cost, and risk',
     'Move into SAP S/4HANA with agility, clarity, and confidence'
   ];

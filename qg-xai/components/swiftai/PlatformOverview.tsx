@@ -22,13 +22,14 @@ const PlatformOverview = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="space-y-10">
             <div className="space-y-6">
+              <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Platform Overview</p>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
                 Why proactive SAP monitoring is <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-hero-accent-1 to-primary">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
                   now a business requirement
                 </span>
               </h2>
-              <div className="w-24 h-1.5 bg-gradient-to-r from-hero-accent-1 to-primary rounded-full" />
+              <div className="w-24 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" />
             </div>
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">

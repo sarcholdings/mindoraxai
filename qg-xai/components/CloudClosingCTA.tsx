@@ -24,7 +24,7 @@ const CloudClosingCTA = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-              Your cloud journey should not be complex. With MindoraX AI Labs, <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">SAP S/4HANA Public Cloud + MindoraX AI</span> gives you a faster, cleaner, and smarter path to the future.
+              Your cloud journey should not be complex. With SwiftAI, <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">SAP S/4HANA Public Cloud + SwiftAI</span> gives you a faster, cleaner, and smarter path to the future.
             </h2>
           </div>
           

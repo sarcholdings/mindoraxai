@@ -153,7 +153,7 @@ const ServicesSection = () => {
       <div ref={headerRef} className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Services</h2>
         <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-          At MindoraX AI Labs, we offer a wide range of services designed to meet the unique challenges and opportunities of modern enterprises. Our expertise spans across various domains to provide holistic and integrated solutions.
+          At SwiftAI, we offer a wide range of services designed to meet the unique challenges and opportunities of modern enterprises. Our expertise spans across various domains to provide holistic and integrated solutions.
         </p>
       </div>
 

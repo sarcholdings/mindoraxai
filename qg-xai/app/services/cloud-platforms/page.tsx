@@ -5,7 +5,7 @@ import CloudJourneySteps from '@/components/CloudJourneySteps';
 import CloudSAPHero from '@/components/CloudSAPHero';
 import WhyCloudSAP from '@/components/WhyCloudSAP';
 import CloudCapabilities from '@/components/CloudCapabilities';
-import CloudMindoraXAIAdvantage from '@/components/CloudMindoraXAIAdvantage';
+import CloudSwiftAIAIAdvantage from '@/components/CloudSwiftAIAIAdvantage';
 import CloudClosingCTA from '@/components/CloudClosingCTA';
 import CloudServicesClosingCTA from '@/components/CloudServicesClosingCTA';
 
@@ -22,7 +22,7 @@ export default function CloudServices() {
         <CloudSAPHero />
         <WhyCloudSAP />
         <CloudCapabilities />
-        <CloudMindoraXAIAdvantage />
+        <CloudSwiftAIAIAdvantage />
         <CloudClosingCTA />
 
         {/* Final Cloud Services CTA */}

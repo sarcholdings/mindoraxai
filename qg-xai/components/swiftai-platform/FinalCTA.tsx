@@ -23,11 +23,11 @@ const FinalCTA = () => {
           
           <h2 className="text-4xl md:text-6xl font-bold text-foreground tracking-tight">
             Build your trust foundation with <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-hero-accent-1 to-primary">MindoraX AI</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-hero-accent-1 to-primary">SwiftAI</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            MindoraX AI brings clarity, intelligence and governance to the operations that matter most. Start with one workflow and scale across your organization.
+            SwiftAI brings clarity, intelligence and governance to the operations that matter most. Start with one workflow and scale across your organization.
           </p>
           
           <div className="flex justify-center pt-8">

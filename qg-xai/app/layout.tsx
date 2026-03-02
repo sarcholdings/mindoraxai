@@ -10,7 +10,7 @@ const garamond = EB_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'MindoraX AI Labs - IT Consulting & Technology Solutions',
+  title: 'SwiftAI - IT Consulting & Technology Solutions',
   description: 'Digital transformation with expert IT consulting, SAP solutions, cloud services',
 }
 

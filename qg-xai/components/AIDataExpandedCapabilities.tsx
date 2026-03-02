@@ -28,7 +28,7 @@ const AIDataExpandedCapabilities = () => {
     },
     {
       title: 'GenAI Analytics',
-      description: 'Leverage natural language queries and copilots for real-time analysis. Detect anomalies, personalize experiences, and uncover hidden risks or fraud. Use MindoraX AI to automate reconciliation, reporting, and insights delivery.',
+      description: 'Leverage natural language queries and copilots for real-time analysis. Detect anomalies, personalize experiences, and uncover hidden risks or fraud. Use SwiftAI to automate reconciliation, reporting, and insights delivery.',
       icon: '🤖',
       color: 'from-orange-500 to-orange-600',
       bgColor: 'from-orange-50 to-orange-100',

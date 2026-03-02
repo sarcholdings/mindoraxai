@@ -189,14 +189,14 @@ const Navigation = ({ activeHero = "hero", onHeroChange, heroTheme = "blue" }: N
     //       action: () => { window.location.href = '/products'; },
     //       subItems: [
     //         {
-    //           label: 'MindoraX AI',
-    //           action: () => { window.location.href = '/products/mindorax-ai'; },
+    //           label: 'SwiftAI',
+    //           action: () => { window.location.href = '/products/swiftai'; },
     //           subItems: [
-    //             { label: 'Finance', action: () => { window.location.href = '/products/mindorax-ai/finance'; } },
-    //             { label: 'ERP', action: () => { window.location.href = '/products/mindorax-ai/erp'; } },
-    //             { label: 'Supply Chain', action: () => { window.location.href = '/products/mindorax-ai/scm'; } },
-    //             { label: 'Cloud and Platforms', action: () => { window.location.href = '/products/mindorax-ai/cloud'; } },
-    //             { label: 'Control Tower', action: () => { window.location.href = '/products/mindorax-ai/control-tower'; } },
+    //             { label: 'Finance', action: () => { window.location.href = '/products/swiftai/finance'; } },
+    //             { label: 'ERP', action: () => { window.location.href = '/products/swiftai/erp'; } },
+    //             { label: 'Supply Chain', action: () => { window.location.href = '/products/swiftai/scm'; } },
+    //             { label: 'Cloud and Platforms', action: () => { window.location.href = '/products/swiftai/cloud'; } },
+    //             { label: 'Control Tower', action: () => { window.location.href = '/products/swiftai/control-tower'; } },
     //           ]
     //         },
     //       ]
@@ -341,7 +341,7 @@ const Navigation = ({ activeHero = "hero", onHeroChange, heroTheme = "blue" }: N
           >
             <div className="relative">
               <span className="text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-800 via-indigo-800 to-blue-700 bg-clip-text text-transparent hover:from-blue-700 hover:via-indigo-700 hover:to-blue-600 transition-all duration-300">
-                MindoraX
+                SwiftAI
               </span>
               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </div>
@@ -378,13 +378,13 @@ const Navigation = ({ activeHero = "hero", onHeroChange, heroTheme = "blue" }: N
                   className="flex items-center text-blue-900 hover:text-blue-700 transition-colors duration-200 font-semibold"
                   // If Home, Careers or Contact Us, make the button directly clickable
                   onClick={
-                    (item.label === 'Home' || item.label === 'Careers' || item.label === 'Contact Us' || item.label === 'MindoraX AI Platform')
+                    (item.label === 'Home' || item.label === 'Careers' || item.label === 'Contact Us' || item.label === 'SwiftAI Platform')
                       ? item.items[0].action
                       : undefined
                   }
                 >
                   {item.label}
-                  {(item.label !== 'Home' && item.label !== 'Careers' && item.label !== 'Contact Us' && item.label !== 'MindoraX AI Platform') && <ChevronDown className="ml-1 h-4 w-4" />}
+                  {(item.label !== 'Home' && item.label !== 'Careers' && item.label !== 'Contact Us' && item.label !== 'SwiftAI Platform') && <ChevronDown className="ml-1 h-4 w-4" />}
                 </button>
                 {/* Dropdown Menu */}
                 {activeDropdown === item.label && (
@@ -394,7 +394,7 @@ const Navigation = ({ activeHero = "hero", onHeroChange, heroTheme = "blue" }: N
                     const isMega = hasThreeLevels || hasTwoLevels;
                     
                     // If Home, Careers or Contact Us, do not show dropdown
-                    if (item.label === 'Home' || item.label === 'Careers' || item.label === 'Contact Us' || item.label === 'MindoraX AI Platform') {
+                    if (item.label === 'Home' || item.label === 'Careers' || item.label === 'Contact Us' || item.label === 'SwiftAI Platform') {
                       return null;
                     }
                     if (!isMega) {

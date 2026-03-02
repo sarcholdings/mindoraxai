@@ -1,10 +1,10 @@
 import React from 'react';
 
-const MindoraXAICapabilities = () => {
+const SwiftAIAICapabilities = () => {
   const capabilities = [
     {
       title: 'Automation at Scale',
-      description: 'From invoices to reconciliations, CX workflows to supply chain processes, MINDORAX takes on repetitive tasks across the enterprise.',
+      description: 'From invoices to reconciliations, CX workflows to supply chain processes, SWIFTAI takes on repetitive tasks across the enterprise.',
       icon: '⚡',
       color: 'from-blue-500 to-blue-600',
       bgColor: 'from-blue-50 to-blue-100',
@@ -95,4 +95,4 @@ const MindoraXAICapabilities = () => {
   );
 };
 
-export default MindoraXAICapabilities;
+export default SwiftAIAICapabilities;

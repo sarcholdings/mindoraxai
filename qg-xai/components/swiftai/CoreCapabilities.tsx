@@ -82,8 +82,12 @@ const CoreCapabilities = () => {
 
       <div className="container px-4 mx-auto relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
+          <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Key Features</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            SOM Key Features
+            SOM Key{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+              Features
+            </span>
           </h2>
           <p className="text-lg text-muted-foreground">
             A comprehensive suite of AI-powered monitoring and intelligence capabilities designed for SAP operational excellence.

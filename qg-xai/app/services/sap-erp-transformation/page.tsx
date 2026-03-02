@@ -8,7 +8,7 @@ import SAPERPServicesClosingCTA from '@/components/SAPERPServicesClosingCTA';
 import CloudSAPHero from '@/components/CloudSAPHero';
 import WhyCloudSAP from '@/components/WhyCloudSAP';
 import CloudCapabilities from '@/components/CloudCapabilities';
-import CloudMindoraXAIAdvantage from '@/components/CloudMindoraXAIAdvantage';
+import CloudSwiftAIAIAdvantage from '@/components/CloudSwiftAIAIAdvantage';
 import CloudClosingCTA from '@/components/CloudClosingCTA';
 
 export default function SAPERPServices() {
@@ -27,7 +27,7 @@ export default function SAPERPServices() {
         <CloudSAPHero />
         <WhyCloudSAP />
         <CloudCapabilities />
-        <CloudMindoraXAIAdvantage />
+        <CloudSwiftAIAIAdvantage />
         <CloudClosingCTA />
       </main>
       <Footer />

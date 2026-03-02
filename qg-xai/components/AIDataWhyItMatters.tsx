@@ -23,7 +23,7 @@ const AIDataWhyItMatters = () => {
       color: 'from-orange-500 to-orange-600'
     },
     {
-      title: 'MINDORAX ties it all together, acting as radar across domains',
+      title: 'SWIFTAI ties it all together, acting as radar across domains',
       icon: '🎯',
       color: 'from-pink-500 to-pink-600'
     }
@@ -45,7 +45,7 @@ const AIDataWhyItMatters = () => {
               Why It <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Matters</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              With MindoraX AI Labs, Data & AI becomes the nervous system of enterprise orchestration
+              With SwiftAI, Data & AI becomes the nervous system of enterprise orchestration
             </p>
           </div>
           

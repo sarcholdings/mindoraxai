@@ -4,15 +4,15 @@ import AboutSection3 from '@/components/our-story/about-section';
 import { FeatureSteps } from '@/components/our-story/features-section';
 import { CTA } from '@/components/our-story/call-to-action';
 import ProductsHero from '@/components/ProductsHero';
-import MindoraXAIIntro from '@/components/MindoraXAIIntro';
-import MindoraXAIWhatItDoes from '@/components/MindoraXAIWhatItDoes';
-import MindoraXAICapabilities from '@/components/MindoraXAICapabilities';
-import MindoraXAIEmbedded from '@/components/MindoraXAIEmbedded';
-import MindoraXAIImpact from '@/components/MindoraXAIImpact';
-import MindoraXAIClosing from '@/components/MindoraXAIClosing';
+import SwiftAIAIIntro from '@/components/SwiftAIAIIntro';
+import SwiftAIAIWhatItDoes from '@/components/SwiftAIAIWhatItDoes';
+import SwiftAIAICapabilities from '@/components/SwiftAIAICapabilities';
+import SwiftAIAIEmbedded from '@/components/SwiftAIAIEmbedded';
+import SwiftAIAIImpact from '@/components/SwiftAIAIImpact';
+import SwiftAIAIClosing from '@/components/SwiftAIAIClosing';
 
 export default function Products() {
-  const mindoraxFeatures = [
+  const swiftAIFeatures = [
     {
       step: 'Productivity',
       title: 'AI-Powered Efficiency',
@@ -39,7 +39,7 @@ export default function Products() {
     }
   ];
 
-  const mindoraxCapabilities = [
+  const swiftAICapabilities = [
     {
       step: 'Enterprise Integration',
       title: 'Universal System Connectivity',
@@ -74,54 +74,54 @@ export default function Products() {
           {/* Hero Section */}
           {/* <AboutSection3 /> */}
 
-          {/* MindoraX AI Core Features */}
+          {/* SwiftAI Core Features */}
           <div className="bg-white rounded-2xl shadow-lg mb-16 mt-10">
             <FeatureSteps
-              features={mindoraxFeatures}
-              title="MindoraX AI Core Features"
+              features={swiftAIFeatures}
+              title="SwiftAI Core Features"
               autoPlayInterval={4000}
               imageHeight="h-[500px]"
             />
           </div>
 
-          {/* MindoraX AI Capabilities */}
+          {/* SwiftAI Capabilities */}
           <div className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-lg mb-16">
             <FeatureSteps
-              features={mindoraxCapabilities}
-              title="MindoraX AI Capabilities"
+              features={swiftAICapabilities}
+              title="SwiftAI Capabilities"
               autoPlayInterval={4000}
               imageHeight="h-[500px]"
             />
           </div>
 
-      {/* MindoraX AI Intro Section */}
+      {/* SwiftAI Intro Section */}
           <div className="bg-white rounded-2xl shadow-lg mb-16">
-      <MindoraXAIIntro />
+      <SwiftAIAIIntro />
           </div>
 
-      {/* MindoraX AI What It Does Section */}
+      {/* SwiftAI What It Does Section */}
           <div className="bg-gradient-to-r from-indigo-50 to-blue-100 rounded-2xl shadow-lg mb-16">
-      <MindoraXAIWhatItDoes />
+      <SwiftAIAIWhatItDoes />
           </div>
 
-      {/* MindoraX AI Capabilities Section */}
+      {/* SwiftAI Capabilities Section */}
           <div className="bg-white rounded-2xl shadow-lg mb-16">
-      <MindoraXAICapabilities />
+      <SwiftAIAICapabilities />
           </div>
 
-      {/* MindoraX AI Embedded Across Transformation Section */}
+      {/* SwiftAI Embedded Across Transformation Section */}
           <div className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-lg mb-16">
-      <MindoraXAIEmbedded />
+      <SwiftAIAIEmbedded />
           </div>
 
-      {/* MindoraX AI Impact Section */}
+      {/* SwiftAI Impact Section */}
           <div className="bg-white rounded-2xl shadow-lg mb-16">
-      <MindoraXAIImpact />
+      <SwiftAIAIImpact />
           </div>
 
-      {/* MindoraX AI Closing Section */}
+      {/* SwiftAI Closing Section */}
           <div className="bg-gradient-to-r from-indigo-50 to-blue-100 rounded-2xl shadow-lg mb-16">
-      <MindoraXAIClosing />
+      <SwiftAIAIClosing />
           </div>
 
       {/* Embedded Verver AI App */}

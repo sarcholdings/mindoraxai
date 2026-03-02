@@ -31,7 +31,7 @@ const HeroIntro = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
             <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-white/20 hover:shadow-blue-500/25 transition-all duration-500">
               <p className="text-xl text-slate-700 mb-8 font-semibold leading-relaxed">
-                Organizations face rapid disruption. With MindoraX AI Labs's AI & Transformation Services, you can:
+                Organizations face rapid disruption. With SwiftAI's AI & Transformation Services, you can:
               </p>
               
               {/* Benefits List with enhanced styling */}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MindoraXAIWhatItDoes = () => {
+const SwiftAIAIWhatItDoes = () => {
   const benefits = [
     'Cleans your core so transformation is lighter, faster, and less risky',
     'Automates across customer experience, finance, supply chain, and everything in between so your teams can focus on higher-value work',
@@ -21,7 +21,7 @@ const MindoraXAIWhatItDoes = () => {
           {/* Header Section */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-              What <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">MINDORAX</span> Does for You
+              What <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">SWIFTAI</span> Does for You
             </h2>
           </div>
           
@@ -54,4 +54,4 @@ const MindoraXAIWhatItDoes = () => {
   );
 };
 
-export default MindoraXAIWhatItDoes;
+export default SwiftAIAIWhatItDoes;

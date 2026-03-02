@@ -60,14 +60,18 @@ const CrossIndustryUseCases = () => {
   ];
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section id="gap-analysis" className="py-24 bg-background relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4">
+            <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Gap Analysis</p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Closing critical gaps in <span className="text-teal-400">SAP monitoring</span>
+              Closing critical gaps in{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+                SAP monitoring
+              </span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               Current monitoring approaches leave dangerous blind spots. SOM fills each gap

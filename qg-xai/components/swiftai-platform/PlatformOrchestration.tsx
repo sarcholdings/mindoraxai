@@ -42,7 +42,7 @@ const PlatformOrchestration = () => {
                 <div className="absolute inset-0 bg-teal-500/20 rounded-full blur-xl" />
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full shadow-[0_0_50px_-10px_rgba(45,212,191,0.5)]" />
                 <div className="relative z-10 text-center">
-                  <span className="block text-foreground font-bold text-xl leading-none">MindoraX AI</span>
+                  <span className="block text-foreground font-bold text-xl leading-none">SwiftAI</span>
                   <span className="text-teal-100 text-sm">Core</span>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const PlatformOrchestration = () => {
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                MindoraX AI acts as an enterprise intelligence backbone across your entire technology stack, breaking down silos and unifying data flow.
+                SwiftAI acts as an enterprise intelligence backbone across your entire technology stack, breaking down silos and unifying data flow.
               </p>
               <div className="flex items-center gap-4 p-5 rounded-xl bg-accent border-3 border-border/80 dark:border-border/60 hover:bg-background/50 hover:border-hero-accent-1/60 hover:shadow-xl hover:shadow-hero-accent-1/10 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-br from-hero-accent-1/5 via-transparent to-primary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

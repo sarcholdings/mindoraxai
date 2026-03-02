@@ -79,9 +79,10 @@ export default function Showcase() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
+          <p className="text-sm font-semibold tracking-widest uppercase text-orange-500 mb-2">/Showcase</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
             Showcase of SOM&apos;s{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-hero-accent-1 to-primary">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
               Capabilities
             </span>
           </h2>
@@ -163,7 +164,10 @@ export default function Showcase() {
                         </div>
 
                         <div className="pt-3">
-                          <button className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-hero-accent-1 text-white text-sm font-semibold hover:bg-hero-accent-1/90 hover:shadow-lg hover:shadow-hero-accent-1/25 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group/btn">
+                          <button
+                            onClick={() => document.getElementById('core-capabilities')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-400 hover:shadow-lg hover:shadow-orange-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group/btn"
+                          >
                             {project.cta}
                             <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                           </button>

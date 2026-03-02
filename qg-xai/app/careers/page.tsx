@@ -60,7 +60,7 @@ export default function Careers() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white mt-20">
       <Navigation />
       <main className="section-container py-16">
-        <h1 className="text-4xl font-extrabold text-center mb-2 text-gray-900">Careers at MindoraX AI Labs</h1>
+        <h1 className="text-4xl font-extrabold text-center mb-2 text-gray-900">Careers at SwiftAI</h1>
         <p className="text-center text-lg text-gray-500 mb-10 max-w-2xl mx-auto">Join our team of innovators, creators, and leaders. Explore our open positions and help shape the future of technology and business.</p>
         <div className="mb-12">
           {/* <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2"><span className="inline-block w-2 h-2 bg-primary rounded-full"></span>Open Positions</h2> */}

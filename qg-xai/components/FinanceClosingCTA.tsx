@@ -24,7 +24,7 @@ const FinanceClosingCTA = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-              Finance doesn't just record the past. With MindoraX AI Labs, it <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">shapes the future</span>.
+              Finance doesn't just record the past. With SwiftAI, it <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">shapes the future</span>.
             </h2>
           </div>
           
@@ -54,7 +54,7 @@ const FinanceClosingCTA = () => {
               
               {/* Button content */}
               <span className="relative flex items-center justify-center space-x-3">
-                <span>Explore MindoraX AI</span>
+                <span>Explore SwiftAI</span>
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>

@@ -44,7 +44,7 @@ const AIDataEmergingTechHorizon = () => {
               The <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Emerging Tech Horizon</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Because EO is future-oriented, MindoraX AI Labs also brings cutting-edge technologies that extend your capabilities
+              Because EO is future-oriented, SwiftAI also brings cutting-edge technologies that extend your capabilities
             </p>
           </div>
           

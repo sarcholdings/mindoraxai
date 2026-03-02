@@ -29,7 +29,7 @@ const steps = [
     number: '04',
     title: 'Quality Assurance',
     subtitle: 'Ensuring Excellence',
-    desc: `Quality is paramount at MindoraX AI Labs. Our comprehensive quality assurance process includes rigorous testing and validation at every stage of development. This ensures that the final product is reliable, secure, and performs as expected under various conditions.`,
+    desc: `Quality is paramount at SwiftAI. Our comprehensive quality assurance process includes rigorous testing and validation at every stage of development. This ensures that the final product is reliable, secure, and performs as expected under various conditions.`,
   },
   {
     img: '/wwa1.jpg',

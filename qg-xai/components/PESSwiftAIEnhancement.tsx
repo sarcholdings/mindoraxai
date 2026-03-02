@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PESMindoraXAIEnhancement = () => {
+const PESSwiftAIAIEnhancement = () => {
   const enhancements = [
     {
       title: 'Analyzes vendor responses and highlights risks',
@@ -32,7 +32,7 @@ const PESMindoraXAIEnhancement = () => {
           {/* Header Section */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-              How <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">MindoraX AI</span> Enhances It
+              How <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">SwiftAI</span> Enhances It
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
               Intelligent automation that accelerates partner evaluation and decision-making
@@ -66,4 +66,4 @@ const PESMindoraXAIEnhancement = () => {
   );
 };
 
-export default PESMindoraXAIEnhancement;
+export default PESSwiftAIAIEnhancement;

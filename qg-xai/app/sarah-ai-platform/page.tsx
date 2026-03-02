@@ -4,20 +4,20 @@ import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import Hero from '@/components/mindorax-ai-platform/Hero';
-import Hero2 from '@/components/mindorax-ai-platform/Hero2';
-import Hero3 from '@/components/mindorax-ai-platform/Hero3';
-import Hero4 from '@/components/mindorax-ai-platform/Hero4';
-import PlatformOverview from '@/components/mindorax-ai-platform/PlatformOverview';
-import CoreCapabilities from '@/components/mindorax-ai-platform/CoreCapabilities';
-import CrossIndustryUseCases from '@/components/mindorax-ai-platform/CrossIndustryUseCases';
-import IndustryEditions from '@/components/mindorax-ai-platform/IndustryEditions';
-import PlatformOrchestration from '@/components/mindorax-ai-platform/PlatformOrchestration';
-import DeploymentIntegration from '@/components/mindorax-ai-platform/DeploymentIntegration';
-import FinalCTA from '@/components/mindorax-ai-platform/FinalCTA';
+import Hero from '@/components/swiftai-platform/Hero';
+import Hero2 from '@/components/swiftai-platform/Hero2';
+import Hero3 from '@/components/swiftai-platform/Hero3';
+import Hero4 from '@/components/swiftai-platform/Hero4';
+import PlatformOverview from '@/components/swiftai-platform/PlatformOverview';
+import CoreCapabilities from '@/components/swiftai-platform/CoreCapabilities';
+import CrossIndustryUseCases from '@/components/swiftai-platform/CrossIndustryUseCases';
+import IndustryEditions from '@/components/swiftai-platform/IndustryEditions';
+import PlatformOrchestration from '@/components/swiftai-platform/PlatformOrchestration';
+import DeploymentIntegration from '@/components/swiftai-platform/DeploymentIntegration';
+import FinalCTA from '@/components/swiftai-platform/FinalCTA';
 
 const HERO_COMPONENTS = [
-  { id: 'hero', component: Hero, name: 'MindoraX AI', theme: 'blue' },
+  { id: 'hero', component: Hero, name: 'SwiftAI', theme: 'blue' },
   { id: 'hero2', component: Hero2, name: 'Vision AI', theme: 'green' },
   { id: 'hero3', component: Hero3, name: 'Private LLMs', theme: 'cyan' },
   { id: 'hero4', component: Hero4, name: 'Voice AI', theme: 'purple' }
@@ -25,7 +25,7 @@ const HERO_COMPONENTS = [
 
 const AUTO_PLAY_INTERVAL = 6000; // 6 seconds
 
-export default function MindoraXAIPlatform() {
+export default function SwiftAIAIPlatform() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [isPaused, setIsPaused] = useState(false);

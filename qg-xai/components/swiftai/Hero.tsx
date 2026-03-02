@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, ChevronRight, Activity } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -9,7 +9,17 @@ const MONITORING_DOMAINS = [
   'Business Interfaces', 'Predictive Alerts', 'Logs & Governance', 'Real User Monitoring',
 ];
 
+const platformMetrics = [
+  { id: 'kpis', label: 'KPIs Monitored', value: '1,100+', sub: 'Across SAP & related domains' },
+  { id: 'downtime', label: 'Hourly Downtime Cost', value: '$300K+', sub: '90% of mid/large enterprises' },
+  { id: 'outages', label: 'Preventable Outages', value: '54%', sub: 'With better monitoring' },
+  { id: 'release', label: 'GA Release', value: "Jul '26", sub: 'Enterprise-ready deployment' },
+];
+
 const Hero = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const active = platformMetrics[activeIndex];
+
   return (
     <section className="relative h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden text-hero-foreground">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -24,12 +34,12 @@ const Hero = () => {
       <div className="container relative z-10 px-6 lg:px-12 mx-auto">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/40 uppercase">[01]</span>
-            <div className="h-px w-12 bg-hero-foreground/20" />
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/40 uppercase">SwiftAI Operations Monitor</span>
+            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/70 uppercase">[01]</span>
+            <div className="h-px w-12 bg-hero-foreground/40" />
+            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/70 uppercase">SwiftAI Operations Monitor</span>
           </div>
 
-          <div className="grid lg:grid-cols-[1fr_380px] gap-16 items-end">
+          <div className="grid lg:grid-cols-[2fr_1fr] gap-16 items-center">
             <div className="space-y-8">
               <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-none bg-hero-accent-1/10 border border-hero-accent-1/20 text-[12px] text-hero-foreground backdrop-blur-sm font-mono tracking-wide uppercase">
@@ -48,7 +58,7 @@ const Hero = () => {
                   </span>
                 </h1>
 
-                <p className="text-[17px] md:text-lg text-hero-foreground/50 max-w-2xl leading-relaxed font-light">
+                <p className="text-[17px] md:text-lg text-hero-foreground/80 max-w-2xl leading-relaxed">
                   SAP systems run your core operations — order management, procurement, finance,
                   manufacturing, and payroll. SOM delivers proactive, AI-powered monitoring
                   that detects issues before they impact your business.
@@ -58,7 +68,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row items-start gap-4 pt-2 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 <Button
                   size="lg"
-                  className="h-12 px-8 bg-hero-foreground text-hero font-medium rounded-none hover:bg-hero-foreground/90 transition-all duration-300 text-sm tracking-wide uppercase"
+                  className="h-12 px-8 bg-emerald-400 text-gray-900 font-semibold rounded-none hover:bg-emerald-300 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('platform-overview')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Explore SOM
@@ -67,7 +77,7 @@ const Hero = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="h-12 px-8 border-hero-foreground/15 bg-transparent text-hero-foreground hover:bg-hero-foreground/5 rounded-none backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
+                  className="h-12 px-8 border-white/25 bg-white/[0.08] text-white hover:bg-white/[0.15] hover:border-white/40 rounded-none backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('industry-editions')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   KPI Coverage
@@ -76,12 +86,12 @@ const Hero = () => {
               </div>
 
               <div className="pt-6 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-                <p className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/30 uppercase mb-4">Monitoring Domains</p>
+                <p className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/65 uppercase mb-4">Monitoring Domains</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-2">
                   {MONITORING_DOMAINS.map((tech) => (
                     <span
                       key={tech}
-                      className="text-[13px] text-hero-foreground/40 hover:text-hero-accent-1 transition-colors duration-300 cursor-default font-light"
+                      className="text-[13px] text-hero-foreground/75 hover:text-hero-accent-1 transition-colors duration-300 cursor-default"
                     >
                       {tech}
                     </span>
@@ -91,32 +101,44 @@ const Hero = () => {
             </div>
 
             <div className="hidden lg:block animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-              <div className="border border-hero-accent-1/20 bg-card/50 backdrop-blur-sm p-8 space-y-8">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/30 uppercase">Platform Status</span>
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-hero-accent-1 animate-pulse" />
-                    <span className="font-mono text-[11px] text-hero-accent-1">Live</span>
+              <div className="border border-hero-foreground/[0.12] bg-hero-foreground/[0.04] backdrop-blur-sm">
+                <div className="px-8 pt-8 pb-6">
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/65 uppercase">Platform Status</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-hero-accent-1 animate-pulse" />
+                      <span className="font-mono text-[11px] text-hero-accent-1">Live</span>
+                    </div>
+                  </div>
+                  <div className="h-px bg-hero-foreground/[0.1] mb-6" />
+                  <div className="mb-2">
+                    <div className="flex items-baseline justify-between mb-3">
+                      <span className="text-[28px] font-semibold text-hero-foreground tracking-tight">{active.value}</span>
+                      <span className="text-[11px] font-mono text-hero-foreground/65">{active.sub}</span>
+                    </div>
+                    <p className="text-[14px] text-hero-foreground/80 leading-relaxed">{active.label}</p>
                   </div>
                 </div>
-
-                <div className="h-px bg-hero-foreground/[0.06]" />
-
-                {[
-                  { label: 'KPIs Monitored', value: '1,100+', sub: 'Across SAP & related domains' },
-                  { label: 'Hourly Downtime Cost', value: '$300K+', sub: '90% of mid/large enterprises' },
-                  { label: 'Preventable Outages', value: '54%', sub: 'With better monitoring' },
-                  { label: 'GA Release', value: 'Jul \'26', sub: 'Enterprise-ready deployment' },
-                ].map((metric, i) => (
-                  <div key={metric.label} className="group">
-                    <div className="flex items-baseline justify-between mb-1">
-                      <span className="text-[13px] text-hero-foreground/40 font-light">{metric.label}</span>
-                      <span className="text-[22px] font-semibold text-hero-foreground tracking-tight">{metric.value}</span>
-                    </div>
-                    <p className="text-[11px] text-hero-foreground/25 font-mono">{metric.sub}</p>
-                    {i < 3 && <div className="h-px bg-hero-foreground/[0.04] mt-6" />}
-                  </div>
-                ))}
+                <div className="border-t border-hero-foreground/[0.1]">
+                  {platformMetrics.map((metric, idx) => (
+                    <button
+                      key={metric.id}
+                      onClick={() => setActiveIndex(idx)}
+                      onMouseEnter={() => setActiveIndex(idx)}
+                      className={`w-full text-left px-8 py-4 flex items-center justify-between transition-all duration-300 border-b border-hero-foreground/[0.08] last:border-b-0 ${
+                        idx === activeIndex
+                          ? 'bg-hero-foreground/[0.1] text-hero-foreground'
+                          : 'text-hero-foreground/70 hover:bg-hero-foreground/[0.08] hover:text-hero-foreground/90'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <span className="font-mono text-[10px] text-hero-foreground/50">0{idx + 1}</span>
+                        <span className="text-[13px] font-medium tracking-wide uppercase">{metric.label}</span>
+                      </div>
+                      {idx === activeIndex && <div className="w-1.5 h-1.5 rounded-full bg-hero-accent-1" />}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

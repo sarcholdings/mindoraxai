@@ -6,7 +6,7 @@ const WhatSetsUsApartSection = () => {
       number: "01",
       title: "Deep Expertise",
       subtitle: "Our strength is in our people.",
-      content: "MindoraX AI Labs is led by experienced professionals with 20+ years in SAP, ERP, AI, and enterprise software. We're ex-Big 4 advisors, enterprise architects, and transformation leads — grounded in delivery, not theory. We speak both business and technology, and we know how to turn complexity into action.",
+      content: "SwiftAI is led by experienced professionals with 20+ years in SAP, ERP, AI, and enterprise software. We're ex-Big 4 advisors, enterprise architects, and transformation leads — grounded in delivery, not theory. We speak both business and technology, and we know how to turn complexity into action.",
       icon: <span className="text-blue-600">👥</span>
     },
     {

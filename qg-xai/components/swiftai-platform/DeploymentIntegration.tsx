@@ -11,7 +11,7 @@ const DeploymentIntegration = () => {
     {
       icon: Rocket,
       title: 'Guardrail-First Deployment',
-      description: 'Activate MindoraX AI for a targeted workflow under strict governance.'
+      description: 'Activate SwiftAI for a targeted workflow under strict governance.'
     },
     {
       icon: LineChart,

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const SupplyChainMindoraXAI = () => {
-  const aiCapabilities = [
-    'Intelligent demand forecasting and planning',
-    'Automated inventory optimization and replenishment',
-    'Real-time supply chain monitoring and alerts',
-    'Predictive analytics for risk management and mitigation'
+const CloudSwiftAIAIAdvantage = () => {
+  const advantages = [
+    'Automating data and process migration',
+    'Cleaning up unnecessary data to reduce technical debt',
+    'Enhancing speed and accuracy of cloud adoption',
+    'Freeing up your workforce to focus on innovation, not manual migration'
   ];
 
   return (
@@ -25,22 +25,22 @@ const SupplyChainMindoraXAI = () => {
           <div className="space-y-6">
             <div className="inline-flex items-center space-x-3 mb-6">
               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-              <span className="text-blue-300 font-semibold text-sm uppercase tracking-wider">AI-Powered Supply Chain</span>
+              <span className="text-blue-300 font-semibold text-sm uppercase tracking-wider">AI-Powered Cloud</span>
               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">MindoraX AI</span> in Supply Chain
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">SwiftAI</span> Advantage
             </h2>
             
             <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto font-medium">
-              Transform your supply chain with intelligent automation and AI-driven insights that drive efficiency and resilience.
+              Our intelligent automation platform, SwiftAI, accelerates your move to SAP S/4HANA Public Cloud by:
             </p>
           </div>
           
-          {/* AI Capabilities Grid */}
+          {/* Advantages Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {aiCapabilities.map((capability, index) => (
+            {advantages.map((advantage, index) => (
               <div key={index} className="group">
                 <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-500 transform hover:-translate-y-2">
                   {/* Glow effect */}
@@ -54,7 +54,7 @@ const SupplyChainMindoraXAI = () => {
                       </svg>
                     </div>
                     <span className="text-lg text-white font-medium group-hover:text-blue-100 transition-colors duration-300">
-                      {capability}
+                      {advantage}
                     </span>
                   </div>
                 </div>
@@ -77,4 +77,4 @@ const SupplyChainMindoraXAI = () => {
   );
 };
 
-export default SupplyChainMindoraXAI;
+export default CloudSwiftAIAIAdvantage;

@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AIDataHero from '@/components/AIDataHero';
 import AIDataExpandedCapabilities from '@/components/AIDataExpandedCapabilities';
-import AIDataMindoraXAIEnhancement from '@/components/AIDataMindoraXAIEnhancement';
+import AIDataSwiftAIAIEnhancement from '@/components/AIDataSwiftAIAIEnhancement';
 import AIDataEmergingTechHorizon from '@/components/AIDataEmergingTechHorizon';
 import AIDataWhyItMatters from '@/components/AIDataWhyItMatters';
 import AIDataClosingCTA from '@/components/AIDataClosingCTA';
@@ -18,8 +18,8 @@ export default function AIDATASolution() {
         {/* Expanded Capabilities Section */}
         <AIDataExpandedCapabilities />
 
-        {/* MindoraX AI Enhancement Section */}
-        <AIDataMindoraXAIEnhancement />
+        {/* SwiftAI Enhancement Section */}
+        <AIDataSwiftAIAIEnhancement />
 
         {/* Emerging Tech Horizon Section */}
         <AIDataEmergingTechHorizon />

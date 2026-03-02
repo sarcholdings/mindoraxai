@@ -42,7 +42,7 @@ const WhyItMattersSection = () => {
           <div className="bg-blue-600 text-white rounded-2xl p-8 md:p-12">
             <div className="text-center space-y-4">
               <p className="text-lg md:text-xl font-bold">
-                At MindoraX AI Labs, we don't just deliver projects.
+                At SwiftAI, we don't just deliver projects.
               </p>
               <p className="text-lg md:text-xl font-bold">
                 We help you build an advantage.

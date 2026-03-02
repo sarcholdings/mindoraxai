@@ -53,11 +53,11 @@ const ValuePropositionSection = () => {
             </div>
           </div>
 
-          {/* MindoraX AI Labs Statement */}
+          {/* SwiftAI Statement */}
           <div className="bg-black text-white rounded-2xl p-8 md:p-12">
             <div className="text-center space-y-6">
               <p className="text-lg md:text-xl font-bold">
-                MindoraX AI Labs isn't here to sell software.
+                SwiftAI isn't here to sell software.
               </p>
               <p className="text-lg md:text-xl font-bold">
                 We're here to help you build the kind of business that makes competitors nervous.

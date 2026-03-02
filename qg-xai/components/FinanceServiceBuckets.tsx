@@ -31,8 +31,8 @@ const FinanceServiceBuckets = () => {
       accentColor: 'text-violet-600'
     },
     {
-      title: 'Global Business Services (GBS) + MindoraX AI',
-      description: 'Build resilient, cost-effective, and AI-enabled service models. With MindoraX AI, automate finance processes, reduce errors, and free up teams for strategic priorities.',
+      title: 'Global Business Services (GBS) + SwiftAI',
+      description: 'Build resilient, cost-effective, and AI-enabled service models. With SwiftAI, automate finance processes, reduce errors, and free up teams for strategic priorities.',
       icon: '🤖',
       color: 'from-orange-500 to-orange-600',
       bgColor: 'from-orange-50 to-orange-100',

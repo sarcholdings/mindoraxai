@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MindoraXAIIntro = () => {
+const SwiftAIAIIntro = () => {
   return (
     <section className="relative py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 overflow-hidden">
       {/* Background decorative elements */}
@@ -14,7 +14,7 @@ const MindoraXAIIntro = () => {
           {/* Header Section */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">MindoraX AI</span> – Intelligence That Clears the Path
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">SwiftAI</span> – Intelligence That Clears the Path
             </h2>
           </div>
           
@@ -26,7 +26,7 @@ const MindoraXAIIntro = () => {
                 Transformation is demanding. Legacy systems weigh you down, technical debt piles up, and teams spend too much time on manual work instead of driving growth. Customers, markets, and regulators demand speed and clarity — all at once.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed">
-                That's where MindoraX AI comes in. Quietly powerful, always present — MINDORAX simplifies what's complex, clears away what's unnecessary, and accelerates what matters most.
+                That's where SwiftAI comes in. Quietly powerful, always present — SWIFTAI simplifies what's complex, clears away what's unnecessary, and accelerates what matters most.
               </p>
             </div>
           </div>
@@ -36,4 +36,4 @@ const MindoraXAIIntro = () => {
   );
 };
 
-export default MindoraXAIIntro;
+export default SwiftAIAIIntro;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const MindoraXAIHighlight = () => {
-  const benefits = [
-    'Automate invoices, reconciliations, and reporting',
-    'Reduce errors and manual work',
-    'Provide real-time visibility',
-    'Free finance teams to focus on insight and forecasting'
+const SupplyChainSwiftAIAI = () => {
+  const aiCapabilities = [
+    'Intelligent demand forecasting and planning',
+    'Automated inventory optimization and replenishment',
+    'Real-time supply chain monitoring and alerts',
+    'Predictive analytics for risk management and mitigation'
   ];
 
   return (
@@ -25,22 +25,22 @@ const MindoraXAIHighlight = () => {
           <div className="space-y-6">
             <div className="inline-flex items-center space-x-3 mb-6">
               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-              <span className="text-blue-300 font-semibold text-sm uppercase tracking-wider">AI-Powered Finance</span>
+              <span className="text-blue-300 font-semibold text-sm uppercase tracking-wider">AI-Powered Supply Chain</span>
               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-              MindoraX AI in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Finance</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">SwiftAI</span> in Supply Chain
             </h2>
             
             <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto font-medium">
-              MindoraX AI transforms finance operations and GBS with intelligent automation. It helps leaders:
+              Transform your supply chain with intelligent automation and AI-driven insights that drive efficiency and resilience.
             </p>
           </div>
           
-          {/* Benefits Grid */}
+          {/* AI Capabilities Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {benefits.map((benefit, index) => (
+            {aiCapabilities.map((capability, index) => (
               <div key={index} className="group">
                 <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-500 transform hover:-translate-y-2">
                   {/* Glow effect */}
@@ -54,7 +54,7 @@ const MindoraXAIHighlight = () => {
                       </svg>
                     </div>
                     <span className="text-lg text-white font-medium group-hover:text-blue-100 transition-colors duration-300">
-                      {benefit}
+                      {capability}
                     </span>
                   </div>
                 </div>
@@ -71,23 +71,10 @@ const MindoraXAIHighlight = () => {
               <div className="absolute inset-0 w-24 h-24 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-3xl blur-xl opacity-50"></div>
             </div>
           </div>
-          
-          {/* Bottom decorative elements */}
-          <div className="pt-12 space-y-6">
-            <div className="w-32 h-1 bg-gradient-to-r from-transparent via-blue-400/40 to-transparent mx-auto rounded-full"></div>
-            
-            <div className="flex justify-center items-center space-x-4">
-              <div className="w-2 h-2 bg-blue-400/60 rounded-full animate-pulse"></div>
-              <div className="w-1 h-1 bg-blue-400/40 rounded-full"></div>
-              <div className="w-2 h-2 bg-blue-400/60 rounded-full animate-pulse delay-150"></div>
-              <div className="w-1 h-1 bg-blue-400/40 rounded-full"></div>
-              <div className="w-2 h-2 bg-blue-400/60 rounded-full animate-pulse delay-300"></div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default MindoraXAIHighlight;
+export default SupplyChainSwiftAIAI;

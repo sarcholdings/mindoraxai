@@ -25,9 +25,6 @@ const HERO_COMPONENTS = [
   { id: 'hero4', component: Hero4, name: 'KPI Coverage', theme: 'purple' }
 ];
 
-const GRADIENT_BLOB = 'https://framerusercontent.com/images/zSXIWZUZ70dcBomAGSlIXbL20Os.png?width=880&height=1168';
-const GRAIN_TEXTURE = 'https://framerusercontent.com/images/6mcf62RlDfRfU61Yg5vb2pefpi4.png?width=256&height=256';
-
 const AUTO_PLAY_INTERVAL = 6000;
 
 export default function SwiftAIAIPlatform() {
@@ -35,14 +32,8 @@ export default function SwiftAIAIPlatform() {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
   const [showArrows, setShowArrows] = useState(true);
-  const [bgVisible, setBgVisible] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const heroRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const t = setTimeout(() => setBgVisible(true), 400);
-    return () => clearTimeout(t);
-  }, []);
 
   useEffect(() => {
     if (isAutoPlaying && !isPaused) {
@@ -87,90 +78,74 @@ export default function SwiftAIAIPlatform() {
 
   return (
     <div className="relative min-h-screen bg-background">
-      {/* Hide hero internal bg images; force dark-mode hero tokens inside hero wrapper */}
       <style>{`
-        .sw2-hero-wrapper section > div[aria-hidden="true"] { display: none !important; }
-        .sw2-hero-bg {
-          --hero-fg: 210 40% 98%;
-          --hero-muted: 215 20.2% 65.1%;
+        .sw3-hero {
+          --hero-fg: 0 0% 100%;
+          --hero-muted: 210 20% 78%;
           --hero-border: 217.2 32.6% 17.5%;
           --hero-bg: 222.2 84% 4.9%;
+          --hero-accent-1: 172 90% 72%;
+          --hero-accent-1-glow: 175 70% 32%;
+          --hero-accent-2: 160 82% 62%;
+          --hero-accent-2-glow: 155 65% 30%;
+          --hero-accent-3: 192 100% 75%;
+          --hero-accent-3-glow: 200 85% 32%;
+          --hero-accent-4: 268 100% 78%;
+          --hero-accent-4-glow: 270 70% 34%;
+          --hero-gradient-1-from: 165 92% 82%;
+          --hero-gradient-1-to: 192 95% 76%;
+          --hero-gradient-2-from: 150 88% 80%;
+          --hero-gradient-2-to: 172 92% 60%;
+          --hero-gradient-3-from: 185 98% 84%;
+          --hero-gradient-3-to: 212 96% 74%;
+          --hero-gradient-4-from: 262 100% 86%;
+          --hero-gradient-4-to: 282 98% 76%;
+        }
+        .sw3-hero section > div[aria-hidden="true"] > div:last-child {
+          background-color: rgba(0, 0, 0, 0.55) !important;
+        }
+        .sw3-hero h1 {
+          text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+        .sw3-hero [class*="bg-emerald"] {
+          background: white !important;
+          color: #0f172a !important;
+          font-weight: 700 !important;
+          box-shadow: 0 4px 24px -4px rgba(255, 255, 255, 0.2) !important;
+        }
+        .sw3-hero [class*="bg-emerald"]:hover {
+          background: rgba(255, 255, 255, 0.92) !important;
+          box-shadow: 0 8px 32px -4px rgba(255, 255, 255, 0.35) !important;
+        }
+        .sw3-hero [class*="border-white\\/25"] {
+          border-color: rgba(255, 255, 255, 0.35) !important;
+          background: rgba(255, 255, 255, 0.12) !important;
+        }
+        .sw3-hero [class*="border-white\\/25"]:hover {
+          border-color: rgba(255, 255, 255, 0.55) !important;
+          background: rgba(255, 255, 255, 0.2) !important;
         }
       `}</style>
 
       <main id="main" className="relative z-10 min-h-screen text-foreground">
         <SwiftAINavigation />
 
-        {/* Hero section with Jacob Schneider background */}
         <div
           ref={heroRef}
-          className="relative overflow-hidden sw2-hero-bg"
-          style={{ backgroundColor: '#111838' }}
+          className="relative overflow-hidden sw3-hero"
+          style={{ backgroundColor: '#0c1222' }}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          {/* Gradient blob — top, fades in */}
-          <div
-            className="pointer-events-none absolute inset-0 z-0 overflow-visible transition-opacity ease-in-out"
-            style={{
-              transitionDuration: '1.6s',
-              opacity: bgVisible ? 1 : 0,
-              WebkitMask: 'linear-gradient(transparent 3%, black 59%)',
-              mask: 'linear-gradient(transparent 3%, black 59%)',
-            }}
-            aria-hidden="true"
-          >
-            <img
-              src={GRADIENT_BLOB}
-              alt=""
-              className="w-full h-auto"
-              style={{ transform: 'rotate(180deg)', objectFit: 'cover' }}
-            />
-          </div>
-
-          {/* Gradient blob — bottom */}
-          <div
-            className="pointer-events-none absolute inset-0 z-0 overflow-visible"
-            style={{
-              WebkitMask: 'linear-gradient(black 18%, transparent 83%)',
-              mask: 'linear-gradient(black 18%, transparent 83%)',
-              top: 'auto',
-              bottom: 0,
-              height: '100%',
-            }}
-            aria-hidden="true"
-          >
-            <img
-              src={GRADIENT_BLOB}
-              alt=""
-              className="w-full h-auto absolute bottom-0"
-              style={{ transform: 'rotate(180deg)', objectFit: 'cover' }}
-            />
-          </div>
-
-          {/* Film grain texture */}
-          <div
-            className="pointer-events-none absolute inset-0 z-[1]"
-            style={{
-              opacity: 0.12,
-              backgroundImage: `url(${GRAIN_TEXTURE})`,
-              backgroundRepeat: 'repeat',
-              backgroundSize: '128px auto',
-              backgroundPosition: 'left top',
-              transform: 'rotate(-180deg)',
-            }}
-            aria-hidden="true"
-          />
-
-          {/* Hero content */}
-          <div className="relative z-10 sw2-hero-wrapper">
-            <AnimatePresence mode="wait">
+          <div className="relative h-screen">
+            <AnimatePresence initial={false}>
               <motion.div
                 key={activeIndex}
+                className="absolute inset-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.5, ease: 'easeInOut' }}
+                transition={{ duration: 0.6, ease: 'easeInOut' }}
               >
                 <ActiveHeroComponent />
               </motion.div>

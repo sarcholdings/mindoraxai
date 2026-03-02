@@ -24,7 +24,7 @@ const SAPERPServicesClosingCTA = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-              Your ERP doesn't need a complete rebuild. With Brownfield and MindoraX AI, you move faster, reduce risk, and unlock the full benefits of <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">SAP S/4HANA—sooner</span>.
+              Your ERP doesn't need a complete rebuild. With Brownfield and SwiftAI, you move faster, reduce risk, and unlock the full benefits of <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">SAP S/4HANA—sooner</span>.
             </h2>
           </div>
           

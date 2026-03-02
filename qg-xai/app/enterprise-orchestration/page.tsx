@@ -62,8 +62,8 @@ export default function EnterpriseOrchestration() {
     },
     {
       step: 'Applied AI',
-      title: 'MindoraX AI & Automation',
-      content: 'Leverage MindoraX AI, automation, and copilots to accelerate transformation and reduce manual effort.',
+      title: 'SwiftAI & Automation',
+      content: 'Leverage SwiftAI, automation, and copilots to accelerate transformation and reduce manual effort.',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop'
     },
     {
@@ -78,11 +78,11 @@ export default function EnterpriseOrchestration() {
     {
       step: 'Cross-Cutting Accelerators',
       title: 'Embedded Across All Offerings',
-      content: 'Products like MindoraX AI embed across EO offerings (Finance, ERP, Supply Chain, Cloud) as proprietary IP and competitive differentiators.',
+      content: 'Products like SwiftAI embed across EO offerings (Finance, ERP, Supply Chain, Cloud) as proprietary IP and competitive differentiators.',
       image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop'
     },
     {
-      step: 'MindoraX AI Integration',
+      step: 'SwiftAI Integration',
       title: 'Intelligent Automation',
       content: 'Finance automation, ERP data cleaning, supply chain predictions, and cloud acceleration through intelligent AI capabilities.',
       image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop'
@@ -90,7 +90,7 @@ export default function EnterpriseOrchestration() {
     {
       step: 'Strategic Positioning',
       title: 'Market Differentiation',
-      content: 'Clients may come specifically for MindoraX AI - a proprietary advantage that drives independent marketing and deep-dive capabilities.',
+      content: 'Clients may come specifically for SwiftAI - a proprietary advantage that drives independent marketing and deep-dive capabilities.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop'
     },
   ];
@@ -111,7 +111,7 @@ export default function EnterpriseOrchestration() {
     {
       step: 'Products',
       title: 'Proprietary Accelerators',
-      content: 'Cross-cutting accelerators like MindoraX AI that embed across both services and offerings for competitive advantage.',
+      content: 'Cross-cutting accelerators like SwiftAI that embed across both services and offerings for competitive advantage.',
       image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2070&auto=format&fit=crop'
     },
   ];

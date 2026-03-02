@@ -94,7 +94,7 @@ export default function SwiftAINavigation() {
               className={`text-[13px] tracking-[0.08em] uppercase font-medium px-5 py-2.5 rounded-none transition-all duration-300 ${
                 scrolled
                   ? 'bg-foreground text-background hover:bg-foreground/90'
-                  : 'bg-white text-[#111838] hover:bg-white/90'
+                  : 'bg-emerald-400 text-gray-900 hover:bg-emerald-300 hover:shadow-lg hover:shadow-emerald-400/25'
               }`}
             >
               Schedule Demo

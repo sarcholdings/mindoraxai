@@ -13,7 +13,7 @@ const CloudJourneySteps = () => {
         'Assess technical debt and opportunities for automation',
         'Design a tailored migration plan based on your timing and needs'
       ],
-      mindoraxAIAdvantage: 'Intelligent analysis to identify redundant processes and unnecessary data before migration.',
+      swiftAIAdvantage: 'Intelligent analysis to identify redundant processes and unnecessary data before migration.',
       color: 'from-blue-500 to-blue-600',
       bgColor: 'from-blue-50 to-blue-100',
       borderColor: 'border-blue-200'
@@ -28,7 +28,7 @@ const CloudJourneySteps = () => {
         'Integrate security, compliance, and extensions seamlessly',
         'Enable change management and workforce adoption'
       ],
-      mindoraxAIAdvantage: 'Automated data cleanup and migration for accuracy, speed, and reduced manual effort.',
+      swiftAIAdvantage: 'Automated data cleanup and migration for accuracy, speed, and reduced manual effort.',
       color: 'from-emerald-500 to-emerald-600',
       bgColor: 'from-emerald-50 to-emerald-100',
       borderColor: 'border-emerald-200'
@@ -43,7 +43,7 @@ const CloudJourneySteps = () => {
         'Drive continuous innovation with AI and cloud-native tools',
         'Ensure performance, scalability, and compliance as your enterprise grows'
       ],
-      mindoraxAIAdvantage: 'Continuous automation to streamline repetitive tasks, surface real-time insights, and reduce future technical debt.',
+      swiftAIAdvantage: 'Continuous automation to streamline repetitive tasks, surface real-time insights, and reduce future technical debt.',
       color: 'from-violet-500 to-violet-600',
       bgColor: 'from-violet-50 to-violet-100',
       borderColor: 'border-violet-200'
@@ -113,18 +113,18 @@ const CloudJourneySteps = () => {
                       </ul>
                     </div>
                     
-                    {/* MindoraX AI Advantage */}
+                    {/* SwiftAI Advantage */}
                     <div className="bg-white/60 rounded-2xl p-6 border border-white/40">
                       <div className="flex items-center space-x-3 mb-3">
                         <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
                           <span className="text-white text-lg">🤖</span>
                         </div>
                         <span className="text-lg font-semibold text-slate-800">
-                          MindoraX AI advantage:
+                          SwiftAI advantage:
                         </span>
                       </div>
                       <p className="text-slate-700 leading-relaxed">
-                        {step.mindoraxAIAdvantage}
+                        {step.swiftAIAdvantage}
                       </p>
                     </div>
                   </div>

@@ -25,7 +25,7 @@ const TCTHero = () => {
             
             {/* Description */}
             <p className="text-xl md:text-2xl text-blue-200 leading-relaxed max-w-4xl mx-auto">
-              MindoraX AI Labs's Transformation Control Tower gives leaders a single vantage point: foresight to see ahead, orchestration to align execution, and intelligence to keep transformation adaptive.
+              SwiftAI's Transformation Control Tower gives leaders a single vantage point: foresight to see ahead, orchestration to align execution, and intelligence to keep transformation adaptive.
             </p>
             
             {/* Animated underline */}

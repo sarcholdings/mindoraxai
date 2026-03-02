@@ -96,7 +96,7 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-                {/* MindoraX AI Button with Tooltip */}
+                {/* SwiftAI Button with Tooltip */}
                 <div className="relative group">
                   <Button
                     variant="outline"
@@ -104,7 +104,7 @@ const HeroSection = () => {
                     className="border-white bg-white text-blue-500 px-8 py-4 text-lg font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
                     style={{ fontFamily: '"Bower-Bold", sans-serif' }}
                   >
-                    Discover&nbsp;MINDORAX&nbsp;AI
+                    Discover&nbsp;SWIFTAI&nbsp;AI
                   </Button>
                   {/* Tooltip */}
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 px-4 py-2 bg-black/90 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap z-20">

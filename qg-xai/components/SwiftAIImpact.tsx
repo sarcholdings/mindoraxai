@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MindoraXAIImpact = () => {
+const SwiftAIAIImpact = () => {
   const impacts = [
     'ERP and cloud migration up to 12–16 weeks faster',
     'Finance and supply chain processes up to 25% more efficient',
@@ -24,7 +24,7 @@ const MindoraXAIImpact = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Impact</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              With MINDORAX at work, transformation becomes faster, cleaner, and more strategic.
+              With SWIFTAI at work, transformation becomes faster, cleaner, and more strategic.
             </p>
           </div>
           
@@ -57,4 +57,4 @@ const MindoraXAIImpact = () => {
   );
 };
 
-export default MindoraXAIImpact;
+export default SwiftAIAIImpact;

@@ -36,7 +36,7 @@ const TCTWhatItDelivers = () => {
     },
     {
       title: 'Intelligent Automation & AI Strategy',
-      description: 'Embed MindoraX AI and automation to enhance performance. Streamline operations and create sustained competitive advantage.',
+      description: 'Embed SwiftAI and automation to enhance performance. Streamline operations and create sustained competitive advantage.',
       icon: '🤖',
       color: 'from-pink-500 to-pink-600',
       bgColor: 'from-pink-50 to-pink-100',
@@ -44,7 +44,7 @@ const TCTWhatItDelivers = () => {
     },
     {
       title: 'Accelerated Planning',
-      description: 'Adaptive roadmaps powered by foresight and MindoraX AI scenario stress-testing. Beyond static plans → responsive, living blueprints.',
+      description: 'Adaptive roadmaps powered by foresight and SwiftAI scenario stress-testing. Beyond static plans → responsive, living blueprints.',
       icon: '⚡',
       color: 'from-indigo-500 to-indigo-600',
       bgColor: 'from-indigo-50 to-indigo-100',

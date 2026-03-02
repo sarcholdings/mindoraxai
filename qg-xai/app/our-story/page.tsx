@@ -117,16 +117,16 @@ export default function OurStory() {
             </p>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                MindoraX AI Labs was founded by industry leaders and former Big 4 professionals who saw a gap: enterprises were surrounded by tools, vendors, and reports but lacked orchestration. Ambition was high, yet outcomes lagged.
+                SwiftAI was founded by industry leaders and former Big 4 professionals who saw a gap: enterprises were surrounded by tools, vendors, and reports but lacked orchestration. Ambition was high, yet outcomes lagged.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                We built MindoraX AI Labs to be different. Not another consultancy, but a partner that combines the rigor of global firms with the agility of a boutique, grounded in real-world context and outcomes.
+                We built SwiftAI to be different. Not another consultancy, but a partner that combines the rigor of global firms with the agility of a boutique, grounded in real-world context and outcomes.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 We often describe our work like the craftsmanship of classic cars: built with care, designed to last, and engineered to perform. Transformation should be no different—not quick fixes or shiny dashboards, but durable systems that adapt and endure.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Today, AI reshapes what's possible. At MindoraX AI Labs, we embed AI into the heart of orchestration. Our role is to help leaders cut through complexity, align people, processes, and technology, and use intelligence like <span className="font-semibold text-blue-600">MindoraX AI</span> to move with clarity, speed, and confidence.
+                Today, AI reshapes what's possible. At SwiftAI, we embed AI into the heart of orchestration. Our role is to help leaders cut through complexity, align people, processes, and technology, and use intelligence like <span className="font-semibold text-blue-600">SwiftAI</span> to move with clarity, speed, and confidence.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Our mission is simple: to bring clarity to complexity. We help enterprises and governments see further, act faster, and scale what works—so they can not only adapt, but thrive in a world of constant change.

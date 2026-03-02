@@ -28,7 +28,7 @@ const stagger = {
 
 const FinalCTA = () => {
   return (
-    <section className="relative">
+    <section id="final-cta" className="relative">
       {/* Overlapping stats card — sits on the boundary between sections */}
       <div className="relative z-20 -mb-28 md:-mb-24">
         <motion.div
@@ -164,7 +164,7 @@ const FinalCTA = () => {
             >
               <Button
                 size="lg"
-                className="h-14 px-10 text-lg bg-teal-500 hover:bg-teal-400 text-[#111838] rounded-full shadow-[0_0_40px_-10px_rgba(45,212,191,0.5)] hover:shadow-[0_0_50px_-5px_rgba(45,212,191,0.7)] hover:scale-[1.03] transition-all duration-300 font-semibold"
+                className="h-14 px-10 text-lg bg-orange-500 hover:bg-orange-400 text-white rounded-full shadow-[0_0_40px_-10px_rgba(249,115,22,0.5)] hover:shadow-[0_0_50px_-5px_rgba(249,115,22,0.7)] hover:scale-[1.03] transition-all duration-300 font-semibold"
                 onClick={() => (window.location.href = '/contact')}
               >
                 Schedule a Demo
@@ -173,7 +173,7 @@ const FinalCTA = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="h-14 px-10 text-lg border-white/15 text-white hover:bg-white/[0.06] rounded-full transition-all duration-300 font-semibold backdrop-blur-sm"
+                className="h-14 px-10 text-lg border-white/30 bg-white/[0.08] text-white hover:bg-white/[0.15] rounded-full transition-all duration-300 font-semibold backdrop-blur-sm"
                 onClick={() => (window.location.href = '/contact')}
               >
                 Partner With Us

@@ -27,7 +27,7 @@ const FinanceIntro = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
             <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-white/20 hover:shadow-blue-500/25 transition-all duration-500">
               <p className="text-2xl text-slate-700 leading-relaxed font-semibold">
-                At MindoraX AI Labs, we help finance leaders advise, implement, and operate a new model for finance. One that creates clarity, speed, and enterprise value.
+                At SwiftAI, we help finance leaders advise, implement, and operate a new model for finance. One that creates clarity, speed, and enterprise value.
               </p>
             </div>
           </div>

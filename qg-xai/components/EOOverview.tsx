@@ -14,7 +14,7 @@ const EOOverview = () => {
           {/* Main Content */}
           <div className="space-y-8">
             <p className="text-2xl md:text-3xl text-slate-700 leading-relaxed font-medium max-w-4xl mx-auto">
-              MindoraX AI Labs's EO service integrates advice, strategy, and transformation delivery into one decisive model. We help you chart the course, align the enterprise, and execute with precision.
+              SwiftAI's EO service integrates advice, strategy, and transformation delivery into one decisive model. We help you chart the course, align the enterprise, and execute with precision.
             </p>
           </div>
         </div>

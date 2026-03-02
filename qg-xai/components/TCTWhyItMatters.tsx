@@ -22,7 +22,7 @@ const TCTWhyItMatters = () => {
     },
     {
       title: 'Confidence',
-      description: 'From MindoraX AI-driven visibility',
+      description: 'From SwiftAI-driven visibility',
       icon: '🎯',
       color: 'from-orange-500 to-orange-600'
     }

@@ -19,7 +19,7 @@ const CloudJourneyHero = () => {
             
             {/* Subheadline */}
             <p className="text-2xl md:text-3xl text-blue-100 leading-relaxed font-medium max-w-4xl mx-auto">
-              At MindoraX AI Labs, we cover the full spectrum of your transformation journey. From strategic planning to ongoing operations, our advise–implement–operate model ensures clarity, speed, and measurable value at every stage.
+              At SwiftAI, we cover the full spectrum of your transformation journey. From strategic planning to ongoing operations, our advise–implement–operate model ensures clarity, speed, and measurable value at every stage.
             </p>
             
             {/* Animated underline */}

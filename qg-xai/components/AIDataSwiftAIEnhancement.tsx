@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AIDataMindoraXAIEnhancement = () => {
+const AIDataSwiftAIAIEnhancement = () => {
   const enhancements = [
     {
       title: 'Governance & Stewardship',
@@ -22,7 +22,7 @@ const AIDataMindoraXAIEnhancement = () => {
     },
     {
       title: 'GenAI Analytics',
-      description: 'Copilots and natural language queries powered by MINDORAX',
+      description: 'Copilots and natural language queries powered by SWIFTAI',
       icon: '🤖',
       color: 'from-orange-500 to-orange-600'
     },
@@ -47,10 +47,10 @@ const AIDataMindoraXAIEnhancement = () => {
           {/* Header Section */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">MindoraX AI</span> Embedded in Data & AI
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">SwiftAI</span> Embedded in Data & AI
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              MINDORAX enhances each capability, turning your data into intelligent action
+              SWIFTAI enhances each capability, turning your data into intelligent action
             </p>
           </div>
           
@@ -84,4 +84,4 @@ const AIDataMindoraXAIEnhancement = () => {
   );
 };
 
-export default AIDataMindoraXAIEnhancement;
+export default AIDataSwiftAIAIEnhancement;

@@ -21,7 +21,7 @@ const SupplyChainOverview = () => {
           {/* Main Content */}
           <div className="space-y-8">
             <p className="text-2xl md:text-3xl text-slate-700 leading-relaxed font-medium max-w-4xl mx-auto">
-              MindoraX AI Labs helps enterprises transform their supply chains with SAP S/4HANA—integrating advanced analytics, AI, and IoT to enhance visibility, streamline operations, and boost efficiency.
+              SwiftAI helps enterprises transform their supply chains with SAP S/4HANA—integrating advanced analytics, AI, and IoT to enhance visibility, streamline operations, and boost efficiency.
             </p>
             
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-4xl mx-auto">

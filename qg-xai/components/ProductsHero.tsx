@@ -25,7 +25,7 @@ const ProductsHero = () => {
             
             {/* Description */}
             <p className="text-xl md:text-2xl text-blue-200 leading-relaxed max-w-4xl mx-auto">
-              At MindoraX AI Labs, we don't just design strategies and orchestrate transformations — we also build intelligent products that bring them to life.
+              At SwiftAI, we don't just design strategies and orchestrate transformations — we also build intelligent products that bring them to life.
             </p>
             
             {/* Animated underline */}
@@ -58,7 +58,7 @@ const ProductsHero = () => {
               
               {/* Button content */}
               <span className="relative flex items-center justify-center space-x-3">
-                <span>Explore MINDORAX</span>
+                <span>Explore SWIFTAI</span>
                 <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>

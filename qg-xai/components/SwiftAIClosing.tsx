@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from './ui/button';
 
-const MindoraXAIClosing = () => {
+const SwiftAIAIClosing = () => {
   return (
     <section className="relative py-24 bg-gradient-to-br from-blue-600 via-indigo-700 to-blue-800 text-white overflow-hidden">
       {/* Background decorative elements */}
@@ -28,7 +28,7 @@ const MindoraXAIClosing = () => {
             </h2>
             
             <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto">
-              With MINDORAX, you move faster, reduce risk, and unlock clarity across your enterprise — from the front office to the back office, and everything in between.
+              With SWIFTAI, you move faster, reduce risk, and unlock clarity across your enterprise — from the front office to the back office, and everything in between.
             </p>
           </div>
           
@@ -58,7 +58,7 @@ const MindoraXAIClosing = () => {
               
               {/* Button content */}
               <span className="relative flex items-center justify-center space-x-3">
-                <span>Explore MINDORAX</span>
+                <span>Explore SWIFTAI</span>
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -89,4 +89,4 @@ const MindoraXAIClosing = () => {
   );
 };
 
-export default MindoraXAIClosing;
+export default SwiftAIAIClosing;

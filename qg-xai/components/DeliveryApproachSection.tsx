@@ -32,7 +32,7 @@ const DeliveryApproachSection = () => {
       icon: Shield,
       title: 'Quality Assurance',
       subtitle: 'Ensuring Excellence',
-      description: 'Quality is paramount at MindoraX AI Labs. Our comprehensive quality assurance process includes rigorous testing and validation at every stage of development. This ensures that the final product is reliable, secure, and performs as expected under various conditions.',
+      description: 'Quality is paramount at SwiftAI. Our comprehensive quality assurance process includes rigorous testing and validation at every stage of development. This ensures that the final product is reliable, secure, and performs as expected under various conditions.',
       color: 'from-orange-500 to-orange-600'
     },
     {

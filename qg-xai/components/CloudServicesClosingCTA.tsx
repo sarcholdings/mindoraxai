@@ -28,7 +28,7 @@ const CloudServicesClosingCTA = () => {
             </h2>
             
             <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto">
-              Let MindoraX AI Labs and MindoraX AI guide you through every step of your journey to the cloud.
+              Let SwiftAI and SwiftAI guide you through every step of your journey to the cloud.
             </p>
           </div>
           

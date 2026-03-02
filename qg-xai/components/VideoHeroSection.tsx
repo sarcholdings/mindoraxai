@@ -47,7 +47,7 @@ const VideoHeroSection = () => {
             {/* Descriptive Paragraph */}
             <div className="max-w-4xl mx-auto space-y-4">
               <p className="text-xl md:text-2xl text-white font-medium leading-relaxed drop-shadow-lg">
-                At <span className="text-blue-300 font-bold">MindoraX AI Labs</span>, we build the connections that drive real transformation.
+                At <span className="text-blue-300 font-bold">SwiftAI</span>, we build the connections that drive real transformation.
               </p>
               <div className="space-y-2 text-lg md:text-xl text-white/95 leading-relaxed">
                 <p>Between strategy and execution.</p>

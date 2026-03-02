@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MindoraXAIEmbedded = () => {
+const SwiftAIAIEmbedded = () => {
   const domains = [
     {
       title: 'Customer Experience',
@@ -50,7 +50,7 @@ const MindoraXAIEmbedded = () => {
               Embedded Across <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Transformation</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              MINDORAX is not a stand-alone tool. It's built into the way MindoraX AI Labs delivers transformation.
+              SWIFTAI is not a stand-alone tool. It's built into the way SwiftAI delivers transformation.
             </p>
           </div>
           
@@ -84,4 +84,4 @@ const MindoraXAIEmbedded = () => {
   );
 };
 
-export default MindoraXAIEmbedded;
+export default SwiftAIAIEmbedded;

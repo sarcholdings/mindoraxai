@@ -67,7 +67,7 @@ const WhyUsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Why Choose Us?</h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            At MindoraX AI Labs, We empower enterprises with innovative software solutions to drive growth, efficiency, and success.
+            At SwiftAI, We empower enterprises with innovative software solutions to drive growth, efficiency, and success.
           </p>
         </div>
 
@@ -101,12 +101,12 @@ const WhyUsSection = () => {
                 ))}
               </div>
               <blockquote className="text-lg md:text-xl italic text-gray-700 leading-relaxed">
-                "MindoraX AI Labs transformed our business processes with their SAP implementation. 
+                "SwiftAI transformed our business processes with their SAP implementation. 
                 Their team's expertise and dedication resulted in a 40% improvement in operational efficiency."
               </blockquote>
             </div>
             <div>
-              <p className="font-semibold text-blue-400">MindoraX Johnson</p>
+              <p className="font-semibold text-blue-400">SwiftAI Johnson</p>
               <p className="text-sm text-gray-500">CTO, Global Manufacturing Corp</p>
             </div>
           </div>

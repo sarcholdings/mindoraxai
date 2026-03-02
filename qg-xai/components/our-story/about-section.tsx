@@ -204,7 +204,7 @@ export default function AboutSection3() {
                 className="sm:text-base text-xs"
               >
                 <p className="leading-relaxed text-justify">
-                  MindoraX AI Labs was founded by industry leaders and former Big 4 professionals who saw a gap: enterprises were surrounded by tools, vendors, and reports but lacked orchestration. Ambition was high, yet outcomes lagged.
+                  SwiftAI was founded by industry leaders and former Big 4 professionals who saw a gap: enterprises were surrounded by tools, vendors, and reports but lacked orchestration. Ambition was high, yet outcomes lagged.
                 </p>
               </TimelineContent>
               <TimelineContent
@@ -215,7 +215,7 @@ export default function AboutSection3() {
                 className="sm:text-base text-xs"
               >
                 <p className="leading-relaxed text-justify">
-                  We built MindoraX AI Labs to be different. Not another consultancy, but a partner that combines the rigor of global firms with the agility of a boutique, grounded in real-world context and outcomes.
+                  We built SwiftAI to be different. Not another consultancy, but a partner that combines the rigor of global firms with the agility of a boutique, grounded in real-world context and outcomes.
                 </p>
               </TimelineContent>
             </TimelineContent>

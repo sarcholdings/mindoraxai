@@ -34,7 +34,7 @@ const PlatformOverview = () => {
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                MindoraX AI provides a single trust and intelligence foundation that strengthens decision-making, oversight and control across complex organizational workflows.
+                SwiftAI provides a single trust and intelligence foundation that strengthens decision-making, oversight and control across complex organizational workflows.
               </p>
               <p>
                 The platform integrates with existing systems to create unified visibility and support agentic execution of high-stakes, policy-aligned processes.
@@ -42,7 +42,7 @@ const PlatformOverview = () => {
               <div className="p-6 rounded-2xl bg-card border-3 border-border/80 dark:border-border/60 backdrop-blur-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.3)] dark:shadow-[0_10px_40px_-15px_rgba(0,0,0,0.6)] hover:border-hero-accent-1/60 hover:shadow-[0_15px_50px_-10px_rgba(45,212,191,0.2)] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-br from-hero-accent-1/5 via-transparent to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <p className="font-medium text-foreground relative z-10">
-                  This architecture allows MindoraX AI to operate across verticals and business lines while ensuring consistency, clarity and compliance.
+                  This architecture allows SwiftAI to operate across verticals and business lines while ensuring consistency, clarity and compliance.
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ const PlatformOverview = () => {
             {/* Gradient Border Effect */}
             <div className="absolute -inset-[2px] bg-gradient-to-br from-hero-accent-1/20 via-transparent to-primary/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-sm" />
 
-            <h3 className="text-xl font-semibold text-foreground mb-8 relative z-10">MindoraX AI combines:</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-8 relative z-10">SwiftAI combines:</h3>
             <div className="grid sm:grid-cols-2 gap-4 relative z-10">
               {features.map((feature, index) => (
                 <div

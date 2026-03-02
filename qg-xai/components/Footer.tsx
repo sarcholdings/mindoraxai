@@ -11,7 +11,7 @@ const Footer = () => {
             <h2 className="text-5xl font-light mb-12">Let's connect</h2>
             <ul className="space-y-6 text-2xl font-light">
               <li><a href="/contact" className="hover:underline">Contact us</a></li>
-              <li><a href="/about" className="hover:underline">About MindoraX AI Labs</a></li>
+              <li><a href="/about" className="hover:underline">About SwiftAI</a></li>
               <li><a href="/team" className="hover:underline">Our Team</a></li>
               <li><a href="/careers" className="hover:underline">Careers</a></li>
             </ul>
@@ -66,9 +66,9 @@ const Footer = () => {
             <a href="#" className="hover:underline">Labor Condition Applications</a>
             <a href="#" className="hover:underline">Do Not Sell or Share My Personal Information</a>
           </div>
-          <div className="mb-2">© 2025 MindoraX AI Labs. See <a href="#" className="text-blue-700 underline">Terms of Use</a> for more information.</div>
+          <div className="mb-2">© 2025 SwiftAI. See <a href="#" className="text-blue-700 underline">Terms of Use</a> for more information.</div>
           <div className="text-xs text-gray-700 max-w-5xl">
-            MindoraX AI Labs refers to one or more independent technology consulting entities. Each entity is legally separate and independent. MindoraX AI Labs does not provide services to clients in all jurisdictions. Certain services may not be available to attest clients under the rules and regulations of public accounting. Please see <a href="/about" className="text-blue-700 underline">our about page</a> to learn more about our global network.
+            SwiftAI refers to one or more independent technology consulting entities. Each entity is legally separate and independent. SwiftAI does not provide services to clients in all jurisdictions. Certain services may not be available to attest clients under the rules and regulations of public accounting. Please see <a href="/about" className="text-blue-700 underline">our about page</a> to learn more about our global network.
           </div>
         </div>
       </div>

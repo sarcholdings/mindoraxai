@@ -24,7 +24,7 @@ const EOClosingCTA = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-              With MindoraX AI Labs <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">EO</span>, you don't just manage transformation — you orchestrate it.
+              With SwiftAI <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">EO</span>, you don't just manage transformation — you orchestrate it.
             </h2>
             
             <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto">

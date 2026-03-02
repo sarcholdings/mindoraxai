@@ -55,7 +55,7 @@ const AboutSection = () => {
                 </h3>
                 <div className="space-y-4">
                   <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                    At MindoraX AI Labs, our mission is to bring clarity to complexity. We believe in the power of orchestration—aligning people, processes, and technology to drive meaningful outcomes.
+                    At SwiftAI, our mission is to bring clarity to complexity. We believe in the power of orchestration—aligning people, processes, and technology to drive meaningful outcomes.
                   </p>
                   <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                     Our values are rooted in integrity, curiosity, and relentless pursuit of results. As the orchestrator of clarity, we help organizations see further, act faster, and scale what works.
@@ -337,7 +337,7 @@ const AboutSection = () => {
                   <div className="bg-white/20 backdrop-blur-md rounded-xl p-6 mx-4 text-center border border-white/30">
                     <h4 className="text-white font-bold text-lg mb-4">Our Promise</h4>
                     <div className="space-y-3 text-sm text-white/90">
-                      <p>At MindoraX AI Labs, your goals drive everything we do.</p>
+                      <p>At SwiftAI, your goals drive everything we do.</p>
                       <p>We stand beside you at every stage — as builders, thinkers, and committed allies.</p>
                       <div className="pt-2 space-y-1 font-semibold">
                         <p>Let's build smarter.</p>

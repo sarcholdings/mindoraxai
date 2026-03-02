@@ -20,7 +20,7 @@ const SAPERPHero = () => {
             
             {/* Subheadline */}
             <p className="text-2xl md:text-3xl text-blue-100 leading-relaxed font-medium max-w-4xl mx-auto">
-              With MindoraX AI Labs's Brownfield approach, powered by MindoraX AI, you reduce technical debt, clean up what you no longer need, and move confidently to SAP S/4HANA—without starting over.
+              With SwiftAI's Brownfield approach, powered by SwiftAI, you reduce technical debt, clean up what you no longer need, and move confidently to SAP S/4HANA—without starting over.
             </p>
             
             {/* Animated underline */}

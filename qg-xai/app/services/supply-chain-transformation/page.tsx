@@ -4,7 +4,7 @@ import SupplyChainHero from '@/components/SupplyChainHero';
 import SupplyChainOverview from '@/components/SupplyChainOverview';
 import SupplyChainExpertise from '@/components/SupplyChainExpertise';
 import SupplyChainSolutions from '@/components/SupplyChainSolutions';
-import SupplyChainMindoraXAI from '@/components/SupplyChainMindoraXAI';
+import SupplyChainSwiftAIAI from '@/components/SupplyChainSwiftAIAI';
 import SupplyChainClosingCTA from '@/components/SupplyChainClosingCTA';
 
 export default function SupplyChainServices() {
@@ -24,8 +24,8 @@ export default function SupplyChainServices() {
         {/* Supply Chain Solutions Section */}
         <SupplyChainSolutions />
 
-        {/* MindoraX AI in Supply Chain Section */}
-        <SupplyChainMindoraXAI />
+        {/* SwiftAI in Supply Chain Section */}
+        <SupplyChainSwiftAIAI />
 
         {/* Supply Chain Closing CTA Section */}
         <SupplyChainClosingCTA />

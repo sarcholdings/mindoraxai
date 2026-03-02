@@ -77,7 +77,7 @@ const SwiftAIFooter = () => {
                 </li>
                 <li>
                   <a href="/about" className="text-white/70 hover:text-teal-400 transition-colors duration-300">
-                    About MindoraX AI Labs
+                    About SwiftAI
                   </a>
                 </li>
                 <li>
@@ -97,46 +97,46 @@ const SwiftAIFooter = () => {
             <div className="flex-[2] grid grid-cols-2 md:grid-cols-3 gap-8 mt-12 lg:mt-0">
               <ul className="space-y-4 text-base font-light">
                 <li>
-                  <a href="/services" className="text-white/50 hover:text-white/90 transition-colors duration-300">
+                  <a href="/services" className="text-white/75 hover:text-white transition-colors duration-300">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="/solutions" className="text-white/50 hover:text-white/90 transition-colors duration-300">
+                  <a href="/solutions" className="text-white/75 hover:text-white transition-colors duration-300">
                     Solutions
                   </a>
                 </li>
                 <li>
-                  <a href="/products" className="text-white/50 hover:text-white/90 transition-colors duration-300">
+                  <a href="/products" className="text-white/75 hover:text-white transition-colors duration-300">
                     Products
                   </a>
                 </li>
               </ul>
               <ul className="space-y-4 text-base font-light">
                 <li>
-                  <a href="/about" className="text-white/50 hover:text-white/90 transition-colors duration-300">
+                  <a href="/about" className="text-white/75 hover:text-white transition-colors duration-300">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="/careers" className="text-white/50 hover:text-white/90 transition-colors duration-300">
+                  <a href="/careers" className="text-white/75 hover:text-white transition-colors duration-300">
                     Careers
                   </a>
                 </li>
               </ul>
               <ul className="space-y-4 text-base font-light">
                 <li>
-                  <a href="/contact" className="text-white/50 hover:text-white/90 transition-colors duration-300">
+                  <a href="/contact" className="text-white/75 hover:text-white transition-colors duration-300">
                     Contact
                   </a>
                 </li>
                 <li>
-                  <a href="/solutions" className="text-white/50 hover:text-white/90 transition-colors duration-300">
+                  <a href="/solutions" className="text-white/75 hover:text-white transition-colors duration-300">
                     Solutions
                   </a>
                 </li>
                 <li>
-                  <a href="/products" className="text-white/50 hover:text-white/90 transition-colors duration-300">
+                  <a href="/products" className="text-white/75 hover:text-white transition-colors duration-300">
                     Products
                   </a>
                 </li>
@@ -147,7 +147,7 @@ const SwiftAIFooter = () => {
             <div className="flex flex-col items-end justify-between min-w-[180px] mt-12 lg:mt-0">
               <div />
               <div className="flex flex-col items-end">
-                <span className="text-sm text-white/40 mb-3 tracking-wide uppercase font-mono text-[11px]">
+                <span className="text-sm text-white/60 mb-3 tracking-wide uppercase font-mono text-[11px]">
                   Follow us
                 </span>
                 <div className="flex space-x-3">
@@ -212,25 +212,25 @@ const SwiftAIFooter = () => {
                 <a
                   key={label}
                   href="#"
-                  className="text-white/30 hover:text-white/60 transition-colors duration-300 font-medium"
+                  className="text-white/55 hover:text-white/90 transition-colors duration-300 font-medium"
                 >
                   {label}
                 </a>
               ))}
             </div>
-            <p className="text-sm text-white/25 mb-2">
-              &copy; 2025 MindoraX AI Labs. See{' '}
-              <a href="#" className="text-teal-500/60 hover:text-teal-400 underline transition-colors">
+            <p className="text-sm text-white/60 mb-2">
+              &copy; 2025 SwiftAI. See{' '}
+              <a href="#" className="text-teal-400 hover:text-teal-300 underline transition-colors">
                 Terms of Use
               </a>{' '}
               for more information.
             </p>
-            <p className="text-xs text-white/15 max-w-5xl leading-relaxed">
-              MindoraX AI Labs refers to one or more independent technology consulting entities.
-              Each entity is legally separate and independent. MindoraX AI Labs does not provide
+            <p className="text-xs text-white/50 max-w-5xl leading-relaxed">
+              SwiftAI refers to one or more independent technology consulting entities.
+              Each entity is legally separate and independent. SwiftAI does not provide
               services to clients in all jurisdictions. Certain services may not be available to
               attest clients under the rules and regulations of public accounting. Please see{' '}
-              <a href="/about" className="text-teal-500/40 hover:text-teal-400 underline transition-colors">
+              <a href="/about" className="text-teal-400 hover:text-teal-300 underline transition-colors">
                 our about page
               </a>{' '}
               to learn more about our global network.

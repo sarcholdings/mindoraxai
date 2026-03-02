@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import PESHero from '@/components/PESHero';
 import PESKeyFocusAreas from '@/components/PESKeyFocusAreas';
-import PESMindoraXAIEnhancement from '@/components/PESMindoraXAIEnhancement';
+import PESSwiftAIAIEnhancement from '@/components/PESSwiftAIAIEnhancement';
 import PESValue from '@/components/PESValue';
 import PESClosingCTA from '@/components/PESClosingCTA';
 
@@ -17,8 +17,8 @@ export default function PESSolution() {
         {/* Key Focus Areas Section */}
         <PESKeyFocusAreas />
 
-        {/* MindoraX AI Enhancement Section */}
-        <PESMindoraXAIEnhancement />
+        {/* SwiftAI Enhancement Section */}
+        <PESSwiftAIAIEnhancement />
 
         {/* The Value Section */}
         <PESValue />

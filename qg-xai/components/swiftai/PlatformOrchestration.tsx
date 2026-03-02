@@ -13,7 +13,7 @@ const PlatformOrchestration = () => {
   ];
 
   return (
-    <section className="py-32 bg-background overflow-hidden relative">
+    <section id="platform-orchestration" className="py-32 bg-background overflow-hidden relative">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[100px]" />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-teal-600/10 rounded-full blur-[100px]" />
@@ -48,11 +48,12 @@ const PlatformOrchestration = () => {
 
           <div className="order-1 lg:order-2 space-y-10">
             <div className="space-y-6">
+              <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Why SOM</p>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
                 From reactive firefighting to <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">proactive business resilience</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">proactive business resilience</span>
               </h2>
-              <div className="w-24 h-1.5 bg-gradient-to-r from-teal-500 to-blue-600 rounded-full" />
+              <div className="w-24 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" />
             </div>
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">

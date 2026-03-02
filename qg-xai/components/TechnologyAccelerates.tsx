@@ -2,7 +2,7 @@ import React from 'react';
 
 const TechnologyAccelerates = () => {
   const technologies = [
-    'MindoraX AI for intelligent automation, data cleanup, and technical debt reduction',
+    'SwiftAI for intelligent automation, data cleanup, and technical debt reduction',
     'AI and analytics to surface insights and prioritize what matters most',
     'A clean core approach to simplify upgrades and reduce future complexity',
     'Cloud-ready platforms to unlock flexibility, scalability, and innovation'

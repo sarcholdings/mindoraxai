@@ -5,19 +5,19 @@ const testimonials = [
     name: 'John Doe',
     handle: 'Vancouver',
     avatar: '/cl1.jpg',
-    text: "MindoraX AI Labs's smart manufacturing solutions have revolutionized our production processes. By implementing IoT and AI-driven technologies, we have seen a significant improvement in operational efficiency and product quality. Their predictive maintenance system has minimized our downtime, saving us both time and money. MindoraX AI Labs's expertise and support have been invaluable in driving our success."
+    text: "SwiftAI's smart manufacturing solutions have revolutionized our production processes. By implementing IoT and AI-driven technologies, we have seen a significant improvement in operational efficiency and product quality. Their predictive maintenance system has minimized our downtime, saving us both time and money. SwiftAI's expertise and support have been invaluable in driving our success."
   },
   {
     name: 'Jessica Smith',
     handle: 'Toronto',
     avatar: '/cl2.jpg',
-    text: "Partnering with MindoraX AI Labs has been a game-changer for our business. Their personalized customer experience solutions have transformed the way we engage with our customers, both online and in-store. The advanced inventory management system has optimized our stock levels, reducing costs and enhancing our profitability. The insights gained from their sales and marketing analytics have enabled us to implement more effective strategies, resulting in increased customer satisfaction and sales."
+    text: "Partnering with SwiftAI has been a game-changer for our business. Their personalized customer experience solutions have transformed the way we engage with our customers, both online and in-store. The advanced inventory management system has optimized our stock levels, reducing costs and enhancing our profitability. The insights gained from their sales and marketing analytics have enabled us to implement more effective strategies, resulting in increased customer satisfaction and sales."
   },
   {
     name: 'Steve Rogers',
     handle: 'Montreal',
     avatar: '/cl3.jpg',
-    text: "MindoraX AI Labs's healthcare solutions have significantly improved our patient care and operational efficiency. Their electronic health records system ensures that our patient data is managed securely and efficiently, allowing our healthcare professionals to access vital information quickly. The telemedicine solutions provided by MindoraX AI Labs have expanded our reach, making it easier for patients to receive care remotely. Their predictive analytics tools have optimized our treatment plans, enhancing the overall quality of care we provide."
+    text: "SwiftAI's healthcare solutions have significantly improved our patient care and operational efficiency. Their electronic health records system ensures that our patient data is managed securely and efficiently, allowing our healthcare professionals to access vital information quickly. The telemedicine solutions provided by SwiftAI have expanded our reach, making it easier for patients to receive care remotely. Their predictive analytics tools have optimized our treatment plans, enhancing the overall quality of care we provide."
   },
 ];
 
@@ -27,7 +27,7 @@ const TestimonialsSection = () => {
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Trusted by customers worldwide</h2>
         <p className="text-lg text-gray-600 text-center mb-12 font-medium">
-          Join thousands of businesses who are already building the future<br />with MindoraX AI Labs
+          Join thousands of businesses who are already building the future<br />with SwiftAI
         </p>
         <div className="relative overflow-x-hidden">
           {/* Fade edges */}

@@ -39,13 +39,17 @@ const DeploymentIntegration = () => {
     <section id="deployment" className="py-32 bg-muted/50 border-t border-white/5">
       <div className="container px-4 mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-24">
+          <p className="text-sm font-semibold tracking-widest uppercase text-orange-500 mb-4">/Deployment</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            From zero to full visibility in weeks
+            From zero to full visibility{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+              in weeks
+            </span>
           </h2>
           <p className="text-lg text-muted-foreground">
             A structured, governance-aligned onboarding process designed for enterprise SAP environments.
           </p>
-          <div className="w-24 h-1.5 bg-teal-500 rounded-full mx-auto opacity-50 mt-6" />
+          <div className="w-24 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full mx-auto opacity-70 mt-6" />
         </div>
 
         <div className="relative max-w-5xl mx-auto">

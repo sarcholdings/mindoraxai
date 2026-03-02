@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="flex items-center gap-4 mb-8 animate-fade-in">
             <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/40 uppercase">[01]</span>
             <div className="h-px w-12 bg-hero-foreground/20" />
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/40 uppercase">MindoraX AI Platform</span>
+            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/40 uppercase">SwiftAI Platform</span>
           </div>
 
           <div className="grid lg:grid-cols-[1fr_380px] gap-16 items-end">
@@ -53,7 +53,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="text-[17px] md:text-lg text-hero-foreground/50 max-w-2xl leading-relaxed font-light">
-                  MindoraX AI brings together identity, behavior, documents, transactions and
+                  SwiftAI brings together identity, behavior, documents, transactions and
                   policy understanding into a unified intelligence layer. Agentic orchestration
                   and AI-driven reasoning support high-stakes decisions.
                 </p>
