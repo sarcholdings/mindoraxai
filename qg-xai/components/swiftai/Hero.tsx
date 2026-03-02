@@ -1,18 +1,17 @@
 'use client'
 
 import React from 'react';
-import { ArrowRight, ChevronRight, Sparkles } from 'lucide-react';
+import { ArrowRight, ChevronRight, Activity } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const TECH_STACK = [
-  'Agentic AI', 'Private LLMs', 'Vision AI', 'Voice AI',
-  'Decision Intelligence', 'RAG Pipelines', 'Knowledge Graphs', 'MLOps',
+const MONITORING_DOMAINS = [
+  'SAP Core Ops', 'HANA Database', 'SAP BTP', 'Infrastructure',
+  'Business Interfaces', 'Predictive Alerts', 'Logs & Governance', 'Real User Monitoring',
 ];
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-24 overflow-hidden text-hero-foreground">
-      {/* Background image */}
+    <section className="relative h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden text-hero-foreground">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <img
           src="https://framerusercontent.com/images/vYZYM5P9vKTxjyMntDIvdSTX7sE.webp?width=2400&height=1368"
@@ -24,49 +23,45 @@ const Hero = () => {
 
       <div className="container relative z-10 px-6 lg:px-12 mx-auto">
         <div className="max-w-6xl mx-auto">
-          {/* Section indicator */}
-          <div className="flex items-center gap-4 mb-8 animate-fade-in">
+          <div className="flex items-center gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/40 uppercase">[01]</span>
             <div className="h-px w-12 bg-hero-foreground/20" />
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/40 uppercase">MindoraX AI Platform</span>
+            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/40 uppercase">SwiftAI Operations Monitor</span>
           </div>
 
           <div className="grid lg:grid-cols-[1fr_380px] gap-16 items-end">
             <div className="space-y-8">
-              {/* Badge */}
-              <div className="animate-fade-in">
+              <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-none bg-hero-accent-1/10 border border-hero-accent-1/20 text-[12px] text-hero-foreground backdrop-blur-sm font-mono tracking-wide uppercase">
-                  <Sparkles className="w-3.5 h-3.5 text-hero-accent-1" />
-                  Intelligence that connects your entire organization
+                  <Activity className="w-3.5 h-3.5 text-hero-accent-1" />
+                  Proactive SAP monitoring for business resilience
                 </div>
               </div>
 
-              {/* Headline */}
-              <div className="space-y-6 animate-fade-in-up">
+              <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
                 <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-semibold tracking-tight leading-[1.05] text-hero-foreground">
-                  Unifying data,{' '}
+                  Protecting SAP{' '}
                   <br className="hidden md:block" />
-                  decisions &{' '}
+                  uptime, revenue &{' '}
                   <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(to right, hsl(var(--hero-gradient-1-from)), hsl(var(--hero-accent-1)), hsl(var(--hero-gradient-1-to)))' }}>
-                    intelligence
+                    operational stability
                   </span>
                 </h1>
 
                 <p className="text-[17px] md:text-lg text-hero-foreground/50 max-w-2xl leading-relaxed font-light">
-                  MindoraX AI brings together identity, behavior, documents, transactions and
-                  policy understanding into a unified intelligence layer. Agentic orchestration
-                  and AI-driven reasoning support high-stakes decisions.
+                  SAP systems run your core operations — order management, procurement, finance,
+                  manufacturing, and payroll. SOM delivers proactive, AI-powered monitoring
+                  that detects issues before they impact your business.
                 </p>
               </div>
 
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row items-start gap-4 pt-2 animate-fade-in-up">
+              <div className="flex flex-col sm:flex-row items-start gap-4 pt-2 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 <Button
                   size="lg"
                   className="h-12 px-8 bg-hero-foreground text-hero font-medium rounded-none hover:bg-hero-foreground/90 transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('platform-overview')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Explore Platform
+                  Explore SOM
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <Button
@@ -75,16 +70,15 @@ const Hero = () => {
                   className="h-12 px-8 border-hero-foreground/15 bg-transparent text-hero-foreground hover:bg-hero-foreground/5 rounded-none backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('industry-editions')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Industry Editions
+                  KPI Coverage
                   <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </div>
 
-              {/* Tech stack */}
-              <div className="pt-6 animate-fade-in-up">
-                <p className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/30 uppercase mb-4">Our Stack</p>
+              <div className="pt-6 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+                <p className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/30 uppercase mb-4">Monitoring Domains</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-2">
-                  {TECH_STACK.map((tech) => (
+                  {MONITORING_DOMAINS.map((tech) => (
                     <span
                       key={tech}
                       className="text-[13px] text-hero-foreground/40 hover:text-hero-accent-1 transition-colors duration-300 cursor-default font-light"
@@ -96,8 +90,7 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right panel */}
-            <div className="hidden lg:block animate-fade-in-up">
+            <div className="hidden lg:block animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
               <div className="border border-hero-accent-1/20 bg-card/50 backdrop-blur-sm p-8 space-y-8">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/30 uppercase">Platform Status</span>
@@ -110,10 +103,10 @@ const Hero = () => {
                 <div className="h-px bg-hero-foreground/[0.06]" />
 
                 {[
-                  { label: 'Data Sources Unified', value: '200+', sub: 'Real-time integration' },
-                  { label: 'Decision Accuracy', value: '99.2%', sub: 'Enterprise-grade AI' },
-                  { label: 'Industries Served', value: '12', sub: 'Vertical editions' },
-                  { label: 'Avg. Response Time', value: '<50ms', sub: 'Agentic orchestration' },
+                  { label: 'KPIs Monitored', value: '1,100+', sub: 'Across SAP & related domains' },
+                  { label: 'Hourly Downtime Cost', value: '$300K+', sub: '90% of mid/large enterprises' },
+                  { label: 'Preventable Outages', value: '54%', sub: 'With better monitoring' },
+                  { label: 'GA Release', value: 'Jul \'26', sub: 'Enterprise-ready deployment' },
                 ].map((metric, i) => (
                   <div key={metric.label} className="group">
                     <div className="flex items-baseline justify-between mb-1">

@@ -4,12 +4,6 @@ import React, { useState } from "react";
 import { ArrowRight, ChevronRight, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
-
-const ParticleField = dynamic(() => import("./ParticleField"), {
-  ssr: false,
-  loading: () => null,
-});
 
 const solutions = [
   { id: "enterprise-deployment", label: "Enterprise Deployment", description: "Enterprise-ready LLM deployment with auto-scaling, high availability, and robust security. Built for mission-critical applications with 99.99% uptime SLA.", stat: "99.99%", statLabel: "Uptime SLA" },
@@ -33,14 +27,16 @@ export default function Hero3() {
   const active = solutions[activeIndex];
 
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-24 overflow-hidden bg-hero text-hero-foreground">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[500px] bg-hero-glow-3/15 rounded-[100%] blur-[120px]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--hero-fg)/0.02)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--hero-fg)/0.02)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_30%,#000_50%,transparent_100%)]" />
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-hero to-transparent" />
+    <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-24 overflow-hidden text-hero-foreground">
+      {/* Background image */}
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <img
+          src="https://framerusercontent.com/images/vYZYM5P9vKTxjyMntDIvdSTX7sE.webp?width=2400&height=1368"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
-
-      <ParticleField color="hsl(var(--hero-accent-3))" className="opacity-35" />
 
       <div className="container relative z-10 px-6 lg:px-12 mx-auto">
         <motion.div className="max-w-6xl mx-auto" variants={stagger} initial="hidden" animate="visible">
