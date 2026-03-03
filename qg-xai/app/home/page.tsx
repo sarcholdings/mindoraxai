@@ -205,17 +205,17 @@ export default function SwiftAIAIPlatform() {
             ))}
           </div>
 
-          {/* Navigation Arrows */}
+          {/* Navigation Arrows - hidden on small screens */}
           <button
             onClick={handlePrevious}
-            className={`absolute left-8 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group shadow-xl ${!showArrows ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+            className={`hidden md:flex absolute left-8 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group shadow-xl ${!showArrows ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-7 h-7 group-hover:scale-110 transition-transform" />
           </button>
           <button
             onClick={handleNext}
-            className={`absolute right-8 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group shadow-xl ${!showArrows ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+            className={`hidden md:flex absolute right-8 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group shadow-xl ${!showArrows ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
             aria-label="Next slide"
           >
             <ChevronRight className="w-7 h-7 group-hover:scale-110 transition-transform" />

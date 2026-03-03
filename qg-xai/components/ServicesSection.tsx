@@ -60,7 +60,6 @@ const ServicesSection = () => {
   }, []);
   const sectionRef = useRef<HTMLDivElement>(null);
   const cardsRowRef = useRef<HTMLDivElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     const section = sectionRef.current;
@@ -90,8 +89,7 @@ const ServicesSection = () => {
 
       // Calculate the vertical offset so the first card is centered in the viewport
       const cardHeight = 500; // px (matches minHeight below)
-      const headerHeight = headerRef.current ? headerRef.current.offsetHeight : 0;
-      const sectionPaddingTop = Math.max((window.innerHeight - headerHeight - cardHeight) / 2, 0);
+      const sectionPaddingTop = Math.max((window.innerHeight - cardHeight) / 2, 0);
       section.style.paddingTop = `${sectionPaddingTop}px`;
       section.style.paddingBottom = `${sectionPaddingTop}px`;
 
@@ -121,12 +119,16 @@ const ServicesSection = () => {
           });
         },
         onLeave: () => {
-          // When the user scrolls past the last card, jump to the next section
-          // Find the next section after this one
-          const nextSection = document.querySelector('#after-services') as HTMLElement;
-          if (nextSection) {
-            nextSection.scrollIntoView({ behavior: 'auto' });
-          }
+          // When the user scrolls past the last card, scroll to footer (removes empty space)
+          const scrollToFooter = () => {
+            const nextSection = document.querySelector('#after-services') as HTMLElement;
+            if (nextSection) {
+              const y = nextSection.getBoundingClientRect().top + window.scrollY;
+              window.scrollTo({ top: y, behavior: 'auto' });
+              ScrollTrigger.refresh();
+            }
+          };
+          requestAnimationFrame(() => setTimeout(scrollToFooter, 150));
         },
       });
       ScrollTrigger.refresh();
@@ -147,22 +149,15 @@ const ServicesSection = () => {
       ref={sectionRef} 
       id="services" 
       style={{ height: "100vh" }} 
-      className="w-full flex flex-col items-center justify-center py-16 relative overflow-hidden bg-gray-200"
+      className="w-full flex flex-col items-center justify-center py-16 relative overflow-hidden bg-background"
     >
-      {/* Header */}
-      <div ref={headerRef} className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Services</h2>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-          At SwiftAI, we offer a wide range of services designed to meet the unique challenges and opportunities of modern enterprises. Our expertise spans across various domains to provide holistic and integrated solutions.
-        </p>
-      </div>
-
-      {/* Cards Row */}
-      <div
-        ref={cardsRowRef}
-        className="relative flex flex-row items-center justify-center z-10 gap-x-12 md:gap-x-24 overflow-x-hidden"
-        style={{ minHeight: 500 }}
-      >
+      {/* Cards Row — wrapped to clip horizontal overflow and prevent page scroll */}
+      <div className="w-full min-w-0 overflow-x-hidden flex-1 flex items-center">
+        <div
+          ref={cardsRowRef}
+          className="relative flex flex-row items-center justify-center z-10 gap-x-12 md:gap-x-24"
+          style={{ minHeight: 500 }}
+        >
         {renderServices.map((service, idx) => (
           <div
             key={idx}
@@ -172,21 +167,21 @@ const ServicesSection = () => {
             {/* Text */}
             <div className="flex-1 flex flex-col justify-center items-start md:pr-8">
               <div className="mb-4">
-                <service.icon className="w-10 h-10 text-blue-600 mb-2" />
+                <service.icon className="w-10 h-10 text-hero-accent-1 mb-2" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-light text-gray-900 mb-4 leading-tight">
+              <h3 className="text-2xl md:text-3xl font-light text-foreground mb-4 leading-tight">
                 {service.title}
               </h3>
-              <p className="text-base text-gray-700 mb-4 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-4 leading-relaxed">
                 {service.description}
               </p>
-              <button className="bg-blue-600 text-white font-semibold rounded-full px-6 py-2 mt-2 hover:bg-blue-700 transition-colors w-fit">
+              <button className="bg-hero-accent-1 text-gray-900 font-semibold rounded-full px-6 py-2 mt-2 hover:bg-hero-accent-1/90 transition-colors w-fit">
                 Read the full story
               </button>
             </div>
             {/* Image: show the image for every service */}
             <div className="hidden md:flex flex-1 items-center justify-center">
-              <div className="rounded-xl overflow-hidden shadow-lg w-[320px] h-[240px] md:w-[400px] md:h-[300px] bg-gray-100 flex items-center justify-center">
+              <div className="rounded-xl overflow-hidden shadow-lg w-[320px] h-[240px] md:w-[400px] md:h-[300px] bg-card border border-border/60 flex items-center justify-center">
                 <img
                   src={`/${service.image}`}
                   alt={`Service ${service.title}`}
@@ -198,6 +193,7 @@ const ServicesSection = () => {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </section>
   );

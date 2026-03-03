@@ -1,16 +1,16 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import SupplyChainHero from '@/components/SupplyChainHero';
 import SupplyChainOverview from '@/components/SupplyChainOverview';
 import SupplyChainExpertise from '@/components/SupplyChainExpertise';
 import SupplyChainSolutions from '@/components/SupplyChainSolutions';
-import SupplyChainSwiftAIAI from '@/components/SupplyChainSwiftAIAI';
+import SupplyChainSwiftAI from '@/components/SupplyChainSwiftAI';
 import SupplyChainClosingCTA from '@/components/SupplyChainClosingCTA';
 
 export default function SupplyChainServices() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main>
         {/* Supply Chain Hero Section */}
         <SupplyChainHero />
@@ -25,7 +25,7 @@ export default function SupplyChainServices() {
         <SupplyChainSolutions />
 
         {/* SwiftAI in Supply Chain Section */}
-        <SupplyChainSwiftAIAI />
+        <SupplyChainSwiftAI />
 
         {/* Supply Chain Closing CTA Section */}
         <SupplyChainClosingCTA />

@@ -1,5 +1,5 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import HeroIntro from '@/components/HeroIntro';
 import ApproachSection from '@/components/ApproachSection';
 import ServiceBuckets from '@/components/ServiceBuckets';
@@ -10,7 +10,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 export default function AIServices() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main>
         <HeroIntro />
         <ApproachSection />

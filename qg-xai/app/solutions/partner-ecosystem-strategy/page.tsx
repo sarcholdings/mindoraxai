@@ -1,15 +1,15 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import PESHero from '@/components/PESHero';
 import PESKeyFocusAreas from '@/components/PESKeyFocusAreas';
-import PESSwiftAIAIEnhancement from '@/components/PESSwiftAIAIEnhancement';
+import PESSwiftAIEnhancement from '@/components/PESSwiftAIEnhancement';
 import PESValue from '@/components/PESValue';
 import PESClosingCTA from '@/components/PESClosingCTA';
 
 export default function PESSolution() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main>
         {/* Partner Ecosystem Strategy Hero Section */}
         <PESHero />
@@ -18,7 +18,7 @@ export default function PESSolution() {
         <PESKeyFocusAreas />
 
         {/* SwiftAI Enhancement Section */}
-        <PESSwiftAIAIEnhancement />
+        <PESSwiftAIEnhancement />
 
         {/* The Value Section */}
         <PESValue />

@@ -1,12 +1,12 @@
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+import SwiftAINavigation from '@/components/swiftai/Navigation'
+import Footer from '@/components/swiftai/Footer'
 import Link from 'next/link'
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
-      <main className="section-padding">
+      <SwiftAINavigation scrolledByDefault />
+      <main className="section-padding pt-20">
         <div className="section-container text-center">
           <h1 className="text-6xl font-bold text-gray-900 mb-4">404</h1>
           <h2 className="text-3xl font-semibold text-gray-700 mb-6">

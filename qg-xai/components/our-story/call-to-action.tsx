@@ -1,6 +1,5 @@
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 function CTA() {
@@ -19,16 +18,18 @@ function CTA() {
               Connect with our visionary leadership team and discover how our collective expertise can drive your enterprise transformation forward.
             </p>
           </div>
-          <div className="flex flex-row gap-4">
-            <Link href="/contact">
-              <Button className="gap-4" variant="outline">
-                Meet Our Leaders <MoveRight className="w-4 h-4" />
-              </Button>
+          <div className="flex flex-row gap-4 flex-wrap justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 text-[13px] tracking-[0.08em] uppercase font-medium px-6 py-3 rounded-none bg-foreground text-background hover:bg-foreground/90 transition-all duration-300"
+            >
+              Meet Our Leaders <MoveRight className="w-4 h-4" />
             </Link>
-            <Link href="/services">
-              <Button className="gap-4">
-                Explore Solutions <PhoneCall className="w-4 h-4" />
-              </Button>
+            <Link
+              href="/services"
+              className="inline-flex items-center justify-center gap-2 text-[13px] tracking-[0.08em] uppercase font-medium px-6 py-3 rounded-none bg-emerald-400 text-gray-900 hover:bg-emerald-300 hover:shadow-lg hover:shadow-emerald-400/25 transition-all duration-300"
+            >
+              Explore Solutions <PhoneCall className="w-4 h-4" />
             </Link>
           </div>
         </div>

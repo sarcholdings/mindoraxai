@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { usePathname } from 'next/navigation';
 
 const NAV_LINKS = [
   { label: 'Platform', target: 'platform-overview' },
@@ -11,29 +13,45 @@ const NAV_LINKS = [
   { label: 'Coverage', target: 'industry-editions' },
 ];
 
-export default function SwiftAINavigation() {
-  const [scrolled, setScrolled] = useState(false);
+const HOME_BASE = '/';
+
+type SwiftAINavigationProps = {
+  /** When true, always use solid/scrolled nav style (e.g. for pages without a hero) */
+  scrolledByDefault?: boolean;
+};
+
+export default function SwiftAINavigation({ scrolledByDefault = false }: SwiftAINavigationProps) {
+  const [scrolled, setScrolled] = useState(scrolledByDefault);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
   const { setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {
+    if (scrolledByDefault) {
+      setScrolled(true);
+      return;
+    }
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [scrolledByDefault]);
 
   const cycleTheme = () => {
     setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
   };
 
-  const scrollTo = (id: string) => {
+  const handleNavClick = (e: React.MouseEvent, target: string) => {
     setMobileOpen(false);
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (pathname === '/' || pathname === '/sw-3') {
+      e.preventDefault();
+      const el = document.getElementById(target);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+    // Otherwise Link href handles navigation to /#target
   };
 
   const ThemeIcon = !mounted ? Sun : resolvedTheme === 'dark' ? Moon : Sun;
@@ -49,21 +67,22 @@ export default function SwiftAINavigation() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a
-            href="/sw-2"
+          <Link
+            href="/"
             className={`text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 ${
               scrolled ? 'text-foreground' : 'text-white'
             }`}
           >
             Swift<span className={`${scrolled ? 'text-hero-accent-1' : 'text-teal-400'}`}>AI</span>
-          </a>
+          </Link>
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
-              <button
+              <Link
                 key={link.label}
-                onClick={() => scrollTo(link.target)}
+                href={`${HOME_BASE}#${link.target}`}
+                onClick={(e) => handleNavClick(e, link.target)}
                 className={`text-[13px] tracking-[0.08em] uppercase font-medium transition-colors duration-300 ${
                   scrolled
                     ? 'text-muted-foreground hover:text-foreground'
@@ -71,7 +90,7 @@ export default function SwiftAINavigation() {
                 }`}
               >
                 {link.label}
-              </button>
+              </Link>
             ))}
           </div>
 
@@ -89,16 +108,16 @@ export default function SwiftAINavigation() {
               <ThemeIcon className="h-[18px] w-[18px]" />
             </button>
 
-            <button
-              onClick={() => window.location.href = '/contact'}
-              className={`text-[13px] tracking-[0.08em] uppercase font-medium px-5 py-2.5 rounded-none transition-all duration-300 ${
+            <Link
+              href="/contact"
+              className={`inline-block text-[13px] tracking-[0.08em] uppercase font-medium px-5 py-2.5 rounded-none transition-all duration-300 ${
                 scrolled
                   ? 'bg-foreground text-background hover:bg-foreground/90'
                   : 'bg-emerald-400 text-gray-900 hover:bg-emerald-300 hover:shadow-lg hover:shadow-emerald-400/25'
               }`}
             >
               Schedule Demo
-            </button>
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -119,13 +138,14 @@ export default function SwiftAINavigation() {
         <div className="md:hidden bg-background/95 backdrop-blur-xl border-t border-border/40">
           <div className="px-6 py-6 space-y-1">
             {NAV_LINKS.map((link) => (
-              <button
+              <Link
                 key={link.label}
-                onClick={() => scrollTo(link.target)}
+                href={`${HOME_BASE}#${link.target}`}
+                onClick={(e) => handleNavClick(e, link.target)}
                 className="block w-full text-left px-4 py-3 text-[14px] tracking-[0.06em] uppercase font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg transition-colors"
               >
                 {link.label}
-              </button>
+              </Link>
             ))}
             <div className="pt-4 flex items-center justify-between px-4">
               <button
@@ -135,12 +155,12 @@ export default function SwiftAINavigation() {
               >
                 <ThemeIcon className="h-5 w-5" />
               </button>
-              <button
-                onClick={() => window.location.href = '/contact'}
-                className="text-[13px] tracking-[0.08em] uppercase font-medium px-5 py-2.5 bg-foreground text-background hover:bg-foreground/90 rounded-none transition-all"
+              <Link
+                href="/contact"
+                className="text-[13px] tracking-[0.08em] uppercase font-medium px-5 py-2.5 bg-foreground text-background hover:bg-foreground/90 rounded-none transition-all inline-block"
               >
                 Schedule Demo
-              </button>
+              </Link>
             </div>
           </div>
         </div>

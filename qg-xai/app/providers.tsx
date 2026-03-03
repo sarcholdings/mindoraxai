@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { Toaster } from '@/components/ui/toaster'
 import { Toaster as Sonner } from '@/components/ui/sonner'
+import { CookieConsent } from '@/components/CookieConsent'
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         {children}
         <Toaster />
         <Sonner />
+        <CookieConsent />
       </TooltipProvider>
     </ThemeProvider>
   )

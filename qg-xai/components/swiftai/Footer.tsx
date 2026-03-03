@@ -71,22 +71,22 @@ const SwiftAIFooter = () => {
               <h2 className="text-5xl font-light text-white/90 mb-12">Let&apos;s connect</h2>
               <ul className="space-y-5 text-xl font-light">
                 <li>
-                  <a href="/contact" className="text-white/70 hover:text-teal-400 transition-colors duration-300">
+                  <a href="/contact" className="text-white/90 hover:text-teal-400 transition-colors duration-300">
                     Contact us
                   </a>
                 </li>
                 <li>
-                  <a href="/about" className="text-white/70 hover:text-teal-400 transition-colors duration-300">
+                  <a href="/about" className="text-white/90 hover:text-teal-400 transition-colors duration-300">
                     About SwiftAI
                   </a>
                 </li>
                 <li>
-                  <a href="/team" className="text-white/70 hover:text-teal-400 transition-colors duration-300">
+                  <a href="/team" className="text-white/90 hover:text-teal-400 transition-colors duration-300">
                     Our Team
                   </a>
                 </li>
                 <li>
-                  <a href="/careers" className="text-white/70 hover:text-teal-400 transition-colors duration-300">
+                  <a href="/careers" className="text-white/90 hover:text-teal-400 transition-colors duration-300">
                     Careers
                   </a>
                 </li>
@@ -97,46 +97,46 @@ const SwiftAIFooter = () => {
             <div className="flex-[2] grid grid-cols-2 md:grid-cols-3 gap-8 mt-12 lg:mt-0">
               <ul className="space-y-4 text-base font-light">
                 <li>
-                  <a href="/services" className="text-white/75 hover:text-white transition-colors duration-300">
+                  <a href="/services" className="text-white/90 hover:text-white transition-colors duration-300">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="/solutions" className="text-white/75 hover:text-white transition-colors duration-300">
+                  <a href="/solutions" className="text-white/90 hover:text-white transition-colors duration-300">
                     Solutions
                   </a>
                 </li>
                 <li>
-                  <a href="/products" className="text-white/75 hover:text-white transition-colors duration-300">
+                  <a href="/products" className="text-white/90 hover:text-white transition-colors duration-300">
                     Products
                   </a>
                 </li>
               </ul>
               <ul className="space-y-4 text-base font-light">
                 <li>
-                  <a href="/about" className="text-white/75 hover:text-white transition-colors duration-300">
+                  <a href="/about" className="text-white/90 hover:text-white transition-colors duration-300">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="/careers" className="text-white/75 hover:text-white transition-colors duration-300">
+                  <a href="/careers" className="text-white/90 hover:text-white transition-colors duration-300">
                     Careers
                   </a>
                 </li>
               </ul>
               <ul className="space-y-4 text-base font-light">
                 <li>
-                  <a href="/contact" className="text-white/75 hover:text-white transition-colors duration-300">
+                  <a href="/contact" className="text-white/90 hover:text-white transition-colors duration-300">
                     Contact
                   </a>
                 </li>
                 <li>
-                  <a href="/solutions" className="text-white/75 hover:text-white transition-colors duration-300">
+                  <a href="/solutions" className="text-white/90 hover:text-white transition-colors duration-300">
                     Solutions
                   </a>
                 </li>
                 <li>
-                  <a href="/products" className="text-white/75 hover:text-white transition-colors duration-300">
+                  <a href="/products" className="text-white/90 hover:text-white transition-colors duration-300">
                     Products
                   </a>
                 </li>
@@ -147,28 +147,30 @@ const SwiftAIFooter = () => {
             <div className="flex flex-col items-end justify-between min-w-[180px] mt-12 lg:mt-0">
               <div />
               <div className="flex flex-col items-end">
-                <span className="text-sm text-white/60 mb-3 tracking-wide uppercase font-mono text-[11px]">
+                <span className="text-sm text-white/90 mb-3 tracking-wide uppercase font-mono text-[11px]">
                   Follow us
                 </span>
                 <div className="flex space-x-3">
                   <a
                     href="#"
                     aria-label="X"
-                    className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all duration-300"
+                    className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-white/85 hover:text-white hover:bg-white/10 transition-all duration-300"
                   >
                     <span className="text-sm font-semibold">X</span>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/swiftai"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all duration-300"
+                    className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-white/85 hover:text-white hover:bg-white/10 transition-all duration-300"
                   >
                     <Linkedin className="h-4 w-4" />
                   </a>
                   <a
                     href="#"
                     aria-label="YouTube"
-                    className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all duration-300"
+                    className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-white/85 hover:text-white hover:bg-white/10 transition-all duration-300"
                   >
                     <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
                       <rect width="24" height="24" rx="4" fill="currentColor" />
@@ -178,7 +180,7 @@ const SwiftAIFooter = () => {
                   <a
                     href="#"
                     aria-label="Instagram"
-                    className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all duration-300"
+                    className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-white/85 hover:text-white hover:bg-white/10 transition-all duration-300"
                   >
                     <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
                       <rect width="24" height="24" rx="6" fill="currentColor" />
@@ -200,37 +202,37 @@ const SwiftAIFooter = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap gap-x-6 gap-y-2 mb-4 text-sm">
               {[
-                'Terms of Use',
-                'Privacy',
-                'Data Privacy Framework',
-                'Cookie Notice',
-                'Cookie Settings',
-                'Legal information for Job Seekers',
-                'Labor Condition Applications',
-                'Do Not Sell or Share My Personal Information',
-              ].map((label) => (
+                { label: 'Terms of Use', href: '/terms-of-use' },
+                { label: 'Privacy', href: '/privacy' },
+                { label: 'Data Privacy Framework', href: '/data-privacy-framework' },
+                { label: 'Cookie Notice', href: '/cookie-notice' },
+                { label: 'Cookie Settings', href: '/cookie-settings' },
+                { label: 'Legal information for Job Seekers', href: '/legal-job-seekers' },
+                { label: 'Labor Condition Applications', href: '/labor-condition-applications' },
+                { label: 'Do Not Sell or Share My Personal Information', href: '/do-not-sell-or-share' },
+              ].map(({ label, href }) => (
                 <a
                   key={label}
-                  href="#"
-                  className="text-white/55 hover:text-white/90 transition-colors duration-300 font-medium"
+                  href={href}
+                  className="text-white/90 hover:text-white transition-colors duration-300 font-medium"
                 >
                   {label}
                 </a>
               ))}
             </div>
-            <p className="text-sm text-white/60 mb-2">
+            <p className="text-sm text-white/95 mb-2">
               &copy; 2025 SwiftAI. See{' '}
-              <a href="#" className="text-teal-400 hover:text-teal-300 underline transition-colors">
+              <a href="/terms-of-use" className="text-teal-300 hover:text-teal-200 underline transition-colors">
                 Terms of Use
               </a>{' '}
               for more information.
             </p>
-            <p className="text-xs text-white/50 max-w-5xl leading-relaxed">
+            <p className="text-sm text-white/90 max-w-5xl leading-relaxed">
               SwiftAI refers to one or more independent technology consulting entities.
               Each entity is legally separate and independent. SwiftAI does not provide
               services to clients in all jurisdictions. Certain services may not be available to
               attest clients under the rules and regulations of public accounting. Please see{' '}
-              <a href="/about" className="text-teal-400 hover:text-teal-300 underline transition-colors">
+              <a href="/about" className="text-teal-300 hover:text-teal-200 underline transition-colors">
                 our about page
               </a>{' '}
               to learn more about our global network.

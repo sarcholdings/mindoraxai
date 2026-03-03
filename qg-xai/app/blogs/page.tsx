@@ -1,5 +1,5 @@
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+import SwiftAINavigation from '@/components/swiftai/Navigation'
+import Footer from '@/components/swiftai/Footer'
 
 export default function BlogsPage() {
   const sampleBlogs = [
@@ -28,7 +28,7 @@ export default function BlogsPage() {
 
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main className="section-padding">
         <div className="section-container">
           <div className="text-center mb-12">

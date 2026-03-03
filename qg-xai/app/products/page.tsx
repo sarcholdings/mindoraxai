@@ -1,15 +1,14 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import AboutSection3 from '@/components/our-story/about-section';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import { FeatureSteps } from '@/components/our-story/features-section';
 import { CTA } from '@/components/our-story/call-to-action';
 import ProductsHero from '@/components/ProductsHero';
-import SwiftAIAIIntro from '@/components/SwiftAIAIIntro';
-import SwiftAIAIWhatItDoes from '@/components/SwiftAIAIWhatItDoes';
-import SwiftAIAICapabilities from '@/components/SwiftAIAICapabilities';
-import SwiftAIAIEmbedded from '@/components/SwiftAIAIEmbedded';
-import SwiftAIAIImpact from '@/components/SwiftAIAIImpact';
-import SwiftAIAIClosing from '@/components/SwiftAIAIClosing';
+import SwiftAIAIIntro from '@/components/SwiftAIIntro';
+import SwiftAIAIWhatItDoes from '@/components/SwiftAIWhatItDoes';
+import SwiftAIAICapabilities from '@/components/SwiftAICapabilities';
+import SwiftAIAIEmbedded from '@/components/SwiftAIEmbedded';
+import SwiftAIAIImpact from '@/components/SwiftAIImpact';
+import SwiftAIAIClosing from '@/components/SwiftAIClosing';
 
 export default function Products() {
   const swiftAIFeatures = [
@@ -67,85 +66,69 @@ export default function Products() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-200">
-      <Navigation />
-      <main className="section-padding">
-        <div className="section-container mt-10">
-          {/* Hero Section */}
-          {/* <AboutSection3 /> */}
+    <div className="relative min-h-screen bg-background">
+      <main id="main" className="relative z-10 min-h-screen text-foreground">
+        <SwiftAINavigation />
+        <ProductsHero />
 
-          {/* SwiftAI Core Features */}
-          <div className="bg-white rounded-2xl shadow-lg mb-16 mt-10">
-            <FeatureSteps
-              features={swiftAIFeatures}
-              title="SwiftAI Core Features"
-              autoPlayInterval={4000}
-              imageHeight="h-[500px]"
-            />
-          </div>
+        <div className="relative bg-background">
+          <div className="container px-4 mx-auto py-16 lg:py-24">
+            {/* SwiftAI Core Features */}
+            <div className="bg-card border border-border rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] mb-16">
+              <FeatureSteps
+                features={swiftAIFeatures}
+                title="SwiftAI Core Features"
+                autoPlayInterval={4000}
+                imageHeight="h-[500px]"
+              />
+            </div>
 
-          {/* SwiftAI Capabilities */}
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-lg mb-16">
-            <FeatureSteps
-              features={swiftAICapabilities}
-              title="SwiftAI Capabilities"
-              autoPlayInterval={4000}
-              imageHeight="h-[500px]"
-            />
-          </div>
+            {/* SwiftAI Capabilities */}
+            <div className="bg-muted/30 border border-border rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] mb-16">
+              <FeatureSteps
+                features={swiftAICapabilities}
+                title="SwiftAI Capabilities"
+                autoPlayInterval={4000}
+                imageHeight="h-[500px]"
+              />
+            </div>
 
-      {/* SwiftAI Intro Section */}
-          <div className="bg-white rounded-2xl shadow-lg mb-16">
-      <SwiftAIAIIntro />
-          </div>
+            {/* SwiftAI Intro Section */}
+            <div className="bg-card border border-border rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] mb-16">
+              <SwiftAIAIIntro />
+            </div>
 
-      {/* SwiftAI What It Does Section */}
-          <div className="bg-gradient-to-r from-indigo-50 to-blue-100 rounded-2xl shadow-lg mb-16">
-      <SwiftAIAIWhatItDoes />
-          </div>
+            {/* SwiftAI What It Does Section */}
+            <div className="bg-muted/30 border border-border rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] mb-16">
+              <SwiftAIAIWhatItDoes />
+            </div>
 
-      {/* SwiftAI Capabilities Section */}
-          <div className="bg-white rounded-2xl shadow-lg mb-16">
-      <SwiftAIAICapabilities />
-          </div>
+            {/* SwiftAI Capabilities Section */}
+            <div className="bg-card border border-border rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] mb-16">
+              <SwiftAIAICapabilities />
+            </div>
 
-      {/* SwiftAI Embedded Across Transformation Section */}
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-lg mb-16">
-      <SwiftAIAIEmbedded />
-          </div>
+            {/* SwiftAI Embedded Across Transformation Section */}
+            <div className="bg-muted/30 border border-border rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] mb-16">
+              <SwiftAIAIEmbedded />
+            </div>
 
-      {/* SwiftAI Impact Section */}
-          <div className="bg-white rounded-2xl shadow-lg mb-16">
-      <SwiftAIAIImpact />
-          </div>
+            {/* SwiftAI Impact Section */}
+            <div className="bg-card border border-border rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] mb-16">
+              <SwiftAIAIImpact />
+            </div>
 
-      {/* SwiftAI Closing Section */}
-          <div className="bg-gradient-to-r from-indigo-50 to-blue-100 rounded-2xl shadow-lg mb-16">
-      <SwiftAIAIClosing />
-          </div>
+            {/* SwiftAI Closing Section - dark CTA matching home FinalCTA */}
+            <div className="mb-16 rounded-2xl overflow-hidden">
+              <SwiftAIAIClosing />
+            </div>
 
-      {/* Embedded Verver AI App */}
-          <div className="bg-white rounded-2xl shadow-lg mb-16">
-            <section className="section-padding relative z-10">
-        <div className="section-container">
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-700 mb-6 text-center">Try Verver AI (Beta)</h2>
-          <div className="flex justify-center">
-            <iframe
-              src="https://verve-app.vercel.app"
-              title="Verver AI App"
-              className="w-full max-w-5xl h-[700px] rounded-2xl border-4 border-blue-600 shadow-xl bg-white"
-              allow="clipboard-write; clipboard-read; microphone; camera"
-            />
+            {/* Call to Action */}
+            <CTA />
           </div>
         </div>
-      </section>
-          </div>
-
-          {/* Call to Action */}
-          <CTA />
-        </div>
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }

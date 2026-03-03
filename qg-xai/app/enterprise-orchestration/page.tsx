@@ -1,5 +1,5 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import AboutSection3 from '@/components/our-story/about-section';
 import { FeatureSteps } from '@/components/our-story/features-section';
 import { CTA } from '@/components/our-story/call-to-action';
@@ -118,7 +118,7 @@ export default function EnterpriseOrchestration() {
 
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main className="section-padding">
         <div className="section-container mt-10">
           {/* Hero Section */}

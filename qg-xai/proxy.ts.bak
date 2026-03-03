@@ -1,0 +1,59 @@
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+/**
+ * Production-only proxy: redirects all routes to homepage except those
+ * explicitly linked from the homepage (Navigation + Footer).
+ * In development, all routes remain accessible.
+ */
+const ALLOWED_PATHS = [
+  '/',
+  '/home',
+  '/contact',
+  '/about',
+  '/team',
+  '/careers',
+  '/services',
+  '/solutions',
+  '/products',
+  '/terms-of-use',
+  '/privacy',
+  '/data-privacy-framework',
+  '/cookie-notice',
+  '/cookie-settings',
+  '/legal-job-seekers',
+  '/labor-condition-applications',
+  '/do-not-sell-or-share',
+];
+
+function isAllowedPath(pathname: string): boolean {
+  return ALLOWED_PATHS.includes(pathname);
+}
+
+export function proxy(request: NextRequest) {
+  // Only apply redirect logic in production
+  if (process.env.NODE_ENV !== 'production') {
+    return NextResponse.next();
+  }
+
+  const { pathname } = request.nextUrl;
+
+  if (isAllowedPath(pathname)) {
+    return NextResponse.next();
+  }
+
+  // Redirect to homepage
+  return NextResponse.redirect(new URL('/', request.url));
+}
+
+export const config = {
+  matcher: [
+    /*
+     * Match all pathnames except:
+     * - _next (Next.js internals)
+     * - api routes
+     * - static files (images, fonts, etc.)
+     */
+    '/((?!_next/|api/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|woff|woff2)$).*)',
+  ],
+};

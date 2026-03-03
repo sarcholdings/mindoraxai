@@ -11,11 +11,11 @@ const techLogos = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding bg-gray-200 text-black relative overflow-hidden">
-      {/* Blue accent background elements */}
+    <section id="about" className="section-padding bg-background text-foreground relative overflow-hidden">
+      {/* Accent background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 right-20 w-64 h-64 bg-blue-100 rounded-full opacity-20"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-blue-50 rounded-full opacity-30"></div>
+        <div className="absolute top-20 right-20 w-64 h-64 bg-accent rounded-full opacity-20"></div>
+        <div className="absolute bottom-20 left-20 w-48 h-48 bg-muted rounded-full opacity-30"></div>
       </div>
 
       <div className="section-container relative z-10">
@@ -23,7 +23,7 @@ const AboutSection = () => {
         <div className="flex flex-col items-center justify-center mb-16">
           {/* Minimal Header */}
           <div className="text-center space-y-4 mb-12">
-            <div className="inline-flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full text-xs font-medium">
+            <div className="inline-flex items-center space-x-2 bg-primary text-primary-foreground px-4 py-2 rounded-full text-xs font-medium">
               <span>Who We Are</span>
             </div>
             {/* <h2 className="text-3xl md:text-4xl font-bold text-black">
@@ -43,21 +43,21 @@ const AboutSection = () => {
               <img
                 src="/wwa1.jpg"
                 alt="Our Story"
-                className="rounded-2xl shadow-lg w-full h-full object-cover border-4 border-blue-100"
+                className="rounded-2xl shadow-lg w-full h-full object-cover border-4 border-border"
                 style={{ maxWidth: "100%", maxHeight: "100%" }}
               />
             </div>
             {/* Right Side Content */}
-            <div className="w-full md:w-1/2 h-[200px] md:h-full flex items-center bg-white">
+            <div className="w-full md:w-1/2 h-[200px] md:h-full flex items-center bg-card">
               <div className="space-y-6 px-8 py-8 w-full">
-                <h3 className="text-3xl md:text-4xl font-bold text-black leading-tight">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
                   Our Story
                 </h3>
                 <div className="space-y-4">
-                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                     At SwiftAI, our mission is to bring clarity to complexity. We believe in the power of orchestration—aligning people, processes, and technology to drive meaningful outcomes.
                   </p>
-                  <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                     Our values are rooted in integrity, curiosity, and relentless pursuit of results. As the orchestrator of clarity, we help organizations see further, act faster, and scale what works.
                   </p>
                 </div>
@@ -72,21 +72,21 @@ const AboutSection = () => {
               <img
                 src="/wwa2.jpg"
                 alt="Enterprise Orchestration"
-                className="rounded-2xl shadow-lg w-full h-full object-cover border-4 border-blue-100"
+                className="rounded-2xl shadow-lg w-full h-full object-cover border-4 border-border"
                 style={{ maxWidth: "100%", maxHeight: "100%" }}
               />
             </div>
             {/* Left Side Content */}
-            <div className="w-full md:w-1/2 h-[200px] md:h-full flex items-center bg-blue-50">
-              <div className="bg-blue-50 rounded-2xl p-8 md:p-12 border border-blue-100 h-full w-full flex flex-col justify-center">
+            <div className="w-full md:w-1/2 h-[200px] md:h-full flex items-center bg-muted">
+              <div className="bg-muted rounded-2xl p-8 md:p-12 border border-border h-full w-full flex flex-col justify-center">
                 <div className="mb-8">
-                  <h4 className="text-xl md:text-2xl font-bold text-black mb-2">
+                  <h4 className="text-xl md:text-2xl font-bold text-foreground mb-2">
                     Enterprise Orchestration (EO)
                   </h4>
-                  <div className="w-12 h-1 bg-blue-600 rounded-full"></div>
+                  <div className="w-12 h-1 bg-primary rounded-full"></div>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                     Our Navigate + Orchestrate philosophy is the anchor of our EO framework. We help enterprises chart the right course and orchestrate the moving parts—so strategy becomes action, and action becomes impact.
                   </p>
                 </div>
@@ -101,37 +101,37 @@ const AboutSection = () => {
               <img
                 src="/wwa3.jpg"
                 alt="Leadership"
-                className="rounded-2xl shadow-lg w-full h-full object-cover border-4 border-blue-100"
+                className="rounded-2xl shadow-lg w-full h-full object-cover border-4 border-border"
                 style={{ maxWidth: "100%", maxHeight: "100%" }}
               />
             </div>
             {/* Right Side Content */}
-            <div className="w-full md:w-1/2 h-[200px] md:h-full flex items-center bg-white">
-              <div className="bg-white border border-blue-100 rounded-2xl p-8 md:p-12 shadow-sm h-full w-full flex flex-col justify-center">
+            <div className="w-full md:w-1/2 h-[200px] md:h-full flex items-center bg-card">
+              <div className="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-sm h-full w-full flex flex-col justify-center">
                 <div className="mb-8">
-                  <h4 className="text-xl md:text-2xl font-bold text-black mb-2">
+                  <h4 className="text-xl md:text-2xl font-bold text-foreground mb-2">
                     Leadership
                   </h4>
-                  <div className="w-12 h-1 bg-blue-600 rounded-full"></div>
+                  <div className="w-12 h-1 bg-primary rounded-full"></div>
                 </div>
                 <div className="grid grid-cols-1 gap-8">
                   {/* Example Executive Bio */}
                   <div className="flex flex-col md:flex-row items-center gap-6">
-                    <img src="/cl1.jpg" alt="Executive 1" className="w-20 h-20 rounded-full object-cover border-2 border-blue-200 mb-2 md:mb-0" />
+                    <img src="/cl1.jpg" alt="Executive 1" className="w-20 h-20 rounded-full object-cover border-2 border-border mb-2 md:mb-0" />
                     <div className="text-center md:text-left">
-                      <span className="font-bold text-black block">Alex Morgan</span>
-                      <span className="text-sm text-blue-700 font-medium block">Chief Executive Officer</span>
-                      <p className="text-sm text-gray-600">
+                      <span className="font-bold text-foreground block">Alex Morgan</span>
+                      <span className="text-sm text-primary font-medium block">Chief Executive Officer</span>
+                      <p className="text-sm text-muted-foreground">
                         20+ years leading global transformation for Fortune 500s. Passionate about orchestrating clarity and results.
                       </p>
                     </div>
                   </div>
                   <div className="flex flex-col md:flex-row items-center gap-6">
-                    <img src="/cl2.jpg" alt="Executive 2" className="w-20 h-20 rounded-full object-cover border-2 border-blue-200 mb-2 md:mb-0" />
+                    <img src="/cl2.jpg" alt="Executive 2" className="w-20 h-20 rounded-full object-cover border-2 border-border mb-2 md:mb-0" />
                     <div className="text-center md:text-left">
-                      <span className="font-bold text-black block">Jamie Lee</span>
-                      <span className="text-sm text-blue-700 font-medium block">Chief Technology Officer</span>
-                      <p className="text-sm text-gray-600">
+                      <span className="font-bold text-foreground block">Jamie Lee</span>
+                      <span className="text-sm text-primary font-medium block">Chief Technology Officer</span>
+                      <p className="text-sm text-muted-foreground">
                         Expert in enterprise systems and AI. Builder of high-performing teams and innovative solutions.
                       </p>
                     </div>
@@ -149,16 +149,16 @@ const AboutSection = () => {
               <img
                 src="/wwa4.jpg"
                 alt="Insights"
-                className="rounded-2xl shadow-lg w-full h-full object-cover border-4 border-blue-100"
+                className="rounded-2xl shadow-lg w-full h-full object-cover border-4 border-border"
                 style={{ maxWidth: "100%", maxHeight: "100%" }}
               />
             </div>
             {/* Left Side Content */}
-            <div className="w-full md:w-1/2 h-[200px] md:h-full flex items-center bg-blue-600">
-              <div className="bg-blue-600 text-white rounded-2xl p-8 md:p-12 h-full w-full flex flex-col justify-center">
+            <div className="w-full md:w-1/2 h-[200px] md:h-full flex items-center bg-primary">
+              <div className="bg-primary text-primary-foreground rounded-2xl p-8 md:p-12 h-full w-full flex flex-col justify-center">
                 <div className="space-y-4">
-                  <div className="inline-flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full text-sm">
-                    <Star className="w-4 h-4 text-white" />
+                  <div className="inline-flex items-center space-x-2 bg-primary-foreground/10 px-4 py-2 rounded-full text-sm">
+                    <Star className="w-4 h-4 text-primary-foreground" />
                     <span className="font-medium">Insights</span>
                   </div>
                   <p className="text-lg md:text-xl font-bold">
@@ -166,7 +166,7 @@ const AboutSection = () => {
                   </p>
                   <a
                     href="/blogs"
-                    className="inline-flex items-center mt-4 px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow hover:bg-blue-50 transition"
+                    className="inline-flex items-center mt-4 px-6 py-3 bg-primary-foreground text-primary font-semibold rounded-full shadow hover:bg-primary-foreground/90 transition"
                   >
                     Read Insights
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -181,10 +181,10 @@ const AboutSection = () => {
           {/* "What Sets Us Apart" - Card Grid UI like attached image */}
           <div className="space-y-12">
             <div className="text-center space-y-4">
-              <h3 className="text-2xl md:text-3xl font-bold text-black">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground">
                 What Sets Us Apart
               </h3>
-              <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+              <div className="w-16 h-1 bg-primary mx-auto rounded-full"></div>
             </div>
 
             {/* Card grid, 1 column on mobile, 2 on md, 4 on lg+ */}
@@ -201,7 +201,7 @@ const AboutSection = () => {
                 </div>
                 
                 {/* Category tag */}
-                <div className="absolute top-4 left-4 bg-blue-600/90 text-white px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm">
+                <div className="absolute top-4 left-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm">
                   TRANSFORMING CHALLENGES
                 </div>
                 
@@ -218,15 +218,15 @@ const AboutSection = () => {
                     <h4 className="text-white font-bold text-lg mb-4">Our Commitment</h4>
                     <div className="space-y-3 text-sm text-white/90">
                       <div className="flex items-center justify-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-200" />
+                        <CheckCircle className="w-4 h-4 text-primary-foreground/80" />
                         <span>Think Big - We pursue ambitious goals</span>
                       </div>
                       <div className="flex items-center justify-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-200" />
+                        <CheckCircle className="w-4 h-4 text-primary-foreground/80" />
                         <span>Customer-Obsessed - Your success is our North Star</span>
                       </div>
                       <div className="flex items-center justify-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-200" />
+                        <CheckCircle className="w-4 h-4 text-primary-foreground/80" />
                         <span>Quality Excellence - We deliver results</span>
                       </div>
                     </div>
@@ -243,7 +243,7 @@ const AboutSection = () => {
                   <div className="absolute inset-0 bg-black/40"></div>
                 </div>
                 
-                <div className="absolute top-4 left-4 bg-blue-600/90 text-white px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm">
+                <div className="absolute top-4 left-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm">
                   UNBIASED PARTNER
                 </div>
                 
@@ -258,15 +258,15 @@ const AboutSection = () => {
                     <h4 className="text-white font-bold text-lg mb-4">Global Expertise</h4>
                     <div className="space-y-3 text-sm text-white/90">
                       <div className="flex items-center justify-center gap-2">
-                        <Globe className="w-4 h-4 text-blue-200" />
+                        <Globe className="w-4 h-4 text-primary-foreground/80" />
                         <span>Glocalized community of experts</span>
                       </div>
                       <div className="flex items-center justify-center gap-2">
-                        <Shield className="w-4 h-4 text-blue-200" />
+                        <Shield className="w-4 h-4 text-primary-foreground/80" />
                         <span>We thrive under pressure</span>
                       </div>
                       <div className="flex items-center justify-center gap-2">
-                        <Users className="w-4 h-4 text-blue-200" />
+                        <Users className="w-4 h-4 text-primary-foreground/80" />
                         <span>Global reach across continents</span>
                       </div>
                     </div>
@@ -283,7 +283,7 @@ const AboutSection = () => {
                   <div className="absolute inset-0 bg-black/40"></div>
                 </div>
                 
-                <div className="absolute top-4 left-4 bg-blue-600/90 text-white px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm">
+                <div className="absolute top-4 left-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm">
                   BIG 4 VALUE
                 </div>
                 
@@ -298,15 +298,15 @@ const AboutSection = () => {
                     <h4 className="text-white font-bold text-lg mb-4">Our Approach</h4>
                     <div className="space-y-3 text-sm text-white/90">
                       <div className="flex items-center justify-center gap-2">
-                        <Award className="w-4 h-4 text-blue-200" />
+                        <Award className="w-4 h-4 text-primary-foreground/80" />
                         <span>Rigor from top-tier consulting</span>
                       </div>
                       <div className="flex items-center justify-center gap-2">
-                        <Target className="w-4 h-4 text-blue-200" />
+                        <Target className="w-4 h-4 text-primary-foreground/80" />
                         <span>Product thinking for scalable IP</span>
                       </div>
                       <div className="flex items-center justify-center gap-2">
-                        <Zap className="w-4 h-4 text-blue-200" />
+                        <Zap className="w-4 h-4 text-primary-foreground/80" />
                         <span>Built-in tech muscle</span>
                       </div>
                     </div>
@@ -323,7 +323,7 @@ const AboutSection = () => {
                   <div className="absolute inset-0 bg-black/40"></div>
                 </div>
                 
-                <div className="absolute top-4 left-4 bg-blue-600/90 text-white px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm border border-white/30">
+                <div className="absolute top-4 left-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm border border-white/30">
                   ROOTED IN PURPOSE
                 </div>
                 
@@ -353,10 +353,10 @@ const AboutSection = () => {
 
         {/* Technology Platforms (minimal) */}
         <div className="-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48 mt-10">
-          <div className="py-12 px-4 md:px-16 lg:px-32 xl:px-48 rounded-2xl border border-blue-100">
+          <div className="py-12 px-4 md:px-16 lg:px-32 xl:px-48 rounded-2xl border border-border">
             <div className="text-center mb-8">
-              <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Technology Platforms We Master</h3>
-              <div className="w-12 h-1 bg-blue-600 mx-auto rounded-full"></div>
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">Technology Platforms We Master</h3>
+              <div className="w-12 h-1 bg-primary mx-auto rounded-full"></div>
             </div>
             <div className="relative overflow-x-hidden w-full">
               <div className="flex whitespace-nowrap animate-tech-marquee will-change-transform items-center" style={{animationDuration: '18s'}}>

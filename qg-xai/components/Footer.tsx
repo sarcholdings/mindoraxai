@@ -57,16 +57,16 @@ const Footer = () => {
       <div className="bg-white text-black text-sm border-t border-gray-200 px-4">
         <div className="max-w-7xl mx-auto py-6">
           <div className="flex flex-wrap gap-x-8 gap-y-2 mb-4 font-semibold">
-            <a href="#" className="hover:underline">Terms of Use</a>
-            <a href="#" className="hover:underline">Privacy</a>
-            <a href="#" className="hover:underline">Data Privacy Framework</a>
-            <a href="#" className="hover:underline">Cookie Notice</a>
-            <a href="#" className="hover:underline">Cookie Settings</a>
-            <a href="#" className="hover:underline">Legal information for Job Seekers</a>
-            <a href="#" className="hover:underline">Labor Condition Applications</a>
-            <a href="#" className="hover:underline">Do Not Sell or Share My Personal Information</a>
+            <a href="/terms-of-use" className="hover:underline">Terms of Use</a>
+            <a href="/privacy" className="hover:underline">Privacy</a>
+            <a href="/data-privacy-framework" className="hover:underline">Data Privacy Framework</a>
+            <a href="/cookie-notice" className="hover:underline">Cookie Notice</a>
+            <a href="/cookie-settings" className="hover:underline">Cookie Settings</a>
+            <a href="/legal-job-seekers" className="hover:underline">Legal information for Job Seekers</a>
+            <a href="/labor-condition-applications" className="hover:underline">Labor Condition Applications</a>
+            <a href="/do-not-sell-or-share" className="hover:underline">Do Not Sell or Share My Personal Information</a>
           </div>
-          <div className="mb-2">© 2025 SwiftAI. See <a href="#" className="text-blue-700 underline">Terms of Use</a> for more information.</div>
+          <div className="mb-2">© 2025 SwiftAI. See <a href="/terms-of-use" className="text-blue-700 underline">Terms of Use</a> for more information.</div>
           <div className="text-xs text-gray-700 max-w-5xl">
             SwiftAI refers to one or more independent technology consulting entities. Each entity is legally separate and independent. SwiftAI does not provide services to clients in all jurisdictions. Certain services may not be available to attest clients under the rules and regulations of public accounting. Please see <a href="/about" className="text-blue-700 underline">our about page</a> to learn more about our global network.
           </div>

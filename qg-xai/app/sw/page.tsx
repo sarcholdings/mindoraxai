@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import Hero from '@/components/swiftai-platform/Hero';
 import Hero2 from '@/components/swiftai-platform/Hero2';
 import Hero3 from '@/components/swiftai-platform/Hero3';
@@ -92,10 +92,7 @@ export default function SwiftAIAIPlatform() {
 
   return (
     <main id="main" className="min-h-screen text-hero-foreground">
-      <Navigation
-        activeHero={HERO_COMPONENTS[activeIndex].id}
-        heroTheme={activeHeroTheme}
-      />
+      <SwiftAINavigation />
 
       {/* Hero Carousel */}
       <div
@@ -139,17 +136,17 @@ export default function SwiftAIAIPlatform() {
           ))}
         </div>
 
-        {/* Navigation Arrows - Inside hero carousel */}
+        {/* Navigation Arrows - hidden on small screens */}
         <button
           onClick={handlePrevious}
-          className={`absolute left-8 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-hero-foreground/10 backdrop-blur-md border border-hero-foreground/20 flex items-center justify-center text-hero-foreground hover:bg-hero-foreground/20 transition-all duration-300 group shadow-xl ${!showArrows ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+          className={`hidden md:flex absolute left-8 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-hero-foreground/10 backdrop-blur-md border border-hero-foreground/20 items-center justify-center text-hero-foreground hover:bg-hero-foreground/20 transition-all duration-300 group shadow-xl ${!showArrows ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-7 h-7 group-hover:scale-110 transition-transform" />
         </button>
         <button
           onClick={handleNext}
-          className={`absolute right-8 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-hero-foreground/10 backdrop-blur-md border border-hero-foreground/20 flex items-center justify-center text-hero-foreground hover:bg-hero-foreground/20 transition-all duration-300 group shadow-xl ${!showArrows ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+          className={`hidden md:flex absolute right-8 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-hero-foreground/10 backdrop-blur-md border border-hero-foreground/20 items-center justify-center text-hero-foreground hover:bg-hero-foreground/20 transition-all duration-300 group shadow-xl ${!showArrows ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
           aria-label="Next slide"
         >
           <ChevronRight className="w-7 h-7 group-hover:scale-110 transition-transform" />

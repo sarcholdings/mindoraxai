@@ -1,8 +1,8 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import AIDataHero from '@/components/AIDataHero';
 import AIDataExpandedCapabilities from '@/components/AIDataExpandedCapabilities';
-import AIDataSwiftAIAIEnhancement from '@/components/AIDataSwiftAIAIEnhancement';
+import AIDataSwiftAIEnhancement from '@/components/AIDataSwiftAIEnhancement';
 import AIDataEmergingTechHorizon from '@/components/AIDataEmergingTechHorizon';
 import AIDataWhyItMatters from '@/components/AIDataWhyItMatters';
 import AIDataClosingCTA from '@/components/AIDataClosingCTA';
@@ -10,7 +10,7 @@ import AIDataClosingCTA from '@/components/AIDataClosingCTA';
 export default function AIDATASolution() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main>
         {/* AI & Data for the Intelligent Enterprise Hero Section */}
         <AIDataHero />
@@ -19,7 +19,7 @@ export default function AIDATASolution() {
         <AIDataExpandedCapabilities />
 
         {/* SwiftAI Enhancement Section */}
-        <AIDataSwiftAIAIEnhancement />
+        <AIDataSwiftAIEnhancement />
 
         {/* Emerging Tech Horizon Section */}
         <AIDataEmergingTechHorizon />

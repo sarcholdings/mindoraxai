@@ -1,18 +1,18 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import CloudJourneyHero from '@/components/CloudJourneyHero';
 import CloudJourneySteps from '@/components/CloudJourneySteps';
 import CloudSAPHero from '@/components/CloudSAPHero';
 import WhyCloudSAP from '@/components/WhyCloudSAP';
 import CloudCapabilities from '@/components/CloudCapabilities';
-import CloudSwiftAIAIAdvantage from '@/components/CloudSwiftAIAIAdvantage';
+import CloudSwiftAIAdvantage from '@/components/CloudSwiftAIAdvantage';
 import CloudClosingCTA from '@/components/CloudClosingCTA';
 import CloudServicesClosingCTA from '@/components/CloudServicesClosingCTA';
 
 export default function CloudServices() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main>
         {/* Cloud Journey Section */}
         <CloudJourneyHero />
@@ -22,7 +22,7 @@ export default function CloudServices() {
         <CloudSAPHero />
         <WhyCloudSAP />
         <CloudCapabilities />
-        <CloudSwiftAIAIAdvantage />
+        <CloudSwiftAIAdvantage />
         <CloudClosingCTA />
 
         {/* Final Cloud Services CTA */}

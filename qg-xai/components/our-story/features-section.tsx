@@ -48,7 +48,7 @@ export function FeatureSteps({
   return (
     <div className={cn("p-8 md:p-12", className)}>
       <div className="max-w-7xl mx-auto w-full">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-center">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-center text-foreground">
           {title}
         </h2>
 
@@ -58,16 +58,16 @@ export function FeatureSteps({
               <motion.div
                 key={index}
                 className="flex items-center gap-6 md:gap-8"
-                initial={{ opacity: 0.3 }}
-                animate={{ opacity: index === currentFeature ? 1 : 0.3 }}
+                initial={{ opacity: 0.85 }}
+                animate={{ opacity: index === currentFeature ? 1 : 0.85 }}
                 transition={{ duration: 0.5 }}
               >
                 <motion.div
                   className={cn(
-                    "w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center border-2",
+                    "w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center border-2 shrink-0",
                     index === currentFeature
                       ? "bg-primary border-primary text-primary-foreground scale-110"
-                      : "bg-muted border-muted-foreground",
+                      : "bg-muted border-border text-muted-foreground",
                   )}
                 >
                   {index <= currentFeature ? (
@@ -78,10 +78,20 @@ export function FeatureSteps({
                 </motion.div>
 
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-semibold">
+                  <h3
+                    className={cn(
+                      "text-xl md:text-2xl font-semibold",
+                      index === currentFeature ? "text-foreground" : "text-muted-foreground",
+                    )}
+                  >
                     {feature.title || feature.step}
                   </h3>
-                  <p className="text-sm md:text-lg text-muted-foreground">
+                  <p
+                    className={cn(
+                      "text-sm md:text-lg",
+                      index === currentFeature ? "text-foreground" : "text-muted-foreground",
+                    )}
+                  >
                     {feature.content}
                   </p>
                 </div>

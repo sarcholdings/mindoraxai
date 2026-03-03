@@ -1,5 +1,5 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 
 const leaders = [
   {
@@ -70,8 +70,8 @@ const groupOrder = ['Leadership', 'Dev Leads', 'SMM Lead', 'Other'];
 export default function Team() {
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
-      <main className="section-container py-16">
+      <SwiftAINavigation scrolledByDefault />
+      <main className="section-container pt-20 pb-16">
         <div className="text-center mb-8">
           <div className="text-sm text-gray-700 font-semibold mb-2">Our people</div>
           <h2 className="text-3xl md:text-4xl font-light mb-12">Meet our US leaders</h2>

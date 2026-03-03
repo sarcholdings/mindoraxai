@@ -1,5 +1,5 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import EOHero from '@/components/EOHero';
 import EOOverview from '@/components/EOOverview';
 import EOKeyPillars from '@/components/EOKeyPillars';
@@ -9,7 +9,7 @@ import EOClosingCTA from '@/components/EOClosingCTA';
 export default function EOService() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main>
         {/* Enterprise Orchestration Hero Section */}
         <EOHero />

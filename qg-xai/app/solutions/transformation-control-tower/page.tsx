@@ -1,5 +1,5 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import TCTHero from '@/components/TCTHero';
 import TCTWhatItDelivers from '@/components/TCTWhatItDelivers';
 import TCTWhyItMatters from '@/components/TCTWhyItMatters';
@@ -8,7 +8,7 @@ import TCTClosingCTA from '@/components/TCTClosingCTA';
 export default function TCTSolutions() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main>
         {/* Transformation Control Tower Hero Section */}
         <TCTHero />

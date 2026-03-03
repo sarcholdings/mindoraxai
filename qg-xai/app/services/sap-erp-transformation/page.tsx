@@ -1,5 +1,5 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import SwiftAINavigation from '@/components/swiftai/Navigation';
+import Footer from '@/components/swiftai/Footer';
 import SAPERPHero from '@/components/SAPERPHero';
 import BrownfieldMatters from '@/components/BrownfieldMatters';
 import TransformationJourney from '@/components/TransformationJourney';
@@ -8,13 +8,13 @@ import SAPERPServicesClosingCTA from '@/components/SAPERPServicesClosingCTA';
 import CloudSAPHero from '@/components/CloudSAPHero';
 import WhyCloudSAP from '@/components/WhyCloudSAP';
 import CloudCapabilities from '@/components/CloudCapabilities';
-import CloudSwiftAIAIAdvantage from '@/components/CloudSwiftAIAIAdvantage';
+import CloudSwiftAIAdvantage from '@/components/CloudSwiftAIAdvantage';
 import CloudClosingCTA from '@/components/CloudClosingCTA';
 
 export default function SAPERPServices() {
   return (
     <div className="min-h-screen bg-gray-200">
-      <Navigation />
+      <SwiftAINavigation scrolledByDefault />
       <main>
         {/* SAP ERP Transformation Section */}
         <SAPERPHero />
@@ -27,7 +27,7 @@ export default function SAPERPServices() {
         <CloudSAPHero />
         <WhyCloudSAP />
         <CloudCapabilities />
-        <CloudSwiftAIAIAdvantage />
+        <CloudSwiftAIAdvantage />
         <CloudClosingCTA />
       </main>
       <Footer />
