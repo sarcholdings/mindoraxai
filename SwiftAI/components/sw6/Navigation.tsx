@@ -13,7 +13,7 @@ type NavItem = {
 
 const NAV_LINKS: NavItem[] = [
   {
-    label: 'Learn More',
+    label: 'Why PRISM',
     target: 'sw6-why',
     children: [
       { label: 'Why Proactive Monitoring', target: 'sw6-why' },
@@ -22,7 +22,6 @@ const NAV_LINKS: NavItem[] = [
       { label: 'How PRISM Closes Critical Gaps', target: 'sw6-closes-gaps' },
     ],
   },
-  { label: 'Showcase', target: 'sw6-showcase' },
   {
     label: 'Platform',
     target: 'sw6-platform',
@@ -32,12 +31,14 @@ const NAV_LINKS: NavItem[] = [
       { label: 'Comparison', target: 'sw6-why-som' },
     ],
   },
+  { label: 'Showcase', target: 'sw6-showcase' },
+  { label: 'Contact', target: 'sw6-contact' },
 ];
 
 const HOME_BASE = '/';
 
-export default function SwiftAINavigation() {
-  const [scrolled, setScrolled] = useState(false);
+export default function SwiftAINavigation({ scrolledByDefault = false }: { scrolledByDefault?: boolean }) {
+  const [scrolled, setScrolled] = useState(scrolledByDefault);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
@@ -60,7 +61,7 @@ export default function SwiftAINavigation() {
     setMobileOpen(false);
     setOpenDropdown(null);
     setMobileExpanded(null);
-    if (pathname === '/' || pathname === '/sw-6') {
+    if (pathname === '/') {
       e.preventDefault();
       scrollTo(target);
     }
@@ -86,12 +87,45 @@ export default function SwiftAINavigation() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link
-            href="/sw-6"
-            className={`text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 ${
+            href="/"
+            className={`flex items-center gap-2.5 transition-colors duration-300 ${
               scrolled ? 'text-foreground' : 'text-white'
             }`}
           >
-            Swift<span className={`${scrolled ? 'text-hero-accent-1' : 'text-teal-400'}`}>AI</span>
+            <svg viewBox="0 0 32 32" className="h-8 w-8 shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="nTL" x1="8" y1="18" x2="16" y2="1" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#ec4899"/>
+                  <stop offset="100%" stopColor="#d946ef"/>
+                </linearGradient>
+                <linearGradient id="nLL" x1="2" y1="30" x2="12" y2="18" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#f59e0b"/>
+                  <stop offset="100%" stopColor="#f97316"/>
+                </linearGradient>
+                <linearGradient id="nRL" x1="24" y1="18" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#0ea5e9"/>
+                  <stop offset="100%" stopColor="#10b981"/>
+                </linearGradient>
+              </defs>
+              <polygon points="16,1 8,18 12,18" fill="url(#nTL)"/>
+              <polygon points="16,1 12,18 20,18" fill="#8b5cf6"/>
+              <polygon points="16,1 20,18 24,18" fill="#06b6d4"/>
+              <polygon points="8,18 2,30 16,26 12,18" fill="url(#nLL)"/>
+              <polygon points="20,18 24,18 30,30 16,26" fill="url(#nRL)"/>
+              <polygon points="2,30 16,26 16,30" fill="#f59e0b"/>
+              <polygon points="16,30 16,26 30,30" fill="#84cc16"/>
+            </svg>
+            <div className="flex flex-col leading-none">
+              <span className="text-lg lg:text-xl font-bold tracking-tight">
+                Swift<span className={`${scrolled ? 'text-orange-500' : 'text-orange-400'}`}>AI</span>{' '}
+                <span className="font-normal">PRISM</span>
+              </span>
+              <span className={`text-[9px] tracking-[0.25em] uppercase font-medium ${
+                scrolled ? 'text-muted-foreground' : 'text-white/50'
+              }`}>
+                Enterprise Observability Reimagined
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
@@ -109,7 +143,7 @@ export default function SwiftAINavigation() {
                     className={`inline-flex items-center gap-1 text-[13px] tracking-[0.08em] uppercase font-medium transition-colors duration-300 ${
                       scrolled
                         ? 'text-muted-foreground hover:text-foreground'
-                        : 'text-white/60 hover:text-white'
+                        : 'text-white/85 hover:text-white'
                     }`}
                   >
                     {link.label}
@@ -141,7 +175,7 @@ export default function SwiftAINavigation() {
                   className={`text-[13px] tracking-[0.08em] uppercase font-medium transition-colors duration-300 ${
                     scrolled
                       ? 'text-muted-foreground hover:text-foreground'
-                      : 'text-white/60 hover:text-white'
+                      : 'text-white/85 hover:text-white'
                   }`}
                 >
                   {link.label}
@@ -155,7 +189,7 @@ export default function SwiftAINavigation() {
             <Link
               href={`${HOME_BASE}#sw6-contact`}
               onClick={(e) => handleNavClick(e, 'sw6-contact')}
-              className={`inline-block text-[13px] tracking-[0.08em] uppercase font-medium px-5 py-2.5 rounded-full transition-all duration-300 ${
+              className={`inline-block text-[13px] tracking-[0.04em] font-medium px-5 py-2.5 rounded-full transition-all duration-300 ${
                 scrolled
                   ? 'bg-orange-500 text-white hover:bg-orange-400'
                   : 'bg-orange-500 text-white hover:bg-orange-400 hover:shadow-lg hover:shadow-orange-500/25'
@@ -224,7 +258,7 @@ export default function SwiftAINavigation() {
               <Link
                 href={`${HOME_BASE}#sw6-contact`}
                 onClick={(e) => handleNavClick(e, 'sw6-contact')}
-                className="block w-full text-center text-[13px] tracking-[0.08em] uppercase font-medium px-5 py-2.5 bg-orange-500 text-white hover:bg-orange-400 rounded-full transition-all"
+                className="block w-full text-center text-[13px] tracking-[0.04em] font-medium px-5 py-2.5 bg-orange-500 text-white hover:bg-orange-400 rounded-full transition-all"
               >
                 Book a Demo
               </Link>

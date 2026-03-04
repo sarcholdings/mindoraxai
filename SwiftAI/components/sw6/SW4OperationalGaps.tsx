@@ -5,8 +5,6 @@ import { operationalGaps } from "./constants";
 export function SW4OperationalGaps() {
   return (
     <section id="sw6-gaps" className="py-24 bg-background relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none" />
-
       <div className="container px-4 mx-auto relative z-10">
         <SectionHeader
           eyebrow="Current operational gaps"
@@ -16,39 +14,39 @@ export function SW4OperationalGaps() {
           centered
         />
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-2">
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {operationalGaps.map((item) => (
             <div
               key={item.area}
-              className="group rounded-2xl border-2 border-border/80 dark:border-border/60 bg-card p-6 hover:border-hero-accent-1/50 hover:shadow-[0_10px_40px_-10px_rgba(45,212,191,0.2)] transition-all duration-300 relative overflow-hidden"
+              className="group rounded-2xl border-2 border-border/80 dark:border-border/60 bg-card p-6 backdrop-blur-sm hover:border-orange-500/50 hover:shadow-[0_10px_40px_-10px_rgba(249,115,22,0.2)] hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-hero-accent-1/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative z-10">
-                <div className="flex items-center gap-3">
-                  <div className="rounded-xl border border-amber-400/20 bg-amber-400/10 p-2 text-amber-500">
-                    <AlertCircle className="h-5 w-5" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground">
-                    {item.area}
-                  </h3>
+              {/* Header */}
+              <div className="flex items-center gap-4 mb-5">
+                <div className="rounded-xl border border-orange-500/20 bg-orange-500/10 p-3 text-orange-400 shrink-0 group-hover:bg-orange-500/20 transition-colors">
+                  <AlertCircle className="h-6 w-6" />
                 </div>
-                <div className="mt-5 grid gap-4 md:grid-cols-2">
-                  <div className="rounded-xl border-2 border-border/80 dark:border-border/60 bg-accent p-4">
-                    <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-mono">
-                      Common today
-                    </div>
-                    <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                      {item.current}
-                    </p>
+                <h3 className="text-lg font-bold text-foreground group-hover:text-orange-400 transition-colors">
+                  {item.area}
+                </h3>
+              </div>
+
+              {/* Inner cards */}
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="rounded-xl border-2 border-border/80 dark:border-border/60 bg-card p-4">
+                  <div className="text-xs font-bold uppercase tracking-[0.2em] text-blue-400/80 mb-3">
+                    Common today
                   </div>
-                  <div className="rounded-xl border border-rose-400/20 bg-rose-400/10 p-4">
-                    <div className="text-xs uppercase tracking-[0.2em] text-rose-400 font-mono">
-                      Operational gap
-                    </div>
-                    <p className="mt-3 text-sm leading-6 text-foreground">
-                      {item.gap}
-                    </p>
+                  <p className="text-base leading-7 text-muted-foreground">
+                    {item.current}
+                  </p>
+                </div>
+                <div className="rounded-xl border border-orange-500/20 bg-orange-500/10 p-4">
+                  <div className="text-xs font-bold uppercase tracking-[0.2em] text-orange-400 mb-3">
+                    Operational gap
                   </div>
+                  <p className="text-base leading-7 text-foreground">
+                    {item.gap}
+                  </p>
                 </div>
               </div>
             </div>
