@@ -74,7 +74,7 @@ const CrossIndustryUseCases = () => {
               </span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Current monitoring approaches leave dangerous blind spots. SOM fills each gap
+              Current monitoring approaches leave dangerous blind spots. SwiftAI PRISM fills each gap
               with unified, intelligent, and proactive capabilities.
             </p>
           </div>
@@ -101,7 +101,7 @@ const CrossIndustryUseCases = () => {
                       <ArrowRight className="w-5 h-5 text-hero-accent-1" />
                     </div>
                     <div>
-                      <p className="text-sm text-teal-400/70 mb-1 font-mono uppercase tracking-wider">How SOM Fills It</p>
+                      <p className="text-sm text-teal-400/70 mb-1 font-mono uppercase tracking-wider">How SwiftAI PRISM Fills It</p>
                       <p className="text-foreground font-medium">{item.solution}</p>
                     </div>
                   </div>

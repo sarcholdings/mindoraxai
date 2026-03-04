@@ -8,10 +8,10 @@ export function SW4About() {
           <div className="absolute inset-0 bg-gradient-to-br from-hero-accent-1/5 via-transparent to-primary/5 rounded-2xl" />
           <div className="relative z-10">
             <SectionHeader
-              eyebrow="About SOM"
+              eyebrow="About SwiftAI PRISM"
               title="Built to modernize SAP"
               gradientText="operational visibility"
-              description="SOM was created to bring stronger observability, deeper operational insight, and smarter monitoring to SAP landscapes. We believe enterprises need more than fragmented tools and reactive alerts — they need connected visibility, meaningful intelligence, and a platform that evolves with modern operational demands."
+              description="SwiftAI PRISM was created to bring stronger observability, deeper operational insight, and smarter monitoring to SAP landscapes. We believe enterprises need more than fragmented tools and reactive alerts — they need connected visibility, meaningful intelligence, and a platform that evolves with modern operational demands."
             />
             <p className="mt-6 max-w-4xl text-base leading-7 text-muted-foreground">
               The goal is simple: help organizations protect business-critical SAP

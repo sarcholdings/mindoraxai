@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="topLeft" x1="24" y1="56" x2="50" y2="3" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#d946ef"/>
+    </linearGradient>
+    <linearGradient id="centerTop" x1="38" y1="56" x2="62" y2="3" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="topRight" x1="62" y1="56" x2="76" y2="3" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="leftLeg" x1="6" y1="94" x2="38" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="rightLeg" x1="76" y1="56" x2="94" y2="94" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="82" y1="92" x2="90" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <!-- Geometric Prismatic "A"  SwiftAI Logo -->
+  <polygon points="50,3 24,56 38,56" fill="url(#topLeft)"/>
+  <polygon points="50,3 38,56 62,56" fill="url(#centerTop)"/>
+  <polygon points="50,3 62,56 76,56" fill="url(#topRight)"/>
+  <polygon points="24,56 6,94 50,81 38,56" fill="url(#leftLeg)"/>
+  <polygon points="62,56 76,56 94,94 50,81" fill="url(#rightLeg)"/>
+  <polygon points="6,94 50,81 50,94" fill="#f59e0b"/>
+  <polygon points="50,94 50,81 94,94" fill="#84cc16"/>
+  <polygon points="82,92 96,98 90,80" fill="url(#accent)" opacity="0.9"/>
+</svg>

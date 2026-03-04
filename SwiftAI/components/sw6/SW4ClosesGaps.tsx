@@ -6,10 +6,10 @@ export function SW4ClosesGaps() {
     <section id="sw6-closes-gaps" className="border-y border-border bg-muted/30 py-24">
       <div className="container px-4 mx-auto">
         <SectionHeader
-          eyebrow="SOM closing critical gaps"
-          title="How SOM helps prevent"
+          eyebrow="SwiftAI PRISM closing critical gaps"
+          title="How SwiftAI PRISM helps prevent"
           gradientText="business disruption"
-          description="SOM closes the space between fragmented monitoring and operational clarity by unifying KPI domains, improving context, and surfacing earlier signals across interconnected SAP environments."
+          description="SwiftAI PRISM closes the space between fragmented monitoring and operational clarity by unifying KPI domains, improving context, and surfacing earlier signals across interconnected SAP environments."
           centered
         />
 
@@ -17,7 +17,7 @@ export function SW4ClosesGaps() {
           <div className="hidden md:grid grid-cols-[1.1fr_1fr_1.1fr] gap-0 border-b border-border bg-accent px-6 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground">
             <div>Area</div>
             <div>Operational gap</div>
-            <div>How SOM fills the gap</div>
+            <div>How SwiftAI PRISM fills the gap</div>
           </div>
           {somGapClosers.map((item) => (
             <div
@@ -38,7 +38,7 @@ export function SW4ClosesGaps() {
               </div>
               <div>
                 <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground md:hidden font-mono">
-                  How SOM fills the gap
+                  How SwiftAI PRISM fills the gap
                 </div>
                 <div className="text-foreground font-medium">
                   {item.solution}

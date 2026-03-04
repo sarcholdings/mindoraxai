@@ -19,12 +19,10 @@ export default function HomePage() {
     <div className="relative min-h-screen bg-background">
       <style>{`
         html {
-          scroll-snap-type: y mandatory;
           scroll-behavior: smooth;
         }
 
         .sw6-hero {
-          scroll-snap-align: start;
           --hero-fg: 0 0% 100%;
           --hero-muted: 210 20% 78%;
           --hero-border: 217.2 32.6% 17.5%;
@@ -59,17 +57,7 @@ export default function HomePage() {
         }
 
         .sw6-sections > section {
-          scroll-snap-align: start;
           scroll-margin-top: 5rem;
-          min-height: 100vh;
-        }
-
-        .sw6-sections > section#sw6-contact {
-          min-height: auto;
-        }
-
-        .sw6-sections > footer {
-          scroll-snap-align: end;
         }
       `}</style>
 
@@ -90,9 +78,6 @@ export default function HomePage() {
           <SW4OperationalGaps />
           <SW4ClosesGaps />
 
-          {/* Showcase */}
-          <Showcase />
-
           {/* Platform */}
           <SW4PlatformHighlights />
           <SW4CapabilitiesGrid />
@@ -101,6 +86,10 @@ export default function HomePage() {
 
           <SW4UseCases />
           <SW4About />
+
+          {/* Showcase */}
+          <Showcase />
+
           <SW4ContactCta />
           <Footer />
         </div>

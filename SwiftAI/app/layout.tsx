@@ -10,8 +10,12 @@ const garamond = EB_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'SwiftAI - IT Consulting & Technology Solutions',
+  title: 'Enterprise observability reimagined',
   description: 'Digital transformation with expert IT consulting, SAP solutions, cloud services',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({

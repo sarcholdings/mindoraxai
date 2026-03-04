@@ -84,7 +84,7 @@ const CoreCapabilities = () => {
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
           <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Key Features</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            SOM Key{' '}
+            SwiftAI PRISM Key{' '}
             <span className="heading-gradient">
               Features
             </span>

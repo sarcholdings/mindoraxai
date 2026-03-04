@@ -4,7 +4,7 @@ import React from 'react';
 import * as motion from 'motion/react-client';
 import { ArrowRight } from 'lucide-react';
 
-const DOT_GRID = 'https://framerusercontent.com/images/iCrEiyCzicNXp4giZVHPJq4rCS0.svg';
+const DOT_GRID = '/images/dot-grid.svg';
 
 const CARD_GRADIENTS: [number, number][] = [
   [180, 210],
@@ -22,7 +22,7 @@ const PROJECTS = [
     description:
       'Brings key indicators into one view — showing current status, connected signals, and likely future risk trends across your entire SAP landscape. Correlate metrics across layers for faster root-cause analysis.',
     cta: 'Explore Dashboard',
-    image: 'https://framerusercontent.com/images/mmBJ1hwaPU5ZWGIyhCbp86UYpc.png',
+    image: '/images/showcase-1.png',
   },
   {
     title: 'Anomaly Detection & Alerts',
@@ -31,7 +31,7 @@ const PROJECTS = [
     description:
       'Identifies unusual behavior early — including risks that may not yet appear in standard alerting. Detects threshold breaches while reducing unnecessary alert noise and improving operational focus.',
     cta: 'See How It Works',
-    image: 'https://framerusercontent.com/images/gYQDgKjRc49WkzJYlfnusNLSObo.png',
+    image: '/images/showcase-2.png',
   },
   {
     title: 'Topology & Impact Analysis',
@@ -40,7 +40,7 @@ const PROJECTS = [
     description:
       'Shows system relationships and dependencies clearly, helping reveal impact paths and affected areas. Understand how a change in one layer cascades across your SAP landscape before it causes disruption.',
     cta: 'View Topology',
-    image: 'https://framerusercontent.com/images/qMJ1eOGI6KqH3EjLwj4wTqRUT0.png',
+    image: '/images/showcase-3.png',
   },
   {
     title: 'Real User Monitoring',
@@ -49,7 +49,7 @@ const PROJECTS = [
     description:
       'Reveals how applications are performing from the user perspective — helping protect service quality and productivity. Detect degradation before helpdesk tickets start piling up.',
     cta: 'Learn More',
-    image: 'https://framerusercontent.com/images/RdBu5uyrv7rEdbWwTGPkXqBmWMo.png',
+    image: '/images/showcase-4.png',
   },
   {
     title: 'GenAI-Assisted Insights',
@@ -58,7 +58,7 @@ const PROJECTS = [
     description:
       'Turns complex monitoring data into clearer, faster-to-understand operational insights. Reduces expert dependency, accelerates analysis, and gives leadership confidence in operational stability.',
     cta: 'Discover GenAI',
-    image: 'https://framerusercontent.com/images/RUGOoLXzHgBmYNmtj1CGsCpb2tc.png',
+    image: '/images/showcase-5.png',
   },
 ];
 
@@ -81,13 +81,13 @@ export default function Showcase() {
         >
           <p className="text-sm font-semibold tracking-widest uppercase text-[#FF6F61]">/Showcase</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-[-0.02em]">
-            Showcase of SOM&apos;s{' '}
+            Showcase of SwiftAI PRISM&apos;s{' '}
             <span className="heading-gradient">
               Capabilities
             </span>
           </h2>
           <p className="text-lg text-muted-foreground mt-4 font-normal">
-            See how SOM transforms SAP monitoring into proactive, intelligent operations.
+            See how SwiftAI PRISM transforms SAP monitoring into proactive, intelligent operations.
           </p>
         </motion.div>
 

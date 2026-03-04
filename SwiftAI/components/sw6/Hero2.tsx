@@ -9,7 +9,7 @@ export default function Hero2() {
     <section className="relative overflow-hidden min-h-screen flex flex-col">
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
         <img
-          src="https://framerusercontent.com/images/vYZYM5P9vKTxjyMntDIvdSTX7sE.webp?width=2400&height=1368"
+          src="/images/hero-bg.webp"
           alt=""
           className="absolute inset-0 w-full h-[110%] object-cover"
         />
@@ -38,7 +38,7 @@ export default function Hero2() {
             </h1>
 
             <p className="mt-6 max-w-3xl mx-auto text-lg leading-8 text-white">
-              SOM connects fragmented signals across SAP and supporting layers, highlights
+              SwiftAI PRISM connects fragmented signals across SAP and supporting layers, highlights
               which risks need attention first, and helps teams intervene earlier with better
               context — giving leadership confidence in operational stability.
             </p>

@@ -66,8 +66,8 @@ const KPI_DOMAINS = [
 
 const COMPARISON_ITEMS = {
   'cloud-alm': {
-    title: 'SOM vs SAP Cloud ALM',
-    subtitle: 'See how SOM compares against SAP\'s baseline ALM platform',
+    title: 'SwiftAI PRISM vs SAP Cloud ALM',
+    subtitle: 'See how SwiftAI PRISM compares against SAP\'s baseline ALM platform',
     som: [
       'Customer-operated (on-prem-first / customer-controlled)',
       'Direct non-SAP monitoring via APIs/exporters/agents',
@@ -82,7 +82,7 @@ const COMPARISON_ITEMS = {
     ],
   },
   'focused-run': {
-    title: 'SOM vs SAP Focused Run',
+    title: 'SwiftAI PRISM vs SAP Focused Run',
     subtitle: 'Advanced enterprise-scale operations cockpit comparison',
     som: [
       'Typically lower TCO than FRUN — lighter stack + commodity infra',
@@ -164,7 +164,7 @@ export default function IndustryEditions() {
         >
           <p className="text-sm font-semibold tracking-widest uppercase text-orange-500 mb-2">/Coverage</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
-            SOM Coverage &{' '}
+            SwiftAI PRISM Coverage &{' '}
             <span className="heading-gradient">
               Comparison
             </span>
@@ -263,13 +263,13 @@ export default function IndustryEditions() {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                      {/* SOM column */}
+                      {/* SwiftAI PRISM column */}
                       <div className="rounded-2xl border-2 border-hero-accent-1/30 bg-hero-accent-1/[0.03] p-6 space-y-4">
                         <div className="flex items-center gap-2 mb-2">
                           <div className="w-8 h-8 rounded-lg bg-hero-accent-1/15 flex items-center justify-center">
                             <CheckCircle2 className="w-4 h-4 text-hero-accent-1" />
                           </div>
-                          <h4 className="font-bold text-foreground text-lg">SOM</h4>
+                          <h4 className="font-bold text-foreground text-lg">SwiftAI PRISM</h4>
                         </div>
                         {data.som.map((item, i) => (
                           <div key={i} className="flex items-start gap-3">

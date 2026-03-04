@@ -48,7 +48,7 @@ const Hero = () => {
 
                 <p className="text-[17px] md:text-lg text-hero-foreground/75 max-w-2xl leading-relaxed font-normal">
                   SAP systems run your core operations — order management, procurement, finance,
-                  manufacturing, and payroll. SOM delivers proactive, AI-powered monitoring
+                  manufacturing, and payroll. SwiftAI PRISM delivers proactive, AI-powered monitoring
                   that detects issues before they impact your business.
                 </p>
               </div>
@@ -59,7 +59,7 @@ const Hero = () => {
                   className="h-12 px-8 bg-[#FF6F61] text-white font-semibold rounded-full hover:bg-[#DE4B3A] hover:shadow-lg hover:shadow-[#FF6F61]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('platform-overview')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Explore SOM
+                  Explore SwiftAI PRISM
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <Button

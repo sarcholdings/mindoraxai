@@ -56,7 +56,7 @@ const PlatformOverview = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-hero-accent-1/10 to-primary/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="absolute -inset-[2px] bg-gradient-to-br from-hero-accent-1/20 via-transparent to-primary/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-sm" />
 
-            <h3 className="text-xl font-semibold text-foreground mb-8 relative z-10">SOM enables organizations to:</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-8 relative z-10">SwiftAI PRISM enables organizations to:</h3>
             <div className="grid sm:grid-cols-2 gap-4 relative z-10">
               {features.map((feature, index) => (
                 <div

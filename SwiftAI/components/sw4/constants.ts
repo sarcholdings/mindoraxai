@@ -358,7 +358,7 @@ export const outcomes = [
 export const differentiators = [
   {
     title: "Built for SAP reality",
-    text: "SOM is designed around the operational complexity of SAP landscapes rather than generic monitoring assumptions.",
+    text: "SwiftAI PRISM is designed around the operational complexity of SAP landscapes rather than generic monitoring assumptions.",
   },
   {
     title: "From alerts to operational context",

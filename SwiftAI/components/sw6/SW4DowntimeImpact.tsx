@@ -24,11 +24,11 @@ export function SW4DowntimeImpact() {
             return (
               <div
                 key={item}
-                className="group rounded-2xl border-2 border-border/80 dark:border-border/60 bg-card px-5 py-7 text-center font-semibold text-foreground hover:border-hero-accent-1/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-hero-accent-1/10 transition-all duration-300 relative overflow-hidden"
+                className="group rounded-2xl border-2 border-border/80 dark:border-border/60 bg-card px-5 py-7 text-center font-semibold text-foreground hover:border-orange-500/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/10 transition-all duration-300 relative overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-hero-accent-1/5 via-transparent to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative z-10 flex flex-col items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-hero-accent-1/10 text-hero-accent-1 group-hover:bg-hero-accent-1/20 transition-colors">
+                  <div className="p-2.5 rounded-xl bg-orange-500/10 text-orange-400 group-hover:bg-orange-500/20 transition-colors">
                     <Icon className="w-6 h-6" />
                   </div>
                   <span className="text-base leading-snug">{item}</span>
@@ -42,9 +42,9 @@ export function SW4DowntimeImpact() {
           {downtimeStats.map((item) => (
             <div
               key={item.source}
-              className="rounded-2xl border-2 border-border/80 dark:border-border/60 bg-card p-6 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.3)] dark:shadow-[0_10px_40px_-15px_rgba(0,0,0,0.6)] hover:border-hero-accent-1/50 hover:-translate-y-1 transition-all duration-300"
+              className="rounded-2xl border-2 border-border/80 dark:border-border/60 bg-card p-6 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.3)] dark:shadow-[0_10px_40px_-15px_rgba(0,0,0,0.6)] hover:border-orange-500/50 hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="text-sm uppercase tracking-[0.18em] text-hero-accent-1">
+              <div className="text-sm uppercase tracking-[0.18em] text-orange-400">
                 {item.source}
               </div>
               <div className="mt-4 flex items-baseline gap-2">

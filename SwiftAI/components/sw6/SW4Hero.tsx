@@ -104,7 +104,7 @@ export function SW4Hero() {
               />
               <span
                 className="bg-clip-text text-transparent"
-                style={{ backgroundImage: "linear-gradient(90deg, #c7d2fe 0%, #a5b4fc 20%, #818cf8 40%, #22d3ee 60%, #34d399 80%, #c7d2fe 100%)", backgroundSize: "200% auto", filter: "drop-shadow(0 0 6px rgba(129,140,248,0.4))" }}
+                style={{ backgroundImage: "linear-gradient(90deg, #e0e7ff 0%, #c7d2fe 15%, #a5b4fc 35%, #67e8f9 55%, #6ee7b7 75%, #e0e7ff 100%)", backgroundSize: "200% auto", filter: "drop-shadow(0 0 10px rgba(199,210,254,0.7)) brightness(1.25)" }}
               >
                 {slide.badge}
               </span>

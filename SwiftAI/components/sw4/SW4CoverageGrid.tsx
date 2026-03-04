@@ -9,7 +9,7 @@ export function SW4CoverageGrid() {
           eyebrow="Coverage"
           title="1,100+ KPIs across SAP and related operational domains —"
           gradientText="and growing"
-          description="SOM is designed to combine breadth of monitoring coverage with risk-oriented visibility across the interconnected layers that shape SAP performance, resilience, and operational continuity."
+          description="SwiftAI PRISM is designed to combine breadth of monitoring coverage with risk-oriented visibility across the interconnected layers that shape SAP performance, resilience, and operational continuity."
           centered
         />
 

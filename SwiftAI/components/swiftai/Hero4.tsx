@@ -55,7 +55,7 @@ export default function Hero4() {
                   <span className="hero-heading-gradient">across SAP domains</span>
                 </h1>
                 <p className="text-[17px] md:text-lg text-hero-foreground/75 max-w-2xl leading-relaxed font-normal">
-                  SOM provides monitoring coverage across the layers that shape SAP performance,
+                  SwiftAI PRISM provides monitoring coverage across the layers that shape SAP performance,
                   resilience, and operational continuity — combining breadth with risk-oriented
                   visibility across interconnected operational domains.
                 </p>

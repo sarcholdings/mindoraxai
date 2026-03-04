@@ -81,13 +81,13 @@ export default function Showcase() {
         >
           <p className="text-sm font-semibold tracking-widest uppercase text-[#FF6F61]">/Showcase</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-[-0.02em]">
-            Showcase of SOM&apos;s{' '}
+            Showcase of SwiftAI PRISM&apos;s{' '}
             <span className="heading-gradient">
               Capabilities
             </span>
           </h2>
           <p className="text-lg text-muted-foreground mt-4 font-normal">
-            See how SOM transforms SAP monitoring into proactive, intelligent operations.
+            See how SwiftAI PRISM transforms SAP monitoring into proactive, intelligent operations.
           </p>
         </motion.div>
 

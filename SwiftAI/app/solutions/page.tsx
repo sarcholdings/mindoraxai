@@ -1,18 +1,36 @@
 "use client";
 
-import SwiftAINavigation from '@/components/swiftai/Navigation';
-import Footer from '@/components/swiftai/Footer';
-import VideoHero from '@/components/VideoHeroSection';
+import SwiftAINavigation from '@/components/sw6/Navigation';
+import Footer from '@/components/sw6/Footer';
 import IndustriesSection from '@/components/IndustriesSection';
 
 export default function Solutions() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#0c1222' }}>
       <SwiftAINavigation scrolledByDefault />
-      <main className="flex-1 w-full pt-20">
+
+      {/* Page hero */}
+      <div className="relative overflow-hidden" style={{ backgroundColor: '#0c1222' }}>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(249,115,22,0.12),transparent)]" />
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-32 pb-20">
+          <div className="inline-flex items-center gap-3 mb-6">
+            <div className="h-px w-10 bg-orange-400/50" />
+            <span className="text-xs font-mono tracking-[0.2em] uppercase text-orange-400/80">Solutions</span>
+            <div className="h-px w-10 bg-orange-400/50" />
+          </div>
+          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-white leading-[1.05] max-w-3xl">
+            Enterprise intelligence <span className="text-orange-400">across every industry</span>
+          </h1>
+          <p className="mt-6 text-lg text-white/60 max-w-xl leading-relaxed">
+            SwiftAI PRISM adapts to the unique operational demands of your sector — delivering proactive observability wherever SAP runs.
+          </p>
+        </div>
+      </div>
+
+      <main className="flex-1">
         <IndustriesSection />
-        <VideoHero />
       </main>
+
       <Footer />
     </div>
   );

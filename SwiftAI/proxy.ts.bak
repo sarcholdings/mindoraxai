@@ -24,6 +24,8 @@ const ALLOWED_PATHS = [
   '/legal-job-seekers',
   '/labor-condition-applications',
   '/do-not-sell-or-share',
+  '/sw-3',
+  '/sw-4',
 ];
 
 function isAllowedPath(pathname: string): boolean {

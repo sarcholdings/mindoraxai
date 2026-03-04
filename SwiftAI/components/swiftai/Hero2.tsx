@@ -80,7 +80,7 @@ export default function Hero2() {
                 </h1>
 
                 <p className="text-[17px] md:text-lg text-hero-foreground/75 max-w-2xl leading-relaxed font-normal">
-                  SOM connects fragmented signals across SAP and supporting layers, highlights
+                  SwiftAI PRISM connects fragmented signals across SAP and supporting layers, highlights
                   which risks need attention first, and helps teams intervene earlier with better
                   context — giving leadership confidence in operational stability.
                 </p>

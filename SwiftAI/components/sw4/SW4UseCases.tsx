@@ -11,9 +11,9 @@ export function SW4UseCases() {
           <div>
             <SectionHeader
               eyebrow="Use cases"
-              title="Where SOM delivers value across"
+              title="Where SwiftAI PRISM delivers value across"
               gradientText="SAP operations"
-              description="SOM supports day-to-day monitoring needs and broader enterprise visibility requirements, helping teams understand what is happening, why it matters, and where attention is needed first."
+              description="SwiftAI PRISM supports day-to-day monitoring needs and broader enterprise visibility requirements, helping teams understand what is happening, why it matters, and where attention is needed first."
             />
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">

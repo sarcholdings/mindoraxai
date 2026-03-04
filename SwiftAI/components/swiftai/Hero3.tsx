@@ -9,7 +9,7 @@ const milestones = [
   { id: "critical-window", label: "2026 — Critical Window", description: "2026–2027 is the critical window for finalizing monitoring strategy. Organizations must act now to avoid the SolMan support cliff and ensure continuity.", stat: "2026", statLabel: "Decision year" },
   { id: "mainstream-end", label: "Mainstream Support Ends", description: "SolMan mainstream support ends December 31, 2027. After this date, no new features, patches, or standard maintenance — only extended support at premium cost.", stat: "Dec '27", statLabel: "Hard deadline" },
   { id: "market-opportunity", label: "20K–44K Orgs at Risk", description: "With 400,000+ SAP customers globally, 5–10% running complex on-prem/hybrid landscapes represents 20,000–44,000 organizations needing a migration path.", stat: "44K", statLabel: "Organizations affected" },
-  { id: "strategic-imperative", label: "Bridge the Gap", description: "Organizations need solutions that deliver Focused Run capabilities without the associated cost and complexity burden. SOM bridges this gap at mid-market pricing.", stat: "60%", statLabel: "Lower TCO vs FRUN" },
+  { id: "strategic-imperative", label: "Bridge the Gap", description: "Organizations need solutions that deliver Focused Run capabilities without the associated cost and complexity burden. SwiftAI PRISM bridges this gap at mid-market pricing.", stat: "60%", statLabel: "Lower TCO vs FRUN" },
 ];
 
 const fadeUp = {

@@ -11,7 +11,7 @@ export function SW4CapabilitiesGrid() {
           eyebrow="Key features"
           title="Capabilities designed to detect risk early and improve"
           gradientText="operational control"
-          description="SOM combines predictive monitoring, AI-assisted analysis, contextual dashboards, and visibility across dependencies so teams can see more, understand more, and act with less guesswork."
+          description="SwiftAI PRISM combines predictive monitoring, AI-assisted analysis, contextual dashboards, and visibility across dependencies so teams can see more, understand more, and act with less guesswork."
           centered
         />
 

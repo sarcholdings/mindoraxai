@@ -9,7 +9,7 @@ export default function Hero3() {
     <section className="relative overflow-hidden min-h-screen flex flex-col">
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
         <img
-          src="https://framerusercontent.com/images/vYZYM5P9vKTxjyMntDIvdSTX7sE.webp?width=2400&height=1368"
+          src="/images/hero-bg.webp"
           alt=""
           className="absolute inset-0 w-full h-[110%] object-cover"
         />

@@ -1,5 +1,5 @@
-import SwiftAINavigation from '@/components/swiftai/Navigation';
-import Footer from '@/components/swiftai/Footer';
+import SwiftAINavigation from '@/components/sw6/Navigation';
+import Footer from '@/components/sw6/Footer';
 
 interface LegalPageLayoutProps {
   title: string;

@@ -122,54 +122,56 @@ const IndustriesSection = () => {
   }, []);
 
   return (
-    <section id="industries" className="section-padding bg-gray-200">
+    <section id="industries" className="py-24" style={{ backgroundColor: '#0c1222' }}>
       <div className="section-container">
+        {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Industries We Serve</h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-3 mb-5">
+            <div className="h-px w-10 bg-orange-400/50" />
+            <span className="text-xs font-mono tracking-[0.2em] uppercase text-orange-400/80">Industries</span>
+            <div className="h-px w-10 bg-orange-400/50" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">Industries We Serve</h2>
+          <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed">
             Our expertise spans across various industries, enabling us to deliver industry-specific solutions that drive success.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="relative group rounded-2xl overflow-hidden shadow-lg h-80 cursor-pointer"
+              className="relative group rounded-2xl overflow-hidden shadow-lg h-80 cursor-pointer ring-1 ring-white/10 hover:ring-orange-500/40 transition-all duration-300"
             >
-              {/* Full height background image */}
+              {/* Background image */}
               <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                 style={{ backgroundImage: `url('${industryImages[index]}')` }}
               >
-                {/* Dark overlay for better text readability */}
-                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="absolute inset-0 bg-black/55" />
               </div>
 
               {/* Category tag */}
-              <div className="absolute top-4 left-4 bg-blue-600/90 text-white px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm">
+              <div className="absolute top-4 left-4 bg-orange-500/90 text-white px-3 py-1 rounded-full text-xs font-semibold z-10 backdrop-blur-sm">
                 {industry.title}
               </div>
 
-              {/* Card heading overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                <h4 className="text-white font-bold text-lg leading-tight">
+              {/* Bottom label */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
+                <h4 className="text-white font-semibold text-base leading-snug">
                   {industry.subtitle}
                 </h4>
               </div>
 
-              {/* Hover content with glass morphism */}
-              <div className="absolute inset-0 bg-white/10 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                <div className="bg-white/20 backdrop-blur-md rounded-xl p-6 mx-4 text-center border border-white/30">
-                  <h4 className="text-white font-bold text-lg mb-3">{industry.title}</h4>
-                  <p className="text-white/90 text-sm leading-relaxed mb-4">
-                    {industry.description}
-                  </p>
-                  <div className="space-y-2 text-sm text-white/90">
+              {/* Hover overlay */}
+              <div className="absolute inset-0 backdrop-blur-md bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center p-5">
+                <div className="rounded-xl p-5 text-center border border-white/20 bg-white/5 w-full">
+                  <h4 className="text-white font-semibold text-base mb-3">{industry.title}</h4>
+                  <div className="space-y-2 text-sm">
                     {industry.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center justify-center gap-2">
-                        <div className="w-2 h-2 bg-blue-200 rounded-full" />
-                        <span>{feature}</span>
+                        <div className="w-1.5 h-1.5 bg-orange-400 rounded-full shrink-0" />
+                        <span className="text-white/80">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -179,15 +181,15 @@ const IndustriesSection = () => {
           ))}
         </div>
 
-        {/* Industry Stats */}
-        <div className="mt-16 text-center" ref={statsRef}>
+        {/* Stats */}
+        <div className="mt-20 border-t border-white/[0.06] pt-16 text-center" ref={statsRef}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {statsData.map((stat, i) => (
               <div key={stat.label}>
-                <div className="text-3xl font-bold text-gray-400 mb-2 ">
+                <div className="text-4xl font-bold text-orange-400 mb-2 tabular-nums">
                   {stats[i]}{stat.suffix}
                 </div>
-                <div className="text-gray-700">{stat.label}</div>
+                <div className="text-sm text-white/50 tracking-wide">{stat.label}</div>
               </div>
             ))}
           </div>

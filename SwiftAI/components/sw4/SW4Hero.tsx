@@ -41,7 +41,7 @@ export function SW4Hero() {
             </h1>
 
             <p className="mt-6 max-w-3xl mx-auto text-lg leading-8 text-white/80">
-              SOM helps enterprises detect risk earlier, connect signals faster,
+              SwiftAI PRISM helps enterprises detect risk earlier, connect signals faster,
               and protect business-critical SAP processes across systems, jobs,
               interfaces, databases, infrastructure, and user experience.
             </p>

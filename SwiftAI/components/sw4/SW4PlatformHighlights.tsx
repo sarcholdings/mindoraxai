@@ -12,7 +12,7 @@ export function SW4PlatformHighlights() {
           eyebrow="Platform"
           title="A modern SAP observability platform with"
           gradientText="operational intelligence built in"
-          description="SOM consolidates operational signals into a connected platform that helps enterprises monitor complex SAP environments across technical layers, applications, interfaces, databases, infrastructure, and user activity."
+          description="SwiftAI PRISM consolidates operational signals into a connected platform that helps enterprises monitor complex SAP environments across technical layers, applications, interfaces, databases, infrastructure, and user activity."
           centered
         />
 

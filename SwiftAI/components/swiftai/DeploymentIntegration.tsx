@@ -13,7 +13,7 @@ const DeploymentIntegration = () => {
       icon: Plug,
       title: 'Connect & Discover',
       timeline: 'Week 2–3',
-      description: 'Deploy SOM on your infrastructure — on-prem, hybrid, or customer-controlled cloud. Automatic discovery of SAP systems, HANA databases, BTP services, and integration points.'
+      description: 'Deploy SwiftAI PRISM on your infrastructure — on-prem, hybrid, or customer-controlled cloud. Automatic discovery of SAP systems, HANA databases, BTP services, and integration points.'
     },
     {
       icon: BarChart3,

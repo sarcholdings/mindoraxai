@@ -1,114 +1,142 @@
-import SwiftAINavigation from '@/components/swiftai/Navigation';
-import Footer from '@/components/swiftai/Footer';
+import SwiftAINavigation from '@/components/sw6/Navigation';
+import Footer from '@/components/sw6/Footer';
+import { Linkedin } from 'lucide-react';
+
+export const metadata = {
+  title: 'Our Team | SwiftAI PRISM',
+  description: 'Meet the people behind SwiftAI PRISM — leaders in enterprise technology and operational intelligence.',
+};
 
 const leaders = [
   {
     name: 'Jason Girzadas',
-    title: 'Chief Executive Officer | Deloitte US',
+    title: 'Chief Executive Officer',
     image: 'https://randomuser.me/api/portraits/men/32.jpg',
     linkedin: '#',
     group: 'Leadership',
+    bio: 'Seasoned enterprise technology leader with 20+ years driving digital transformation across Fortune 500 organizations.',
   },
   {
     name: 'Lara Abrash',
-    title: 'Chair | Deloitte US',
+    title: 'Chair',
     image: 'https://randomuser.me/api/portraits/women/44.jpg',
     linkedin: '#',
     group: 'Leadership',
-    extra: true,
+    bio: 'Visionary executive with deep expertise in governance, strategy, and enterprise operations at global scale.',
   },
-  // Dev Leads
   {
     name: 'Alex Kim',
     title: 'Lead Developer',
     image: 'https://randomuser.me/api/portraits/men/45.jpg',
     linkedin: '#',
-    group: 'Dev Leads',
+    group: 'Engineering',
+    bio: 'Full-stack engineer specializing in observability platforms, real-time data pipelines, and SAP system integrations.',
   },
   {
     name: 'Priya Patel',
     title: 'Senior Frontend Engineer',
     image: 'https://randomuser.me/api/portraits/women/65.jpg',
     linkedin: '#',
-    group: 'Dev Leads',
+    group: 'Engineering',
+    bio: 'Expert in building high-performance UIs with deep focus on accessibility, design systems, and user experience.',
   },
-  // SMM Lead
   {
     name: 'Sofia Martinez',
-    title: 'Social Media Marketing Lead',
+    title: 'Marketing Lead',
     image: 'https://randomuser.me/api/portraits/women/68.jpg',
     linkedin: '#',
-    group: 'SMM Lead',
+    group: 'Marketing',
+    bio: 'Brand strategist and growth marketer with a track record of scaling B2B SaaS products across global markets.',
   },
-  // Other roles
   {
     name: 'Michael Chen',
     title: 'Product Manager',
     image: 'https://randomuser.me/api/portraits/men/77.jpg',
     linkedin: '#',
-    group: 'Other',
+    group: 'Product',
+    bio: 'Product leader focused on enterprise monitoring solutions, customer discovery, and outcome-driven roadmaps.',
   },
   {
     name: 'Emily Nguyen',
     title: 'UX/UI Designer',
     image: 'https://randomuser.me/api/portraits/women/72.jpg',
     linkedin: '#',
-    group: 'Other',
+    group: 'Product',
+    bio: 'Designer passionate about translating complex operational data into intuitive, human-centered interfaces.',
   },
 ];
 
-const LinkedInIcon = () => (
-  <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" strokeWidth="1.5"/><path d="M7 10v4m0 0v4m0-4h.01M12 14v-2a2 2 0 1 1 4 0v2m0 0v4m0-4h.01" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-);
-
-const XCircleIcon = () => (
-  <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" fill="none"/><path d="M15 9l-6 6M9 9l6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
-);
-
-const groupOrder = ['Leadership', 'Dev Leads', 'SMM Lead', 'Other'];
+const groups = ['Leadership', 'Engineering', 'Product', 'Marketing'];
 
 export default function Team() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background text-foreground flex flex-col">
       <SwiftAINavigation scrolledByDefault />
-      <main className="section-container pt-20 pb-16">
-        <div className="text-center mb-8">
-          <div className="text-sm text-gray-700 font-semibold mb-2">Our people</div>
-          <h2 className="text-3xl md:text-4xl font-light mb-12">Meet our US leaders</h2>
+
+      {/* Page hero */}
+      <div className="relative overflow-hidden" style={{ backgroundColor: '#0c1222' }}>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(249,115,22,0.12),transparent)]" />
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-32 pb-20">
+          <div className="inline-flex items-center gap-3 mb-6">
+            <div className="h-px w-10 bg-orange-400/50" />
+            <span className="text-xs font-mono tracking-[0.2em] uppercase text-orange-400/80">Our People</span>
+            <div className="h-px w-10 bg-orange-400/50" />
+          </div>
+          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-white leading-[1.05]">
+            The team behind <span className="text-orange-400">SwiftAI PRISM</span>
+          </h1>
+          <p className="mt-6 text-lg text-white/60 max-w-xl leading-relaxed">
+            A group of enterprise technologists, product designers, and operations experts united by a mission to make SAP landscapes resilient.
+          </p>
         </div>
-        {groupOrder.map((group) => {
-          const groupMembers = leaders.filter(l => l.group === group);
-          if (groupMembers.length === 0) return null;
-          return (
-            <div key={group} className="mb-12">
-              {group !== 'Leadership' && (
-                <h3 className="text-xl font-semibold text-gray-800 mb-6 text-center">{group}</h3>
-              )}
-              <div className="flex flex-col md:flex-row justify-center items-center gap-12 flex-wrap">
-                {groupMembers.map((leader) => (
-                  <div key={leader.name} className="flex flex-col items-center">
-                    <div className="w-48 h-48 rounded-full overflow-hidden mb-4 shadow-md bg-gray-100">
-                      <img src={leader.image} alt={leader.name} className="w-full h-full object-cover" />
-                    </div>
-                    <div className="text-primary font-semibold text-lg mb-1">{leader.name}</div>
-                    <div className="text-xs text-gray-500 mb-3">{leader.title}</div>
-                    <div className="flex items-center gap-3">
-                      <a href={leader.linkedin} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 border border-primary rounded-full p-1.5 transition">
-                        <LinkedInIcon />
+      </div>
+
+      <main className="flex-1 py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          {groups.map((group) => {
+            const members = leaders.filter((l) => l.group === group);
+            if (!members.length) return null;
+            return (
+              <div key={group} className="mb-20">
+                <div className="flex items-center gap-4 mb-10">
+                  <h2 className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-400">{group}</h2>
+                  <div className="flex-1 h-px bg-border/60" />
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {members.map((member) => (
+                    <div
+                      key={member.name}
+                      className="group rounded-2xl border border-border/60 bg-card p-6 hover:border-orange-500/40 hover:shadow-[0_10px_40px_-10px_rgba(249,115,22,0.15)] transition-all duration-300"
+                    >
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-border/60 group-hover:ring-orange-500/30 transition-all shrink-0">
+                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-foreground text-base leading-tight">{member.name}</p>
+                          <p className="text-xs text-orange-400 font-medium mt-0.5">{member.title}</p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">{member.bio}</p>
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${member.name} LinkedIn`}
+                        className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-orange-400 transition-colors"
+                      >
+                        <Linkedin className="h-3.5 w-3.5" />
+                        <span>LinkedIn</span>
                       </a>
-                      {leader.extra && (
-                        <button className="text-gray-400 hover:text-gray-600 border border-gray-300 rounded-full p-1.5 transition" title="Other">
-                          <XCircleIcon />
-                        </button>
-                      )}
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </main>
+
       <Footer />
     </div>
   );

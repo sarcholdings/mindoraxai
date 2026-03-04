@@ -19,7 +19,7 @@ import DeploymentIntegration from '@/components/swiftai/DeploymentIntegration';
 import FinalCTA from '@/components/swiftai/FinalCTA';
 
 const HERO_COMPONENTS = [
-  { id: 'hero', component: Hero, name: 'SOM Overview', theme: 'blue' },
+  { id: 'hero', component: Hero, name: 'SwiftAI PRISM Overview', theme: 'blue' },
   { id: 'hero2', component: Hero2, name: 'Intelligent Monitoring', theme: 'green' },
   { id: 'hero3', component: Hero3, name: 'SolMan Migration', theme: 'cyan' },
   { id: 'hero4', component: Hero4, name: 'KPI Coverage', theme: 'purple' }

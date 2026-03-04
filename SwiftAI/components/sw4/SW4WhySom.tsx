@@ -11,10 +11,10 @@ export function SW4WhySom() {
 
       <div className="container px-4 mx-auto relative z-10">
         <SectionHeader
-          eyebrow="Why SOM"
+          eyebrow="Why SwiftAI PRISM"
           title="A clearer path from fragmented monitoring to"
           gradientText="proactive SAP operations"
-          description="The problem is rarely lack of data. It is lack of context, correlation, and timely visibility. SOM helps teams see the full situation sooner, prioritize faster, and operate with more confidence across landscapes."
+          description="The problem is rarely lack of data. It is lack of context, correlation, and timely visibility. SwiftAI PRISM helps teams see the full situation sooner, prioritize faster, and operate with more confidence across landscapes."
           centered
         />
 

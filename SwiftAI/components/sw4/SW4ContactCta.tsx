@@ -57,10 +57,10 @@ export function SW4ContactCta() {
                 /Contact
               </p>
               <h2 className="text-3xl font-bold text-white md:text-5xl">
-                See how SOM fits into your SAP operations
+                See how SwiftAI PRISM fits into your SAP operations
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
-                Book a walkthrough to explore how SOM can improve visibility,
+                Book a walkthrough to explore how SwiftAI PRISM can improve visibility,
                 reduce incidents, strengthen operational control, and support
                 more proactive SAP operations across your landscape.
               </p>
@@ -74,7 +74,7 @@ export function SW4ContactCta() {
                   deployment approach.
                 </div>
                 <div className="border border-white/10 bg-white/[0.04] px-4 py-4">
-                  Explore how SOM can fit leadership visibility as well as
+                  Explore how SwiftAI PRISM can fit leadership visibility as well as
                   technical operations.
                 </div>
               </div>

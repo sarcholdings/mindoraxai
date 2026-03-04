@@ -39,7 +39,7 @@ const PlatformOrchestration = () => {
                 <div className="absolute inset-0 bg-teal-500/20 rounded-full blur-xl" />
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full shadow-[0_0_50px_-10px_rgba(45,212,191,0.5)]" />
                 <div className="relative z-10 text-center">
-                  <span className="block text-foreground font-bold text-xl leading-none">SOM</span>
+                  <span className="block text-foreground font-bold text-xl leading-none">SwiftAI PRISM</span>
                   <span className="text-teal-100 text-sm">Core</span>
                 </div>
               </div>
@@ -48,7 +48,7 @@ const PlatformOrchestration = () => {
 
           <div className="order-1 lg:order-2 space-y-10">
             <div className="space-y-6">
-              <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Why SOM</p>
+              <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Why SwiftAI PRISM</p>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
                 From reactive firefighting to <br/>
                 <span className="heading-gradient">proactive business resilience</span>
@@ -58,7 +58,7 @@ const PlatformOrchestration = () => {
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                SOM detects slow-building issues before they become visible failures, connects fragmented
+                SwiftAI PRISM detects slow-building issues before they become visible failures, connects fragmented
                 signals across SAP and supporting layers, and highlights which risks need attention first —
                 instead of flooding teams with disconnected alerts.
               </p>
