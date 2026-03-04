@@ -39,12 +39,6 @@ export default function Hero4() {
 
       <div className="container relative z-10 px-6 lg:px-12 mx-auto">
         <motion.div className="max-w-6xl mx-auto" variants={stagger} initial="hidden" animate="visible">
-          <motion.div className="flex items-center gap-4 mb-8" variants={fadeUp}>
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/70 uppercase">[04]</span>
-            <div className="h-px w-12 bg-hero-foreground/40" />
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/70 uppercase">KPI Coverage</span>
-          </motion.div>
-
             <div className="grid lg:grid-cols-[2fr_1fr] gap-16 items-center">
             <div className="space-y-8">
               <motion.div variants={fadeUp}>
@@ -55,14 +49,12 @@ export default function Hero4() {
               </motion.div>
 
               <motion.div className="space-y-6" variants={fadeUp}>
-                <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-semibold tracking-tight leading-[1.05] text-hero-foreground">
-                  Broad coverage{" "}
+                <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.02em] leading-[1.05] text-[#FFFFFF]">
+                  Broad coverage
                   <br className="hidden md:block" />
-                  <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(to right, hsl(var(--hero-gradient-4-from)), hsl(var(--hero-accent-4)), hsl(var(--hero-gradient-4-to)))' }}>
-                    across SAP domains
-                  </span>
+                  <span className="hero-heading-gradient">across SAP domains</span>
                 </h1>
-                <p className="text-[17px] md:text-lg text-hero-foreground/80 max-w-2xl leading-relaxed">
+                <p className="text-[17px] md:text-lg text-hero-foreground/75 max-w-2xl leading-relaxed font-normal">
                   SOM provides monitoring coverage across the layers that shape SAP performance,
                   resilience, and operational continuity — combining breadth with risk-oriented
                   visibility across interconnected operational domains.
@@ -70,25 +62,16 @@ export default function Hero4() {
               </motion.div>
 
               <motion.div className="flex flex-col sm:flex-row items-start gap-4 pt-2" variants={fadeUp}>
-                <Button size="lg" className="h-12 px-8 bg-emerald-400 text-gray-900 font-semibold rounded-none hover:bg-emerald-300 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 text-sm tracking-wide uppercase"
+                <Button size="lg" className="h-12 px-8 bg-[#FF6F61] text-white font-semibold rounded-full hover:bg-[#DE4B3A] hover:shadow-lg hover:shadow-[#FF6F61]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('industry-editions')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   View All KPIs <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline" size="lg" className="h-12 px-8 border-white/25 bg-white/[0.08] text-white hover:bg-white/[0.15] hover:border-white/40 rounded-none backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
+                <Button variant="outline" size="lg" className="h-12 px-8 border-white/25 bg-white/[0.08] text-white hover:bg-white/[0.15] hover:border-white/40 rounded-full backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('showcase')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Download Catalog <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
-              </motion.div>
-
-              <motion.div className="pt-6" variants={fadeUp}>
-                <p className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/65 uppercase mb-4">Domains</p>
-                <div className="flex flex-wrap gap-x-6 gap-y-2">
-                  {["SAP Core", "HANA DB", "SAP BTP", "Infrastructure", "IDocs", "Logs & Audit", "Early Warning", "Real User"].map((t) => (
-                    <span key={t} className="text-[13px] text-hero-foreground/75 hover:text-hero-accent-4 transition-colors duration-300 cursor-default">{t}</span>
-                  ))}
-                </div>
               </motion.div>
             </div>
 

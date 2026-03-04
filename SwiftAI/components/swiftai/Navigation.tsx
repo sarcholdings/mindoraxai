@@ -46,7 +46,7 @@ export default function SwiftAINavigation({ scrolledByDefault = false }: SwiftAI
 
   const handleNavClick = (e: React.MouseEvent, target: string) => {
     setMobileOpen(false);
-    if (pathname === '/' || pathname === '/sw-3') {
+    if (pathname === '/' || pathname === '/sw-3' || pathname === '/sw-4') {
       e.preventDefault();
       const el = document.getElementById(target);
       if (el) el.scrollIntoView({ behavior: 'smooth' });

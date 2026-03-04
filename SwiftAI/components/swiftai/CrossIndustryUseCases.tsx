@@ -69,7 +69,7 @@ const CrossIndustryUseCases = () => {
             <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Gap Analysis</p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Closing critical gaps in{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+              <span className="heading-gradient">
                 SAP monitoring
               </span>
             </h2>

@@ -25,11 +25,11 @@ const PlatformOverview = () => {
               <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Platform Overview</p>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
                 Why proactive SAP monitoring is <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+                <span className="heading-gradient">
                   now a business requirement
                 </span>
               </h2>
-              <div className="w-24 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" />
+              <div className="w-24 h-1.5 rounded-full heading-gradient-bar" />
             </div>
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">

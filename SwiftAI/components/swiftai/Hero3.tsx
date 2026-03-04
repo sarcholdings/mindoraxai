@@ -39,12 +39,6 @@ export default function Hero3() {
 
       <div className="container relative z-10 px-6 lg:px-12 mx-auto">
         <motion.div className="max-w-6xl mx-auto" variants={stagger} initial="hidden" animate="visible">
-          <motion.div className="flex items-center gap-4 mb-8" variants={fadeUp}>
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/70 uppercase">[03]</span>
-            <div className="h-px w-12 bg-hero-foreground/40" />
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/70 uppercase">SolMan Support Cliff</span>
-          </motion.div>
-
             <div className="grid lg:grid-cols-[2fr_1fr] gap-16 items-center">
             <div className="space-y-8">
               <motion.div variants={fadeUp}>
@@ -55,15 +49,12 @@ export default function Hero3() {
               </motion.div>
 
               <motion.div className="space-y-6" variants={fadeUp}>
-                <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-semibold tracking-tight leading-[1.05] text-hero-foreground">
-                  The SolMan{" "}
-                  <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(to right, hsl(var(--hero-gradient-3-from)), hsl(var(--hero-accent-3)), hsl(var(--hero-gradient-3-to)))' }}>
-                    support cliff
-                  </span>
+                <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.02em] leading-[1.05] text-[#FFFFFF]">
+                  The SolMan support cliff
                   <br className="hidden md:block" />
-                  is here
+                  <span className="hero-heading-gradient">is here</span>
                 </h1>
-                <p className="text-[17px] md:text-lg text-hero-foreground/80 max-w-2xl leading-relaxed">
+                <p className="text-[17px] md:text-lg text-hero-foreground/75 max-w-2xl leading-relaxed font-normal">
                   With mainstream support ending Dec 2027 and extended support only buying time until 2030,
                   every SAP organization faces a critical decision: Cloud ALM, Focused Run, or a smarter
                   third-party alternative.
@@ -71,25 +62,16 @@ export default function Hero3() {
               </motion.div>
 
               <motion.div className="flex flex-col sm:flex-row items-start gap-4 pt-2" variants={fadeUp}>
-                <Button size="lg" className="h-12 px-8 bg-emerald-400 text-gray-900 font-semibold rounded-none hover:bg-emerald-300 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 text-sm tracking-wide uppercase"
+                <Button size="lg" className="h-12 px-8 bg-[#FF6F61] text-white font-semibold rounded-full hover:bg-[#DE4B3A] hover:shadow-lg hover:shadow-[#FF6F61]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('industry-editions')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Compare Options <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline" size="lg" className="h-12 px-8 border-white/25 bg-white/[0.08] text-white hover:bg-white/[0.15] hover:border-white/40 rounded-none backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
+                <Button variant="outline" size="lg" className="h-12 px-8 border-white/25 bg-white/[0.08] text-white hover:bg-white/[0.15] hover:border-white/40 rounded-full backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('deployment')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   View Timeline <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
-              </motion.div>
-
-              <motion.div className="pt-6" variants={fadeUp}>
-                <p className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/65 uppercase mb-4">Key Factors</p>
-                <div className="flex flex-wrap gap-x-6 gap-y-2">
-                  {["Hard Deadline", "Dual-Path Dilemma", "400K+ Customers", "Cost Burden", "Migration Risk", "Enterprise-Grade"].map((t) => (
-                    <span key={t} className="text-[13px] text-hero-foreground/75 hover:text-hero-accent-3 transition-colors duration-300 cursor-default">{t}</span>
-                  ))}
-                </div>
               </motion.div>
             </div>
 

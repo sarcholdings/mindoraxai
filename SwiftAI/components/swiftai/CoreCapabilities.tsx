@@ -85,7 +85,7 @@ const CoreCapabilities = () => {
           <p className="text-sm font-semibold tracking-widest uppercase text-orange-500">/Key Features</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
             SOM Key{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+            <span className="heading-gradient">
               Features
             </span>
           </h2>

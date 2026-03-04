@@ -165,7 +165,7 @@ export default function IndustryEditions() {
           <p className="text-sm font-semibold tracking-widest uppercase text-orange-500 mb-2">/Coverage</p>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
             SOM Coverage &{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+            <span className="heading-gradient">
               Comparison
             </span>
           </h2>

@@ -14,7 +14,7 @@ import { SW4WhySom } from "@/components/sw6/SW4WhySom";
 import { SW4About } from "@/components/sw6/SW4About";
 import { SW4ContactCta } from "@/components/sw6/SW4ContactCta";
 
-export default function HomePage() {
+export default function SW6Page() {
   return (
     <div className="relative min-h-screen bg-background">
       <style>{`

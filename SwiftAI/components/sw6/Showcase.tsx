@@ -69,7 +69,7 @@ const STICKY_TOP_STEP = 30;
 
 export default function Showcase() {
   return (
-    <section id="showcase" className="py-24 md:py-32 bg-background relative">
+    <section id="sw6-showcase" className="py-24 md:py-32 bg-background relative">
       <div className="container px-4 mx-auto relative z-10">
         {/* Section header */}
         <motion.div

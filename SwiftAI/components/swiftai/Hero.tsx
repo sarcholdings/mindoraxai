@@ -4,11 +4,6 @@ import React, { useState } from 'react';
 import { ArrowRight, ChevronRight, Activity } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const MONITORING_DOMAINS = [
-  'SAP Core Ops', 'HANA Database', 'SAP BTP', 'Infrastructure',
-  'Business Interfaces', 'Predictive Alerts', 'Logs & Governance', 'Real User Monitoring',
-];
-
 const platformMetrics = [
   { id: 'kpis', label: 'KPIs Monitored', value: '1,100+', sub: 'Across SAP & related domains' },
   { id: 'downtime', label: 'Hourly Downtime Cost', value: '$300K+', sub: '90% of mid/large enterprises' },
@@ -33,12 +28,6 @@ const Hero = () => {
 
       <div className="container relative z-10 px-6 lg:px-12 mx-auto">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/70 uppercase">[01]</span>
-            <div className="h-px w-12 bg-hero-foreground/40" />
-            <span className="font-mono text-[11px] tracking-[0.2em] text-hero-foreground/70 uppercase">SwiftAI Operations Monitor</span>
-          </div>
-
           <div className="grid lg:grid-cols-[2fr_1fr] gap-16 items-center">
             <div className="space-y-8">
               <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -49,16 +38,15 @@ const Hero = () => {
               </div>
 
               <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-semibold tracking-tight leading-[1.05] text-hero-foreground">
+                <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.02em] leading-[1.05] text-[#FFFFFF]">
                   Protecting SAP{' '}
                   <br className="hidden md:block" />
                   uptime, revenue &{' '}
-                  <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(to right, hsl(var(--hero-gradient-1-from)), hsl(var(--hero-accent-1)), hsl(var(--hero-gradient-1-to)))' }}>
-                    operational stability
-                  </span>
+                  <br className="hidden md:block" />
+                  <span className="hero-heading-gradient">operational stability</span>
                 </h1>
 
-                <p className="text-[17px] md:text-lg text-hero-foreground/80 max-w-2xl leading-relaxed">
+                <p className="text-[17px] md:text-lg text-hero-foreground/75 max-w-2xl leading-relaxed font-normal">
                   SAP systems run your core operations — order management, procurement, finance,
                   manufacturing, and payroll. SOM delivers proactive, AI-powered monitoring
                   that detects issues before they impact your business.
@@ -68,7 +56,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row items-start gap-4 pt-2 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 <Button
                   size="lg"
-                  className="h-12 px-8 bg-emerald-400 text-gray-900 font-semibold rounded-none hover:bg-emerald-300 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 text-sm tracking-wide uppercase"
+                  className="h-12 px-8 bg-[#FF6F61] text-white font-semibold rounded-full hover:bg-[#DE4B3A] hover:shadow-lg hover:shadow-[#FF6F61]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('platform-overview')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Explore SOM
@@ -77,26 +65,12 @@ const Hero = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="h-12 px-8 border-white/25 bg-white/[0.08] text-white hover:bg-white/[0.15] hover:border-white/40 rounded-none backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
+                  className="h-12 px-8 border-white/25 bg-white/[0.08] text-white hover:bg-white/[0.15] hover:border-white/40 rounded-full backdrop-blur-sm transition-all duration-300 text-sm tracking-wide uppercase"
                   onClick={() => document.getElementById('industry-editions')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   KPI Coverage
                   <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
-              </div>
-
-              <div className="pt-6 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-                <p className="font-mono text-[11px] tracking-[0.15em] text-hero-foreground/65 uppercase mb-4">Monitoring Domains</p>
-                <div className="flex flex-wrap gap-x-6 gap-y-2">
-                  {MONITORING_DOMAINS.map((tech) => (
-                    <span
-                      key={tech}
-                      className="text-[13px] text-hero-foreground/75 hover:text-hero-accent-1 transition-colors duration-300 cursor-default"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
 
